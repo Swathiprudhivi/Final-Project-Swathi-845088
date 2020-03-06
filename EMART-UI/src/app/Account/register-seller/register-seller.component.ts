@@ -27,7 +27,7 @@ item:Seller;
 
   ngOnInit() {
     this.registerForm=this.formBulider.group({
-      id:['',Validators.required],
+      
       name:['',Validators.required],
       phnum:['',[Validators.required,Validators.pattern("^[6-9][0-9]{9}$")]],
       email:['',[Validators.required,Validators.email]],
@@ -60,7 +60,7 @@ item:Seller;
   Add()
   {
     this.item=new Seller();
-    this.item.sellerId=this.registerForm.value["id"];
+    this.item.sellerId='B'+Math.floor(Math.random()*999);
     this.item.userName=this.registerForm.value["name"];
     this.item.password=this.registerForm.value["pwd"];
     this.item.companyName=this.registerForm.value["companyname"];

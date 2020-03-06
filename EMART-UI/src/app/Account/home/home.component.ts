@@ -1,7 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import {FormBuilder,FormGroup,Validators } from "@angular/forms";
-import { Buyer } from 'src/app/Models/buyer';
-import { Seller } from 'src/app/Models/seller';
 import { Token } from 'src/app/Models/token';
 import { Router } from '@angular/router';
 import { AccountService } from 'src/app/Serviecs/account.service';
@@ -15,9 +13,9 @@ export class HomeComponent implements OnInit {
   submitted = false;
   userName:string;
   password:string;
-  errmsg:string;
-  buyer:Buyer;
-  seller:Seller;
+  msg:string;
+  
+  
   role: any;
   token:Token;
   constructor(private formBuilder: FormBuilder,private route:Router,private service:AccountService) { }
@@ -54,7 +52,8 @@ public Validate()
     this.service.BuyerLogin(userName,password).subscribe(res=>{
       console.log(res);
       this.token=res;
-
+      console.log(this.token);
+      localStorage.setItem('buyerId',this.token.buyerId);
       if(this.token.msg=='Success'){
           this.route.navigateByUrl('/buyer');
       }
@@ -67,8 +66,10 @@ if(role=='seller')
 {
  
 this.service.SellerLogin(userName,password).subscribe(res=>{
-  console.log(res)
+  console.log(res);
   this.token=res;
+  console.log(this.token);
+  localStorage.setItem('sellerId',this.token.sellerId);
   if(this.token.msg=="Success"){
     this.route.navigateByUrl("/seller")
   }

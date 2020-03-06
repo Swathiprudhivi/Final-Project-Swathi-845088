@@ -4,6 +4,7 @@ import {Buyer} from 'src/app/Models/buyer';
 import { from } from 'rxjs';
 import { BuyerService } from 'src/app/Services/buyer.service';
 import {Items} from 'src/app/Models/items';
+import { Router } from '@angular/router';
 @Component({
   selector: 'app-search',
   templateUrl: './search.component.html',
@@ -14,7 +15,7 @@ export class SearchComponent implements OnInit {
   itemlist:Items[];
   item:Items[];
   itemName:string;
-  constructor(private formbuilder:FormBuilder,private service:BuyerService) { }
+  constructor(private formbuilder:FormBuilder,private service:BuyerService,private route:Router) { }
 
   ngOnInit() {
     this.buyerform=this.formbuilder.group({
@@ -29,5 +30,11 @@ Search()
       this.itemlist=res;
       console.log(this.itemlist);
 })
+}
+Buy(item:Items)
+{
+console.log(item);
+localStorage.setItem('item',JSON.stringify(item));
+this.route.navigateByUrl('/buyer/buyproduct')
 }
 }

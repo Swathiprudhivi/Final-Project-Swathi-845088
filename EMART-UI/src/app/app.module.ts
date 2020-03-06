@@ -27,6 +27,7 @@ import { DailyReportsComponent } from './Admin/daily-reports/daily-reports.compo
 import { SViewProfileComponent } from './Seller/sview-profile/sview-profile.component';
 import { HomeComponent } from './Account/home/home.component';
 import { AccountService } from 'src/app/Serviecs/account.service';
+import { LogoutComponent } from './logout/logout.component';
 
 
 @NgModule({
@@ -53,6 +54,7 @@ import { AccountService } from 'src/app/Serviecs/account.service';
     DailyReportsComponent,
     SViewProfileComponent,
     HomeComponent,
+    LogoutComponent,
     
     
   ],

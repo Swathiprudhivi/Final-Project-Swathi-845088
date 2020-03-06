@@ -4,6 +4,7 @@ import {Observable} from "Rxjs";
 import {Seller} from 'src/app/Models/seller';
 const Requestheaders={headers:new HttpHeaders({
   'Content-Type':'application/json',
+  'Authorization':'Bearer'+localStorage.getItem('token')
 })}
 @Injectable({
   providedIn: 'root'

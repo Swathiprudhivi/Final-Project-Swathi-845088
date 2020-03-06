@@ -20,16 +20,34 @@ export class ViewProfileComponent implements OnInit {
     createdDateTime:Date;
     list:Buyer[];
 buyer:Buyer;
-  constructor(private formBulider:FormBuilder,private service:BuyerService) { }
+item:Buyer;
+  constructor(private formBulider:FormBuilder,private service:BuyerService) { 
+    let id1=localStorage.getItem('buyerId');
+  console.log(id1);
+  this.service.GetProfile(id1).subscribe(res=>{
+    this.item=res;
+    console.log(this.item);
+    this.editForm.patchValue({
+      buyerId:this.item.buyerId,
+      userName:this.item.userName,
+      password:this.item.password,
+      emailId:this.item.emailId,
+      mobileNo:this.item.mobileNo,
+      createdDateTime:this.item.createdDateTime
+    })
+  })
+
+  }
 
   ngOnInit() {
     this.editForm=this.formBulider.group({
-      buyerId:[''],
-      userName:[''],
-      emailId:[''],
-      password:[''],
-      mobileNo:[''],
-      createdDateTime:['']
+      
+        buyerId:['',Validators.required],
+       userName:['',[Validators.required,Validators.pattern('^[a-zA-Z]{3,6}$')]],
+        mobileNo:['',[Validators.required,Validators.pattern("^[6-9][0-9]{9}$")]],
+       emailId:['',[Validators.required,Validators.email]],
+        password:['',[Validators.required,Validators.minLength(6)]],
+        createdDateTime:['']
       
     });
   
@@ -37,7 +55,7 @@ buyer:Buyer;
   onSubmit()
   {
     this.submitted=true;
-    this.View();
+    
   
     }
   get f() {return this.editForm.controls;}
@@ -46,21 +64,20 @@ buyer:Buyer;
   this.submitted=false;
   this.editForm.reset();
   }
-  View()
-  {
-    let id=this.editForm.value["buyerId"];
-    this.service.ViewProfile(id).subscribe(res=>{
-      this.buyer=res;
-      console.log(this.buyer);
-      this.editForm.patchValue({
-        sellerId:this.buyer.buyerId,
-        userName:this.buyer.userName,
-        emailId:this.buyer.emailId,
-        password:this.buyer.password,
-        mobileNo:this.buyer.mobileNo,
-        createdDateTime:this.buyer.createdDateTime       
-        
-      })
+  EditProfile()
+{
+  this.item=new Buyer();
+  this.item.buyerId=this.editForm.value["buyerId"];
+  this.item.userName=this.editForm.value["userName"];
+  this.item.password=this.editForm.value["password"];
+  this.item.emailId=this.editForm.value["emailId"];
+  this.item.mobileNo=this.editForm.value["mobileNo"];
+this.item.createdDateTime=this.editForm.value["createdDateTime"];
+
+  console.log(this.item);
+  this.service.EditProfile(this.item).subscribe(res=>
+    {
+      console.log('Record Updated');
     })
-  }
+}
 }

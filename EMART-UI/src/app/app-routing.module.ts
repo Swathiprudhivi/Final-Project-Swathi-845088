@@ -21,6 +21,7 @@ import { AddSubCategoryComponent } from './Admin/add-sub-category/add-sub-catego
 import { DailyReportsComponent } from './Admin/daily-reports/daily-reports.component';
 import { SViewProfileComponent } from './Seller/sview-profile/sview-profile.component';
 import { HomeComponent } from './Account/home/home.component';
+import { LogoutComponent } from './logout/logout.component';
 
 const routes: Routes = [
   {path:'seller',component:SellerLandingPageComponent,children:[
@@ -46,8 +47,10 @@ const routes: Routes = [
   ]},
   {path:'home',component:HomeComponent},
   {path:'login',component:LoginComponent},
+  {path:'logout',component:LogoutComponent},
   {path:'registerseller',component:RegisterSellerComponent},
-  {path:'registerbuyer',component:RegisterBuyerComponent}
+  {path:'registerbuyer',component:RegisterBuyerComponent},
+  {path:'',redirectTo:'home',pathMatch:"full"}
 ];
 
 @NgModule({

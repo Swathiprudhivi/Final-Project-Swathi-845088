@@ -58,8 +58,10 @@ public Validate()
     this.service.BuyerLogin(userName,password).subscribe(res=>{
       console.log(res);
       this.token=res;
+      console.log(this.token);
+      localStorage.setItem('buyerId',this.token.buyerId);
 
-      if(this.token.msg=='Success'){
+      if(this.token.msg=='success'){
           this.route.navigateByUrl('/buyer');
       }
       else{
@@ -73,7 +75,9 @@ if(role=='seller')
 this.service.SellerLogin(userName,password).subscribe(res=>{
   console.log(res)
   this.token=res;
-  if(this.token.msg=="Success"){
+  console.log(this.token);
+  localStorage.setItem('sellerId',this.token.sellerId);
+  if(this.token.msg=="success"){
     this.route.navigateByUrl("/seller")
   }
   else{
