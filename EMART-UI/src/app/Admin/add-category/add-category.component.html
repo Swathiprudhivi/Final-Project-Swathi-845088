@@ -1,0 +1,39 @@
+
+   <div class="card-md-3">
+    <div class="card-body">
+<h3 id=t1>Add new Category</h3> 
+ <form [formGroup]="addcatform" (ngSubmit)="onSubmit()">
+     
+     <div class="form-group">
+         <label>Category Id</label>
+          <input type="text" formControlName="categoryId" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.categoryId.errors }" id=a1/>
+          <div *ngIf="submitted && f.categoryId.errors" class="invalid-feedback">
+         <div *ngIf="f.categoryId.errors.required">Category ID is required</div>
+         </div>
+     </div>
+     <div class="form-group">
+         <label>Category Name</label>
+          <input type="text" formControlName="categoryName" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.categoryName.errors }" id=a1/>
+          <div *ngIf="submitted && f.categoryName.errors" class="invalid-feedback">
+         <div *ngIf="f.categoryName.errors.required">Category Name is required</div>
+         </div>
+     </div>  
+     <div class="form-group">
+        <label>Brief Details</label>
+        <textarea class="form-control" rows="5" id="comment" formControlName="bd" [ngClass]="{ 'is-invalid': submitted && f.bd.errors}" id=a1></textarea>
+         <div *ngIf="submitted && f.bd.errors" class="invalid-feedback">
+        <div *ngIf="f.bd.errors.required">Brief Details is required</div>
+        </div>
+    </div>
+     
+         <div class="text-center">
+        
+            <button class="btn btn-primary mr-1" >Add</button>
+            <button class="btn btn-primary mr-1" (click)="Delete()" type="button">Delete</button>
+        
+         </div>
+    </form>
+ </div>
+ </div>
+ <router-outlet></router-outlet>
+
