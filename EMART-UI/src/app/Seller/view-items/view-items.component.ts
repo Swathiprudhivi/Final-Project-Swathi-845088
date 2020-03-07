@@ -85,7 +85,8 @@ Search()
       price:this.item.price,
       description:this.item.description,
       stockNumber:this.item.stockNumber,
-      remarks:this.item.remarks
+      remarks:this.item.remarks,
+      image:this.item.image
     })
   })
 }
@@ -101,6 +102,7 @@ Search()
     this.item.description=this.viewitemsform.value["description"];
     this.item.stockNumber=this.viewitemsform.value["stockNumber"];
     this.item.remarks=this.viewitemsform.value["remarks"];
+    this.item.image=this.viewitemsform.value["image"];
     console.log(this.item);
     this.service.UpdateItem(this.item).subscribe(res=>{
       console.log('Item Updated')

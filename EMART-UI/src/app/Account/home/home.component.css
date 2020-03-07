@@ -1,32 +1,56 @@
-.sidenav a {
-	margin-top: 30px;
-	padding: 0px 0px 0px 20px;
-	text-decoration: none;
-	font-size: 20px;
-	color: blanchedalmond;
-	display: inline-block;
-}
-.sidenav {
-	height: 90%;
-	width: 220px;
-	position: fixed;
-	z-index: 1;
-	top: 62px;
-	left: 0px;
-	background-color:lightskyblue ;
-	overflow-x: hidden;
-	padding-top: 20px;
-}
+
+
 * {box-sizing: border-box;}
 
-body {
-  margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
+.login-box{
+  width: 280px;
+  position: absolute;
+  top: 1%;
+  left: 50%;
+  transform: translate(-50%,50%);
+  color: white;
+}
+.login-box h1{
+  float: left;
+  font-size: 40px;
+  border-bottom: 6px solid #4caf50;
+  margin-bottom: 50px;
+  padding: 13px 0
+}
+.textbox{
+  width: 100%;
+  overflow: hidden;
+  font-size: 20px;
+  padding:  8px 0;
+  margin: 8px 0;
+  border-bottom: 1px solid #4caf50;
+}
+#i{
+  width: 40px;
+  font-size: 20px;
+
+}
+.textbox input{
+  border: none;
+  outline: none;
+  background: none;
+  color: white;
+  font-size: 18px;
+  width: 80%;
+  float: left;
+  margin: 0 10px;
+}
+#id1{
+  font-size: 20px;
+}
+#id2{
+  font-size: 20px;
+  color: #ccc;
 }
 
 .topnav {
   overflow: hidden;
-  background-color:lightgoldenrodyellow;
+  background-color:whitesmoke;
 }
 
 .topnav a {
@@ -73,8 +97,11 @@ body {
 .bgimage {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
-  background-image: url("src/assets/images/order11.jpg");
+  background-image: url("src/assets/images/download.jpg");
   height: 700pt;
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
   
 }
 

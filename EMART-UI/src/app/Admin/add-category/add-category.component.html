@@ -4,13 +4,7 @@
 <h3 id=t1>Add new Category</h3> 
  <form [formGroup]="addcatform" (ngSubmit)="onSubmit()">
      
-     <div class="form-group">
-         <label>Category Id</label>
-          <input type="text" formControlName="categoryId" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.categoryId.errors }" id=a1/>
-          <div *ngIf="submitted && f.categoryId.errors" class="invalid-feedback">
-         <div *ngIf="f.categoryId.errors.required">Category ID is required</div>
-         </div>
-     </div>
+     
      <div class="form-group">
          <label>Category Name</label>
           <input type="text" formControlName="categoryName" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.categoryName.errors }" id=a1/>

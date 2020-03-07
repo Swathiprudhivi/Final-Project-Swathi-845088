@@ -23,18 +23,39 @@ postalAddress:string;
 website:string;
 list:Seller[];
 seller:Seller;
-  constructor(private formBulider:FormBuilder,private service:SellerService) { }
+item:Seller;
+  constructor(private formBulider:FormBuilder,private service:SellerService) {
+    let id1=localStorage.getItem('sellerId');
+  console.log(id1);
+  this.service.GetProfile(id1).subscribe(res=>{
+    this.item=res;
+    console.log(this.item);
+    this.editForm.patchValue({
+      sellerId:this.item.sellerId,
+      userName:this.item.userName,
+      password:this.item.password,
+      companyName:this.item.companyName,
+      gstin:this.item.gstin,
+      briefDetails:this.item.briefDetails,
+      postalAddress:this.item.postalAddress,
+      website:this.item.website,
+      emailId:this.item.emailId,
+      mobileNo:this.item.mobileNo,
+      
+    })
+  })
+   }
 
   ngOnInit() {
     this.editForm=this.formBulider.group({
       sellerId:[''],
-      userName:[''],
+      userName:['',[Validators.required,Validators.pattern('^[a-zA-Z]{3,6}$')]],
+      mobileNo:['',[Validators.required,Validators.pattern("^[6-9][0-9]{9}$")]],
       emailId:[''],
-      password:[''],
+      password:['',[Validators.required,Validators.minLength(6)]],
       companyName:[''],
       gstin:[''],
       briefDetails:[''],
-      mobileNo:[''],
       postalAddress:[''],
       website:['']
       
@@ -43,7 +64,7 @@ seller:Seller;
   onSubmit()
   {
     this.submitted=true;
-    this.View();
+    
   
     }
   get f() {return this.editForm.controls;}
@@ -53,26 +74,23 @@ onreset()
 this.submitted=false;
 this.editForm.reset();
 }
-View()
-  {
-    let id=this.editForm.value["sellerId"];
-    this.service.ViewProfile(id).subscribe(res=>{
-      this.seller=res;
-      console.log(this.seller);
-      this.editForm.patchValue({
-        sellerId:this.seller.sellerId,
-        userName:this.seller.userName,
-        emailId:this.seller.emailId,
-        password:this.seller.password,
-        companyName:this.seller.companyName,
-        gstin:this.seller.gstin,
-        briefDetails:this.seller.briefDetails,
-        mobileNo:this.seller.mobileNo,
-        postalAddress:this.seller.postalAddress,
-        website:this.seller.website
-        
-      })
+EditProfile()
+{
+  this.item=new Seller();
+  this.item.sellerId=this.editForm.value["sellerId"];
+  this.item.userName=this.editForm.value["userName"];
+  this.item.password=this.editForm.value["password"];
+  this.item.emailId=this.editForm.value["emailId"];
+  this.item.mobileNo=this.editForm.value["mobileNo"];
+  this.item.companyName=this.editForm.value["companyName"];
+  this.item.briefDetails=this.editForm.value["briefDetails"];
+  this.item.gstin=this.editForm.value["gstin"];
+  this.item.postalAddress=this.editForm.value["postalAddress"];
+  this.item.website=this.editForm.value["website"];
+  console.log(this.item);
+  this.service.EditProfile(this.item).subscribe(res=>
+    {
+      console.log('Record Updated');
     })
-  }
-
+}
 }

@@ -20,7 +20,6 @@ item:Category;
 
   ngOnInit() {
     this.addcatform=this.formBuilder.group({
-      categoryId:['',Validators.required],
       categoryName:['',Validators.required],
       bd:['',Validators.required]
     });
@@ -49,7 +48,7 @@ get f()
 Add()
 {
   this.item=new Category();
-  this.item.categoryId=this.addcatform.value["categoryId"];
+  this.item.categoryId='C'+Math.floor(Math.random()*100);
   this.item.categoryName=this.addcatform.value["categoryName"];
   this.item.BriefDetails=this.addcatform.value["bd"];
   console.log(this.item);

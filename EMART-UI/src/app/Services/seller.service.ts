@@ -15,5 +15,12 @@ export class SellerService {
   public ViewProfile(id:string):Observable<any>{
     return this.http.get<Seller>(this.url+'ViewProfile/'+id,Requestheaders);
 }
-
+public EditProfile(seller:Seller):Observable<any>
+  {
+    return this.http.put<any>(this.url+'EditProfile',JSON.stringify(seller),Requestheaders);
+  }
+  public GetProfile(id:string):Observable<Seller>
+  {
+    return this.http.get<Seller>(this.url+'ViewProfile/'+id,Requestheaders);
+  }
 }
