@@ -14,6 +14,10 @@ namespace Emart.AdminServices.Repositories
         void DeleteSubCategory(string subid);
         public List<Category> GetCategory();
         public List<SubCategory> GetSubCategory();
+        Category GetCatById(string cid);
+        SubCategory GetSubCatById(string subid);
+        void UpdateCategory(Category obj);
+        void UpdateSubCategory(SubCategory obj);
 
     }
 }

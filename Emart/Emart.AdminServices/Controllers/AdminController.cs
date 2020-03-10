@@ -94,5 +94,61 @@ namespace Emart.AdminServices.Controllers
                 return NotFound(ex.Message);
             }
         }
+        [HttpGet]
+        [Route("GetCatById/{categoryId}")]
+        public IActionResult GetCatById(string categoryId)
+        {
+            try
+            {
+                return Ok(_iadmrepo.GetCatById(categoryId));
+            }
+            catch(Exception ex)
+            {
+                return NotFound(ex.Message);
+            }
+        }
+        [HttpGet]
+        [Route("GetSubCatById/{SubcategoryId}")]
+        public IActionResult GetSubCatById(string SubcategoryId)
+        {
+            try
+            {
+                return Ok(_iadmrepo.GetSubCatById(SubcategoryId));
+            }
+            catch (Exception ex)
+            {
+                return NotFound(ex.Message);
+            }
+        }
+        [HttpPut]
+        [Route("UpdateCategory")]
+        public IActionResult UpdateCategory(Category obj)
+        {
+            try
+            {
+                _iadmrepo.UpdateCategory(obj);
+                return Ok();
+            }
+
+            catch (Exception ex)
+            {
+                return NotFound(ex.InnerException.Message);
+            }
+        }
+        [HttpPut]
+        [Route("UpdateSubCategory")]
+        public IActionResult UpdateSubCategory(SubCategory obj)
+        {
+            try
+            {
+                _iadmrepo.UpdateSubCategory(obj);
+                return Ok();
+            }
+
+            catch (Exception ex)
+            {
+                return NotFound(ex.InnerException.Message);
+            }
+        }
     }
 }
