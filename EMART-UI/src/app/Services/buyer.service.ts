@@ -14,9 +14,7 @@ const Requestheaders={headers:new HttpHeaders({
 export class BuyerService {
   url:string='http://localhost:57775/Buyer/'
   constructor(private http:HttpClient) { }
-  public ViewProfile(id:string):Observable<any>{
-    return this.http.get<Buyer>(this.url+'ViewProfile/'+id,Requestheaders);
-}
+ 
 public SearchItems(name:string):Observable<any>
 {
   return this.http.get<Buyer>(this.url+'SearchItem/'+name,Requestheaders);
@@ -43,5 +41,17 @@ public EditProfile(buyer:Buyer):Observable<any>
   public RemoveCartItem(Id:string):Observable<any>
   {
     return this.http.delete<any>(this.url+'DeleteCartItems/'+Id,Requestheaders);
+  }
+  public GetPurchaseHistory(buyerid:string):Observable<any>
+  {
+    return this.http.get<any>(this.url+'TransactionHistory/'+buyerid,Requestheaders);
+  }
+  public GetCount(buyerid:string):Observable<any>
+  {
+    return this.http.get<any>(this.url+'GetCount/'+buyerid,Requestheaders);
+  }
+  public GetAllItems():Observable<any>{
+
+    return this.http.get<any>(this.url+'GetAllItems',Requestheaders);
   }
 }

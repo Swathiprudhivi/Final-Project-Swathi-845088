@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {FormBuilder,FormGroup,Validators } from "@angular/forms";
+import { Router } from '@angular/router';
 @Component({
   selector: 'app-seller-landing-page',
   templateUrl: './seller-landing-page.component.html',
@@ -8,7 +9,11 @@ import {FormBuilder,FormGroup,Validators } from "@angular/forms";
 export class SellerLandingPageComponent implements OnInit {
   loginForm:FormGroup;
   submitted=false;
-  constructor(private formbuilder:FormBuilder) { }
+  constructor(private formbuilder:FormBuilder, private route:Router) { 
+    if(!(localStorage.getItem('token'))){
+      this.route.navigateByUrl('/home');
+    }
+  }
 
   ngOnInit() {
     this.loginForm=this.formbuilder.group({
@@ -37,5 +42,13 @@ export class SellerLandingPageComponent implements OnInit {
   {
     this.submitted=false;
     this.loginForm.reset();
+  }
+  Logout()
+  {
+    localStorage.clear();
+    localStorage.removeItem('buyerid');
+    localStorage.removeItem('sellerId');
+    localStorage.removeItem('token');
+    this.route.navigateByUrl('/home');
   }
 }

@@ -25,7 +25,8 @@ namespace Emart.Test
             Assert.AreSame(b, b1);
         }
         [Test]
-        public void ViewProfile()
+        [Description("Test GetProfile()")]
+        public void TestGetProfile()
         {
             var result = _repo.GetProfile("2");
             Assert.IsNotNull(result);
@@ -40,8 +41,8 @@ namespace Emart.Test
         [Description("DeleteCartItems")]
         public void DeleteCartItems()
         {
-            _repo.DeleteCartItems("I2");
-            var result = _repo.("I2");
+            _repo.DeleteCartItems("C532");
+            var result = _repo.GetCartItem("C532");
             Assert.Null(result);
         }
         [Test]
@@ -61,16 +62,44 @@ namespace Emart.Test
                 BuyerId="1",
                 SellerId="1",
                 TransactionId="T20",
-                ItemId="I56",
+                ItemId="4",
                 NumberOfItems="5",
                 DateTime=DateTime.Now,
                 Remarks="Gud",
                 TransactionType="Debit"
             });
-            var result = _repo.TransactionHistory("T20");
+            var result = _repo.TransactionHistory("1");
             Assert.IsNotNull(result);
         }
-       
-        
+        [Test]
+        [Description ("AddtoCart")]
+        public void AddtoCart()
+        {
+            _repo.AddtoCart(new Cart()
+            {
+                Id = "C545",
+                CategoryId="c03",
+                SubcategoryId="s02",
+                SellerId="2",
+                ItemId="I6",
+                ItemName="maskara",
+                Price="56",
+                Description="dff",
+                StockNumber="87",
+                Remarks="fdgg",
+                Img="",
+                BuyerId="3"
+            });
+            var result = _repo.ViewCart("3", "I6");
+            Assert.IsNotNull(result);
+        }
+        [Test]
+        [Description("Test GetCartItems()")]
+        public void TestGetCartItems()
+        {
+            var result = _repo.GetCartItem("1");
+        }
+
+
     }
 }

@@ -49,8 +49,6 @@ namespace Emart.BuyerServices.Controllers
             }
 
         }
-
-
         [HttpPut]
         [Route("EditProfile")]
         public IActionResult EditProfile(Buyer obj)
@@ -67,9 +65,6 @@ namespace Emart.BuyerServices.Controllers
                 return NotFound(e.Message);
             }
         }
-
-
-
         [HttpGet]
         [Route("ViewProfile/{id}")]
         public IActionResult GetProfile(string id)
@@ -84,9 +79,6 @@ namespace Emart.BuyerServices.Controllers
                 return NotFound(e.Message);
             }
         }
-
-
-
         [HttpGet]
         [Route("TransactionHistory/{bid}")]
 
@@ -101,10 +93,8 @@ namespace Emart.BuyerServices.Controllers
                 return NotFound(e.Message);
             }
         }
-
         [HttpGet]
         [Route("GetCategory")]
-
         public IActionResult GetCategory()
         {
             try
@@ -116,7 +106,6 @@ namespace Emart.BuyerServices.Controllers
                 return NotFound(e.Message);
             }
         }
-
         [HttpGet]
         [Route("GetSubCategory/{catid}")]
 
@@ -171,6 +160,17 @@ namespace Emart.BuyerServices.Controllers
                 return NotFound(ex.Message);
             }
         }
+        public IActionResult GetCartItem(string catid)
+        {
+            try
+            {
+                return Ok(_ibuyrepo.GetCartItem(catid));
+            }
+            catch (Exception ex)
+            {
+                return NotFound(ex.Message);
+            }
+        }
         [HttpDelete]
         [Route("DeleteCartItems/{Id}")]
         public IActionResult DeleteCartItems(string Id)
@@ -179,6 +179,34 @@ namespace Emart.BuyerServices.Controllers
             {
                 _ibuyrepo.DeleteCartItems(Id);
                 return Ok();
+            }
+            catch (Exception ex)
+            {
+                return NotFound(ex.Message);
+            }
+        }
+        [HttpGet]
+        [Route("ViewCart/{bid}")]
+        public IActionResult ViewCart(string bid, string iid)
+        {
+            try
+            {
+
+
+                return Ok(_ibuyrepo.ViewCart(bid, iid));
+            }
+            catch (Exception e)
+            {
+                return NotFound(e.Message);
+            }
+        }
+        [HttpGet]
+        [Route("GetCount/{buyerid}")]
+        public IActionResult GetCount(string buyerid)
+        {
+            try
+            {
+                return Ok(_ibuyrepo.GetCount(buyerid));
             }
             catch (Exception ex)
             {
