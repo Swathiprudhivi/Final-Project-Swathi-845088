@@ -1,51 +1,52 @@
 
 
-* {box-sizing: border-box;}
+/* * {box-sizing: border-box;} */
 
-.login-box{
+/* .login-box{
   width: 280px;
   position: absolute;
   top: 1%;
   left: 50%;
   transform: translate(-50%,50%);
-  color: white;
-}
-.login-box h1{
+  color: black;
+} */
+/* .login-box h1{
   float: left;
   font-size: 40px;
   border-bottom: 6px solid #4caf50;
   margin-bottom: 50px;
   padding: 13px 0
-}
-.textbox{
+} */
+/* .textbox{
   width: 100%;
   overflow: hidden;
-  font-size: 20px;
+  font-size: 30px;
   padding:  8px 0;
   margin: 8px 0;
   border-bottom: 1px solid #4caf50;
-}
+  
+} */
 #i{
   width: 40px;
   font-size: 20px;
 
 }
-.textbox input{
+/* .textbox input{
   border: none;
   outline: none;
   background: none;
-  color: white;
-  font-size: 18px;
+  color: black;
+  font-size: 50px;
   width: 80%;
   float: left;
   margin: 0 10px;
-}
+} */
 #id1{
   font-size: 20px;
 }
 #id2{
   font-size: 20px;
-  color: #ccc;
+  color:black;
 }
 
 .topnav {
@@ -70,7 +71,7 @@
 
 .topnav a.active {
   background-color: #2196F3;
-  color: white;
+  color: black;
 }
 
 .topnav .logout {
@@ -98,7 +99,7 @@
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
   background-image: url("src/assets/images/10.jpg");
-  height: 700pt;
+  height: 900pt;
   background-position: center; /* Center the image */
   background-repeat: no-repeat; /* Do not repeat the image */
   background-size: cover; /* Resize the background image to cover the entire container */

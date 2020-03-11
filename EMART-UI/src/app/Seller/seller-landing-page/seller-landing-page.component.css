@@ -73,8 +73,11 @@ body {
 .bgimage {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
-  background-image: url("src/assets/images/order11.jpg");
+  background-image: url("src/assets/images/8.png");
   height: 700pt;
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
   
 }
 .topnav .search-container button:hover {

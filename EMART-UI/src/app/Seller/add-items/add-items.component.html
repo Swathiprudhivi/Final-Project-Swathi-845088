@@ -13,7 +13,7 @@
                 <div class="form-group">
                     <label>Select SubCategory</label>
                          <select formControlName="subcategoryId" class="form-control"  [ngClass]="{ 'is-invalid': submitted && f.subcategoryName.errors }"  >
-                          <option *ngFor="let lst of subcategorylist" [value]="lst.subcategoryId">{{lst.subcategoryName}}</option>
+                          <option *ngFor="let lst of subcategorylist" value="{{lst.subcategoryId}}">{{lst.subcategoryName}}</option>
                           </select>
                           <div *ngIf="submitted && f.subcategoryId.errors" class="invalid-feedback">
                           </div>
