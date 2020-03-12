@@ -62,7 +62,7 @@ public Validate()
       localStorage.setItem('token',this.token.token);
       localStorage.setItem('buyerId',this.token.buyerId);
 
-      if(this.token.msg=='success'){
+      if(this.token.msg=='Success'){
           this.route.navigateByUrl('/buyer');
       }
       else{
@@ -79,7 +79,7 @@ this.service.SellerLogin(userName,password).subscribe(res=>{
   console.log(this.token);
   localStorage.setItem('token',this.token.token);
   localStorage.setItem('sellerId',this.token.sellerId);
-  if(this.token.msg=="success"){
+  if(this.token.msg=="Success"){
     this.route.navigateByUrl("/seller")
   }
   else{

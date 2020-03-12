@@ -20,8 +20,8 @@ item:Category;
 
   ngOnInit() {
     this.addcatform=this.formBuilder.group({
-      categoryName:['',Validators.required],
-      bd:['',Validators.required]
+      categoryName:['',[Validators.required,Validators.pattern('^[a-zA-Z0-9]{3,20}$')]],
+      bd:['']
     });
     
   }

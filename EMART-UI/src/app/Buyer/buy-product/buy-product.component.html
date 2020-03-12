@@ -1,49 +1,75 @@
-<div class="card card-signin my-5 " style="float:right">
-    <h5 class="card-header text-center">Payment Gateway</h5>
-        <div class="card-body">
-            <form [formGroup]="buyerform" (ngSubmit)="onSubmit()">    
+   <div class="row offset-6 ">
+    <div class="card bg-light md-8" style="width: 600px;align-items: center;">
+      
+              <div class="card-body">
+                <form [formGroup]="buyerform" (ngSubmit)="onSubmit()">    
                   <div class="form-group">
-                    <label>Number Of Items</label>
-                    <input type="text" formControlName="numberOfItems" class="form-control" autofocus/>
+                    <label id="id2">Number Of Items</label>
+                    <input type="text" formControlName="numberOfItems" class="form-control" autofocus  [ngClass]="{ 'is-invalid': submitted && f.numberOfItems.errors }"/>
+                    <div *ngIf="submitted && f.numberOfItems.errors" class="invalid-feedback">
+                      <div *ngIf="f.numberOfItems.errors.required">Items is required</div>
+                  </div>
                   </div>
                   <div class="form-group">
-                    <label>Date</label>
-                    <input type="date" formControlName="dateTime" class="form-control"/>
+                    <label id="id2">Date</label>
+                    <input type="date" formControlName="dateTime" class="form-control" id="b"  [ngClass]="{ 'is-invalid': submitted && f.dateTime.errors }"/>
+                    <div *ngIf="submitted && f.dateTime.errors" class="invalid-feedback">
+                      <div *ngIf="f.dateTime.errors.required">date is required</div>
+                  </div>
                   </div>
                 <div class="form-group">
-                    <label>Choose PayMent Mode</label>
-                    <select formControlName="transactionType">
+                    <label id="id2">Choose PayMent Mode</label>
+                    <select formControlName="transactionType" id="b">
                         <option value="credit">Credit Card</option>
                         <option value="debit">Debit Card</option>
                         <option value="cod">Cash On Delivery</option>
                     </select>
                   </div>
                   <div class="form-group">
-                    <label>Card Number</label>
-                    <input type="text" formControlName="cardnumber" class="form-control"/>
+                    <label id="id2">Card Number</label>
+                    <input type="text" formControlName="cardnumber" class="form-control"  [ngClass]="{ 'is-invalid': submitted && f.cardnumber.errors }"/>
+                    <div *ngIf="submitted && f.cardnumber.errors" class="invalid-feedback">
+                      <div *ngIf="f.cardnumber.errors.required">CardNumber is required</div>
+                  </div>
                   </div>
                   <div class="form-group">
-                    <label>CVV</label>
-                    <input type="number" formControlName="cvv" class="form-control" style="width: 30%;"/>
+                    <label id="id2">CVV</label>
+                    <input type="number" formControlName="cvv" class="form-control" id="b" style="width: 30%;"  [ngClass]="{ 'is-invalid': submitted && f.cvv.errors }"/>
+                    <div *ngIf="submitted && f.cvv.errors" class="invalid-feedback">
+                      <div *ngIf="f.cvv.errors.required">CVV is required</div>
+                  </div>
                   </div>
                   <div class="form-group">
-                    <label>ExpiryDate</label>
-                    <input type="date" formControlName="ed" class="form-control"/>
+                    <label id="id2">ExpiryDate</label>
+                    <input type="date" formControlName="ed" class="form-control" id="b"  [ngClass]="{ 'is-invalid': submitted && f.ed.errors }"/>
+                    <div *ngIf="submitted && f.ed.errors" class="invalid-feedback">
+                      <div *ngIf="f.ed.errors.required">Date is required</div>
+                  </div>
                   </div>
                   <div class="form-group">
-                    <label>Card Holders Name</label>
-                    <input type="text" formControlName="name" class="form-control"/>
+                    <label id="id2">Card Holders Name</label>
+                    <input type="text" formControlName="name" class="form-control"  [ngClass]="{ 'is-invalid': submitted && f.name.errors }"/>
+                    <div *ngIf="submitted && f.name.errors" class="invalid-feedback">
+                      <div *ngIf="f.name.errors.required">Name is required</div>
+                  </div>
                   </div>
                   <div class="form-group">
-                    <label>Remarks</label>
+                    <label id="id2">Remarks</label>
                     <input type="text" formControlName="remarks" class="form-control"/>
                   </div>
                 <hr class="my-4 bg-success"/>
                 <div class="form-group">
                     <div class="text-center">
-                        <button type="submit" class="btn btn-primary mr-1">Purchase</button>
+                        <button type="submit" class="btn btn-primary mr-1" id="id1">Purchase</button>
                     </div>
                 </div>
             </form>
-        </div>
-    </div>
+              </div>
+             
+            </div>
+      </div>
+     
+    
+    <router-outlet></router-outlet>
+    
+

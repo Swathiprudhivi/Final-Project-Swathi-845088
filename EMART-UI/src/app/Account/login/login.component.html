@@ -7,70 +7,62 @@
         <a class="active"  href="#home"><i class="fa fa-fw fa-home"></i>Home</a>
         <a href="#"><i class="fa fa-fw fa-user"></i>ViewProfile</a>
         <a href="#"><i class="fa fa-fw fa-envelope"></i>Contact</a>
-        
-        <div class="logout">
-          <a [routerLink]="'logout'"><i class="fa fa-sign-out"></i>LogOut</a>
-        </div>
       </div>
-   <div class="row">
-      <div class="col">
-          <div class="sidenav">
-               <a href="#">Add Category</a>
-               <a href="#">Add SubCategory</a>
-                <a href="#">Block/Unblock Buyer</a>
-                <a href="#">Block/Unblock Seller</a>
-                <a href="#">LogOut</a>    
-           </div>
+    <br><br>
+    <br><br>
+    <br><br>
+    <br><br>
+    <br><br>
+    <br><br>
+    <br><br>
+<div class="row offset-8 ">
+      <div class="card bg-light md-8" style="width: 600px;align-items: center;">
+        <div class="card-header">
+          LoginForm
         </div>
-
-           <div class="col-lg-8">
-            <h3 id=h1>LOGIN FORM</h3>
-               <div class="jumbotron">
-                
-                 <div class="container">
-                    
-                        <form [formGroup]="login" (ngSubmit)="onSubmit()">
+        <div class="card-body">
+          <form [formGroup]="login" (ngSubmit)="onSubmit()">
                             
-                            <div class="form-group">
-                                <label>UserName</label>
-                                 <input type="text" placeholder="UserName" formControlName="userName" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.userName.errors }" />
-                                 <div *ngIf="submitted && f.userName.errors" class="invalid-feedback">
-                                <div *ngIf="f.userName.errors.required">UserName is required</div>
-                                </div>
-                            </div>
-                             
-                    
-                    <div class="form-group">
-                        <label>Password</label>
-                        <input type="password" placeholder="Password" formControlName="password"  class="form-control" [ngClass]="{ 'is-invalid': submitted && f.password.errors }" />
-                        <div *ngIf="submitted && f.password.errors" class="invalid-feedback">
-                            <div *ngIf="f.password.errors.required">Password is required</div>
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        Buyer  <input type="radio" formControlName="role"  value="buyer" name="role" />
-                    </div> 
-                    <div class="form-group">
-                      Seller  <input type="radio" formControlName="role"  value="seller" name="role" />
-                    </div>
-                   
-                    <div class="text-center">
-                        <button class="btn btn-primary mr-1 " id=b1>Login</button>
-                        <button class="btn btn-secondary" type="reset" (click)="onReset()" id=b2>Reset</button>
-                    </div>
-                    <br><br>
-                    <div class="form-row">
-                    <div class="col">
-                        <a [routerLink]="['/registerbuyer']">Register Buyer</a></div>
-                        <div class="col">
-                        <a [routerLink]="['/registerseller']">Register Seller</a>
-                    </div>
-                </div>  
-                </form>
+            <div class="form-group col-md-6 offset-3">
+                <label id=id1>UserName</label>
+                <i class=" fa fa-user" aria-hidden="true" id="i"></i>
+                 <input type="text" formControlName="userName" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.userName.errors }" />
+                 <div *ngIf="submitted && f.userName.errors" class="invalid-feedback">
+                <div *ngIf="f.userName.errors.required">UserName is required</div>
+                </div>
             </div>
+            <div class="form-group col-md-6 offset-3">
+              <label id=id1>Password</label>
+               <i class=" fa fa-lock" aria-hidden="true" id="i"></i>
+                <input type="password" formControlName="password"  class="form-control" [ngClass]="{ 'is-invalid': submitted && f.password.errors }" />
+                    <div *ngIf="submitted && f.password.errors" class="invalid-feedback">
+                       <div *ngIf="f.password.errors.required">Password is required</div>
+                    </div>
             </div>
+            <div class="form-check form-check-inline offset-4 ">
+           Buyer  <input type="radio" formControlName="role"  value="buyer" name="role" style="width:20px; height:20px;" />
+       </div> 
+       <div class="form-check form-check-inline ">
+          Seller  <input type="radio" formControlName="role"  value="seller" name="role" style="width:20px; height:20px; font-size: 16px;"/>
         </div>
-   </div> 
-   </div>    
+   
+        <div class="row offset-3  mt-2">
+            <button class="btn btn-primary mr-1 " id="id1">Login</button>
+             <button class="btn btn-secondary" type="reset" (click)="onReset()" id="id1">Reset</button>
+          </div>
+    <br><br>
+    <div class="row offset-3 mt-3">
+         <div class="col" >
+               <a [routerLink]="['/registerbuyer']" id="id2">Register Buyer</a></div>
+              <div class="col" id="id2">
+                  <a [routerLink]="['/registerseller']"id="id2">Register Seller</a>
+                 </div>
+            </div>  
+ </form>
+        </div>
+       
+      </div>
+      
+    </div>
 <router-outlet></router-outlet>
 

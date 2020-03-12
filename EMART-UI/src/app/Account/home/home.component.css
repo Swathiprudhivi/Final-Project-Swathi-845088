@@ -74,9 +74,9 @@
   color: black;
 }
 
-.topnav .logout {
+/* .topnav .logout {
   float: right;
-}
+} */
 
 .topnav input[type=text] {
   padding: 6px;
@@ -85,7 +85,7 @@
   border: none;
 }
 
-.topnav .logout {
+/* .topnav .logout {
   float: right;
   padding: 6px 10px;
   margin-top: 8px;
@@ -94,7 +94,7 @@
   font-size: 17px;
   border: none;
   cursor: pointer;
-}
+} */
 .bgimage {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
@@ -105,7 +105,34 @@
   background-size: cover; /* Resize the background image to cover the entire container */
   
 }
+.card {
+  background-image: url("src/assets/images/aa.png");
+}
+input[type=text] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 2px solid black;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-size: 20px;
+}
+input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 2px solid black;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-size: 20px;
+}
+input[type=radio] {
 
+  font-size: 20px;
+
+}
 @media screen and (max-width: 600px) {
   .topnav .search-container {
     float: none;

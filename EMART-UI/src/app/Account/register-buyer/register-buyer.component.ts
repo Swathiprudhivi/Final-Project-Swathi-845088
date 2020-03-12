@@ -23,11 +23,11 @@ item:Buyer;
   ngOnInit() {
     this.registerForm=this.formBulider.group({
       
-      name:['',Validators.required],
+      name:['',[Validators.required,Validators.pattern('^[a-zA-Z0-9]{3,20}$')]],
       phnum:['',[Validators.required,Validators.pattern("^[6-9][0-9]{9}$")]],
       email:['',[Validators.required,Validators.email]],
-      pwd:['',[Validators.required,Validators.minLength(6)]],
-      dt:['',Validators.required]
+      pwd:['',[Validators.required,Validators.pattern('^a-zA-Z0-9`!@#$%^&*()_+=]{6,15}$')]],
+      
      
     });
   }

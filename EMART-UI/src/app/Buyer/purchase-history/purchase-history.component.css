@@ -1,0 +1,7 @@
+.table {
+    background-image: url("src/assets/images/newbg.jpg");
+  }
+  table, td, th {
+    border: 2px solid black;
+    font-size: 20px;
+  }

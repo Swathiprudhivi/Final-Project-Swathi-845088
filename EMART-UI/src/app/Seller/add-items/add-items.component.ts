@@ -38,19 +38,19 @@ item:Items;
   ngOnInit() {
     this.additemsForm=this.formBulider.group({
     
-      i_id:['',Validators.required],
-      ItemName:['',Validators.required],
-      price:['',Validators.required],
-      stock:['',Validators.required],
+      i_id:[''],
+      ItemName:['',[Validators.required,Validators.pattern('^[a-zA-Z0-9]{3,20}$')]],
+      price:['',[Validators.required,Validators.pattern('^[0-9]{5}$')]],
+      stock:['',[Validators.required,Validators.pattern('^[0-9]{10}$')]],
       description:[''],
-      remark:['',Validators.required],
+      remark:[''],
       categoryId:[''],
       subcategoryId:[''],
       image:['']
      
     });
   }
-  get f() {return this.additemsForm.controls;}
+  
   onSubmit()
   {
     
@@ -62,6 +62,7 @@ item:Items;
     }
     this.AddItem();
   }
+  get f() {return this.additemsForm.controls;}
   onReset()
   {
     this.submitted=false;

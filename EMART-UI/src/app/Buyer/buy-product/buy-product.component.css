@@ -1,0 +1,30 @@
+#id2{
+    font-size: 20px;
+    color:black;
+  }
+  #id1{
+    font-size: 20px;
+  }
+  input[type=text],select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 2px solid black;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 20px;
+  }
+  #b{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 2px solid black;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 20px;
+  }
+  .card {
+    background-image: url("src/assets/images/newbg.jpg");
+  }

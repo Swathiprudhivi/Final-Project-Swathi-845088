@@ -88,23 +88,23 @@
                   <div class="card-body">
                       <form [formGroup]="viewitemsform">    
                         <div class="form-group">
-                          <label>Item ID</label>
+                          <label id="id2">Item ID</label>
                              <!-- <input type="text" formControlName="id" class="form-control" readonly="readonly"/>  -->
                             <select formControlName="itemId" class="form-control" (change)="Search()">
                                 <option *ngFor="let item of list" value="{{item.itemId}}">{{item.itemId}}</option>
                             </select>
                         </div>
                         <div class="form-group">
-                          <label>Price</label>
+                          <label id="id2">Price</label>
                           <input type="text" formControlName="price" class="form-control" />
                       </div>
                       <div class="form-group">
-                        <label>Stock Number</label>
+                        <label id="id2">Stock Number</label>
                         <input type="text" formControlName="stockNumber" class="form-control" />
                     </div>
                     <hr class="my-5 bg-success"/>
                         <div class="form-group">
-                          <button class="btn btn-primary btn-block text-uppercase"  (click)="Update()">Edit</button>
+                          <button class="btn btn-primary btn-block text-uppercase"  (click)="Update()" id="id1">Edit</button>
                           
                         </div>
                       </form>

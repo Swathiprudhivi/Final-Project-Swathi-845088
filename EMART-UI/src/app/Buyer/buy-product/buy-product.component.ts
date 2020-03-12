@@ -22,23 +22,24 @@ tobj:TransactionHistory;
 
   ngOnInit() {
     this.buyerform=this.formbuilder.group({
-      id:[''],
-      buyerId:[''],
-      sellerId:[''],
-      transactionType:[''],
-      itemId:[''],
-      numberOfItems:[''],
-      dateTime:[''],
-      remarks:[''],
-      cardnumber:[''],
-      cvv:[''],
-      ed:[''],
-      name:[''],
+      id:['',Validators.required],
+      buyerId:['',Validators.required],
+      sellerId:['',Validators.required],
+      transactionType:['',Validators.required],
+      itemId:['',Validators.required],
+      numberOfItems:['',Validators.required],
+      dateTime:['',Validators.required],
+      remarks:['',Validators.required],
+      cardnumber:['',Validators.required],
+      cvv:['',Validators.required],
+      ed:['',Validators.required],
+      name:['',Validators.required],
       
     });
     this.item=JSON.parse(localStorage.getItem('item'));
     console.log(this.item);
   }
+  get f() {return this.buyerform.controls;}
   onSubmit()
   {
     this.tobj=new TransactionHistory();

@@ -1,80 +1,88 @@
-
-<div class="card-md-3">
-        <div class="card-body">
-        <form [formGroup]="additemsForm" (ngSubmit)="onSubmit()">
-                <div class="form-group">
-                    <label>Select Category</label>
-                    <select id="s1" formControlName="categoryId" (change)="GetSubCategories()" class="form-control" >
-                        <option *ngFor="let cat of categorylist" value="{{cat.categoryId}}">{{cat.categoryName}}</option>
-                    </select>
-                    <div *ngIf="submitted && f.categoryId.errors" class="invalid-feedback">
-                    </div>
-                </div>
-                <div class="form-group">
-                    <label>Select SubCategory</label>
-                         <select formControlName="subcategoryId" class="form-control"  [ngClass]="{ 'is-invalid': submitted && f.subcategoryName.errors }"  >
-                          <option *ngFor="let lst of subcategorylist" value="{{lst.subcategoryId}}">{{lst.subcategoryName}}</option>
-                          </select>
-                          <div *ngIf="submitted && f.subcategoryId.errors" class="invalid-feedback">
-                          </div>
-                </div>
-                
-                <div class="form-group">
-                    <label>Item Name</label>
-                    <input type="text" formControlName="ItemName" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.ItemName.errors }" />
-                    <div *ngIf="submitted && f.ItemName.errors" class="invalid-feedback">
-                        <div *ngIf="f.ItemName.errors.required">Item name is required</div>
-                    </div>
-                </div>
-                <div class="form-group">
-                    <label>Price</label>
-                    <input type="text" formControlName="price" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.price.errors }" />
-                    <div *ngIf="submitted && f.price.errors" class="invalid-feedback">
-                        <div *ngIf="f.price.errors.required">Price is required</div>
-                    </div>
-                </div>
-                <div class="form-group">
-                    <label>Remarks</label>
-                    <input type="text" formControlName="remark" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.remark.errors }" />
-                    <div *ngIf="submitted && f.remark.errors" class="invalid-feedback">
-                        <div *ngIf="f.remark.errors.required">remark is required</div>
-                    </div>
-                </div>
-                <div class="form-group">
-                    <label>Stock</label>
-                    <input type="text" formControlName="stock" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.stock.errors }" />
-                    <div *ngIf="submitted && f.stock.errors" class="invalid-feedback">
-                        <div *ngIf="f.stock.errors.required">Stock is required</div>
-                    </div>
-                </div>
-                <div class="form-group">
-                    <label>Descripition</label>
-                    <input type="text" formControlName="description" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.description.errors }" />
-                    <div *ngIf="submitted && f.description.errors" class="invalid-feedback">
-                        <div *ngIf="f.description.errors.required">description is required</div>
-                    </div>
-                </div>
-                <div class="form-group">
-                    <label>Image</label>
-                    <input type="file" formControlName="image" (change)="fileEvent($event)">
-                    <br><br>
-                    <div *ngFor="let items of item">
-                        <div>
-                            <img src='assets/images/{{items.image}}' style="height: 150px; width:150px;"><br>
-                            Name:{{items.itemName}}
+   <div class="row offset-6 ">
+    <div class="card bg-light md-8" style="width: 600px;align-items: center;">
+      
+              <div class="card-body">
+                <form [formGroup]="additemsForm" (ngSubmit)="onSubmit()">
+                    <div class="form-group">
+                        <label id="id2">Select Category</label>
+                        <select id="b" formControlName="categoryId" (change)="GetSubCategories()" class="form-control" >
+                            <option *ngFor="let cat of categorylist" value="{{cat.categoryId}}">{{cat.categoryName}}</option>
+                        </select>
+                        <div *ngIf="submitted && f.categoryId.errors" class="invalid-feedback">
                         </div>
-                    </div> 
-                </div>
-               
-                <div class="text-center">
-                    <button class="btn btn-primary mr-1" (click)="AddItem()" type="button" >Add Item</button>
+                    </div>
+                    <div class="form-group">
+                        <label id="id2">Select SubCategory</label>
+                             <select  id="b" formControlName="subcategoryId" class="form-control"  [ngClass]="{ 'is-invalid': submitted && f.subcategoryName.errors }"  >
+                              <option *ngFor="let lst of subcategorylist" value="{{lst.subcategoryId}}">{{lst.subcategoryName}}</option>
+                              </select>
+                              <div *ngIf="submitted && f.subcategoryId.errors" class="invalid-feedback">
+                              </div>
+                    </div>
                     
-                    <button class="btn btn-primary mr-1" (click)="UpdateItem()" type="button">Update</button>
-                    <button class="btn btn-primary mr-1" (click)="DeleteItem()" type="button">Delete</button>
+                    <div class="form-group">
+                        <label id="id2">Item Name</label>
+                        <input type="text" formControlName="ItemName" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.ItemName.errors }" />
+                        <div *ngIf="submitted && f.ItemName.errors" class="invalid-feedback">
+                            <div *ngIf="f.ItemName.errors.required">Item name is required</div>
+                            <div *ngIf="f.ItemName.errors.pattern">Item name must be valid</div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label id="id2">Price</label>
+                        <input type="text" formControlName="price" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.price.errors }" />
+                        <div *ngIf="submitted && f.price.errors" class="invalid-feedback">
+                            <div *ngIf="f.price.errors.required">Price is required</div>
+                            <div *ngIf="f.price.errors.pattern">Price must be valid</div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label id="id2">Remarks</label>
+                        <input type="text" formControlName="remark" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.remark.errors }" />
+                        <div *ngIf="submitted && f.remark.errors" class="invalid-feedback">
+                            <div *ngIf="f.remark.errors.required">remark is required</div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label id="id2">Stock</label>
+                        <input type="text" formControlName="stock" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.stock.errors }" />
+                        <div *ngIf="submitted && f.stock.errors" class="invalid-feedback">
+                            <div *ngIf="f.stock.errors.required">Stock is required</div>
+                            <div *ngIf="f.stock.errors.pattern">Stock must be valid</div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label id="id2">Descripition</label>
+                        <input type="text" formControlName="description" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.description.errors }" />
+                        <div *ngIf="submitted && f.description.errors" class="invalid-feedback">
+                            <div *ngIf="f.description.errors.required">description is required</div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label id="id2">Image</label>
+                        <input type="file" formControlName="image" (change)="fileEvent($event)" id="b">
+                        <br><br>
+                        <div *ngFor="let items of item">
+                            <div>
+                                <img src='assets/images/{{items.image}}' style="height: 150px; width:150px;"><br>
+                                Name:{{items.itemName}}
+                            </div>
+                        </div> 
+                    </div>
                    
-                    <button class="btn btn-secondary" type="reset" (click)="onReset()">Cancel</button>
-                </div>
-        </form>
-    </div>
-</div>
-<router-outlet></router-outlet>
+                    <div class="text-center">
+                        <button class="btn btn-primary mr-1"  type="button" id="id1" >Add Item</button>
+                        <button class="btn btn-primary mr-1" (click)="UpdateItem()" type="button" id="id1">Update</button>
+                        <button class="btn btn-primary mr-1" (click)="DeleteItem()" type="button" id="id1">Delete</button>
+                        <button class="btn btn-secondary" type="reset" (click)="onReset()" id="id1">Cancel</button>
+                    </div>
+            </form>
+              </div>
+             
+            </div>
+      </div>
+     
+    
+    <router-outlet></router-outlet>
+    
+
