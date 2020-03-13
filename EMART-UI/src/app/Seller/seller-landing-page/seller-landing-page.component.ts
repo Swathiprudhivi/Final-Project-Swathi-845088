@@ -10,7 +10,7 @@ export class SellerLandingPageComponent implements OnInit {
   loginForm:FormGroup;
   submitted=false;
   constructor(private formbuilder:FormBuilder, private route:Router) { 
-    if(!(localStorage.getItem('token'))){
+    if(!(localStorage.getItem('token1'))){
       this.route.navigateByUrl('/home');
     }
   }
@@ -48,7 +48,7 @@ export class SellerLandingPageComponent implements OnInit {
     localStorage.clear();
     localStorage.removeItem('buyerid');
     localStorage.removeItem('sellerId');
-    localStorage.removeItem('token');
+    localStorage.removeItem('token1');
     this.route.navigateByUrl('/home');
   }
 }
