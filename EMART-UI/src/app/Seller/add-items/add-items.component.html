@@ -62,18 +62,16 @@
                         <label id="id2">Image</label>
                         <input type="file" formControlName="image" (change)="fileEvent($event)" id="b">
                         <br><br>
-                        <div *ngFor="let items of item">
+                        <!-- <div *ngFor="let items of item">
                             <div>
                                 <img src='assets/images/{{items.image}}' style="height: 150px; width:150px;"><br>
                                 Name:{{items.itemName}}
                             </div>
-                        </div> 
+                        </div>  -->
                     </div>
                    
                     <div class="text-center">
-                        <button class="btn btn-primary mr-1"  type="button" id="id1" >Add Item</button>
-                        <button class="btn btn-primary mr-1" (click)="UpdateItem()" type="button" id="id1">Update</button>
-                        <button class="btn btn-primary mr-1" (click)="DeleteItem()" type="button" id="id1">Delete</button>
+                        <button class="btn btn-primary mr-1"   id="id1" >Add Item</button>
                         <button class="btn btn-secondary" type="reset" (click)="onReset()" id="id1">Cancel</button>
                     </div>
             </form>

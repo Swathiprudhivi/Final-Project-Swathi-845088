@@ -40,8 +40,8 @@ item:Items;
     
       i_id:[''],
       ItemName:['',[Validators.required,Validators.pattern('^[a-zA-Z0-9]{3,20}$')]],
-      price:['',[Validators.required,Validators.pattern('^[0-9]{5}$')]],
-      stock:['',[Validators.required,Validators.pattern('^[0-9]{10}$')]],
+      price:['',[Validators.required,Validators.pattern('^[0-9]+$')]],
+      stock:['',[Validators.required,Validators.pattern('^[0-9]+$')]],
       description:[''],
       remark:[''],
       categoryId:[''],
@@ -57,10 +57,11 @@ item:Items;
     this.submitted=true;
     //display form values on success
     if(this.additemsForm.valid) {
+      this.AddItem();
       alert('SUCCESS!! :-)\n\n')
       console.log(JSON.stringify(this.additemsForm.value));
     }
-    this.AddItem();
+    // this.AddItem();
   }
   get f() {return this.additemsForm.controls;}
   onReset()
@@ -71,6 +72,7 @@ item:Items;
   AddItem()
   {
     this.item=new Items();
+    this.item.sellerId=localStorage.getItem('sellerId');
   this.item.categoryId=this.additemsForm.value["categoryId"];
   this.item.subcategoryId=this.additemsForm.value["subcategoryId"];
   this.item.itemId='I'+Math.floor(Math.random()*100);

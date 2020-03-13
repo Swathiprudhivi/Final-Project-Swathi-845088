@@ -16,6 +16,7 @@ export class BuyProductComponent implements OnInit {
 buyerform:FormGroup;
 item:Items;
   itemlist:Items[];
+  submitted=false;
 tobj:TransactionHistory;
 
   constructor(private formbuilder:FormBuilder,private service:BuyerService) { }
@@ -40,7 +41,7 @@ tobj:TransactionHistory;
     console.log(this.item);
   }
   get f() {return this.buyerform.controls;}
-  onSubmit()
+  purchase()
   {
     this.tobj=new TransactionHistory();
     this.tobj.id='T'+Math.floor(Math.random()*1000);
@@ -60,4 +61,16 @@ tobj:TransactionHistory;
  
  
   }
+  onSubmit()
+  {
+    
+    this.submitted=true;
+    //display form values on success
+    if(this.buyerform.valid) {
+      alert('SUCCESS!! :-)\n\n')
+      console.log(JSON.stringify(this.buyerform.value));
+    }
+    this.purchase();
+  }
+ 
 }

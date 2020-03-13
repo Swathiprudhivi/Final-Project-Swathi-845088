@@ -30,6 +30,7 @@ import { AccountService } from 'src/app/Serviecs/account.service';
 import { LogoutComponent } from './logout/logout.component';
 
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -55,6 +56,7 @@ import { LogoutComponent } from './logout/logout.component';
     SViewProfileComponent,
     HomeComponent,
     LogoutComponent,
+    
     
     
   ],

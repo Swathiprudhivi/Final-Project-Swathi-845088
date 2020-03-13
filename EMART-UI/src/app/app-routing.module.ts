@@ -43,7 +43,8 @@ const routes: Routes = [
     {path:'block-unblock-seller',component:BlockUnblockSellerComponent},
     {path:'addcategory',component:AddCategoryComponent},
     {path:'addsubcategory',component:AddSubCategoryComponent},
-    {path:'dailyreports',component:DailyReportsComponent}
+    {path:'dailyreports',component:DailyReportsComponent},
+    
   ]},
   {path:'home',component:HomeComponent},
   {path:'login',component:LoginComponent},

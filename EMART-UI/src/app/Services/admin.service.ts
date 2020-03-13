@@ -35,4 +35,11 @@ export class AdminService {
   {
     return this.http.get<Category[]>(this.url+'GetCategory',Requestheaders);
   }
+  public GetAllCategories():Observable<any>
+  {
+    return this.http.get<any>(this.url+'GetAllCategories',Requestheaders);
+  }
+  public UpdateCategory(category:Category):Observable<any>{
+    return this.http.put<any>(this.url+'UpdateCategory',category,Requestheaders);
+  }
 }
