@@ -9,7 +9,7 @@ import { Router } from '@angular/router';
 export class BuyerLandingPageComponent implements OnInit {
 
   constructor(private route:Router) {
-    if(!(localStorage.getItem('token3'))){
+    if(!(localStorage.getItem('token'))){
       this.route.navigateByUrl('/home');
     }
    }
@@ -21,7 +21,7 @@ export class BuyerLandingPageComponent implements OnInit {
     localStorage.clear();
     localStorage.removeItem('buyerid');
     localStorage.removeItem('sellerId');
-    localStorage.removeItem('token3');
+    localStorage.removeItem('token');
     this.route.navigateByUrl('/home');
   }
 }
