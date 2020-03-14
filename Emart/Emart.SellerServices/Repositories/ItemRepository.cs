@@ -49,7 +49,7 @@ namespace Emart.SellerServices.Repositories
         }
         public List<SubCategory> GetSubCategory(string id)
         {
-            return _context.SubCategory.ToList();
+            return _context.SubCategory.Where(i=>i.CategoryId==id).ToList();
 
         }
         public List<Items> ViewItems()

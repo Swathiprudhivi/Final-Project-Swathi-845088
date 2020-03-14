@@ -1,0 +1,1887 @@
+Started by an SCM change
+Running as SYSTEM
+Building in workspace C:\Program Files (x86)\Jenkins\workspace\EmartUI
+No credentials specified
+ > git.exe rev-parse --is-inside-work-tree # timeout=10
+Fetching changes from the remote Git repository
+ > git.exe config remote.origin.url https://github.com/Swathiprudhivi/Final-Project-Swathi-845088 # timeout=10
+Fetching upstream changes from https://github.com/Swathiprudhivi/Final-Project-Swathi-845088
+ > git.exe --version # timeout=10
+ > git.exe fetch --tags --force --progress -- https://github.com/Swathiprudhivi/Final-Project-Swathi-845088 +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git.exe rev-parse "refs/remotes/origin/master^{commit}" # timeout=10
+ > git.exe rev-parse "refs/remotes/origin/origin/master^{commit}" # timeout=10
+Checking out Revision 1606d658811724a35758559c84a41b22707c67ab (refs/remotes/origin/master)
+ > git.exe config core.sparsecheckout # timeout=10
+ > git.exe checkout -f 1606d658811724a35758559c84a41b22707c67ab # timeout=10
+Commit message: "11/03/2020"
+ > git.exe rev-list --no-walk 39b2c300e116e88c71250cdf6222ff2a08a18f22 # timeout=10
+[EmartUI] $ cmd /c call C:\Windows\TEMP\jenkins3609516629913293553.bat
+
+C:\Program Files (x86)\Jenkins\workspace\EmartUI>CD EMART-UI 
+
+C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI>npm install 
+npm WARN bootstrap@4.4.1 requires a peer of jquery@1.9.1 - 3 but none is installed. You must install peer dependencies yourself.
+npm WARN bootstrap@4.4.1 requires a peer of popper.js@^1.16.0 but none is installed. You must install peer dependencies yourself.
+npm WARN karma-jasmine-html-reporter@1.5.2 requires a peer of jasmine-core@>=3.5 but none is installed. You must install peer dependencies yourself.
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: fsevents@1.2.11 (node_modules\webpack-dev-server\node_modules\fsevents):
+npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for fsevents@1.2.11: wanted {"os":"darwin","arch":"any"} (current: {"os":"win32","arch":"x64"})
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: fsevents@1.2.11 (node_modules\watchpack\node_modules\fsevents):
+npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for fsevents@1.2.11: wanted {"os":"darwin","arch":"any"} (current: {"os":"win32","arch":"x64"})
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: fsevents@1.2.11 (node_modules\karma\node_modules\fsevents):
+npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for fsevents@1.2.11: wanted {"os":"darwin","arch":"any"} (current: {"os":"win32","arch":"x64"})
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: fsevents@1.2.11 (node_modules\@angular\compiler-cli\node_modules\fsevents):
+npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for fsevents@1.2.11: wanted {"os":"darwin","arch":"any"} (current: {"os":"win32","arch":"x64"})
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: fsevents@2.1.2 (node_modules\fsevents):
+npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for fsevents@2.1.2: wanted {"os":"darwin","arch":"any"} (current: {"os":"win32","arch":"x64"})
+
+audited 19101 packages in 33.907s
+found 1 moderate severity vulnerability
+  run `npm audit fix` to fix them, or `npm audit` for details
+[EmartUI] $ cmd /c call C:\Windows\TEMP\jenkins7161081405686194394.bat
+
+C:\Program Files (x86)\Jenkins\workspace\EmartUI>CD EMART-UI 
+
+C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI>npm run ng -- build --prod  
+
+> emart-ui@0.0.0 ng C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI
+> ng "build" "--prod"
+
+Generating ES5 bundles for differential loading...
+ES5 bundle generation complete.
+
+chunk {3} polyfills-es5.8e50a9832860f7cf804a.js (polyfills-es5) 126 kB [initial] [rendered]
+chunk {2} polyfills-es2015.5b10b8fd823b6392f1fd.js (polyfills) 36.2 kB [initial] [rendered]
+chunk {0} runtime-es2015.c5fa8325f89fc516600b.js (runtime) 1.45 kB [entry] [rendered]
+chunk {0} runtime-es5.c5fa8325f89fc516600b.js (runtime) 1.45 kB [entry] [rendered]
+chunk {1} main-es2015.e9faf1e1aa22b834255b.js (main) 467 kB [initial] [rendered]
+chunk {1} main-es5.e9faf1e1aa22b834255b.js (main) 537 kB [initial] [rendered]
+chunk {4} styles.91774cb956cdf300af34.css (styles) 154 kB [initial] [rendered]
+Date: 2020-03-11T07:53:43.613Z - Hash: 90da92d21550b6100b2b - Time: 59523ms
+
+WARNING in ./node_modules/Rxjs/_esm2015/index.js
+There are multiple modules with names that only differ in casing.
+This can lead to unexpected behavior when compiling on a filesystem with other case-semantic.
+Use equal casing. Compare these module identifiers:
+* C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\@angular-devkit\build-optimizer\src\build-optimizer\webpack-loader.js??ref--8-0!C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\Rxjs\_esm2015\index.js
+    Used by 3 module(s), i. e.
+    C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\@angular-devkit\build-optimizer\src\build-optimizer\webpack-loader.js??ref--18-0!C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\@ngtools\webpack\src\index.js!C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\src\app\Services\buyer.service.ts
+* C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\@angular-devkit\build-optimizer\src\build-optimizer\webpack-loader.js??ref--8-0!C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\rxjs\_esm2015\index.js
+    Used by 86 module(s), i. e.
+    C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\@angular-devkit\build-optimizer\src\build-optimizer\webpack-loader.js??ref--8-0!C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\@angular\core\fesm2015\core.js
+ @ ./node_modules/Rxjs/_esm2015/index.js
+ @ ./src/app/Services/buyer.service.ts
+ @ ./src/app/Buyer/buy-product/buy-product.component.ngfactory.js
+ @ ./src/app/app.module.ngfactory.js
+ @ ./src/main.ts
+ @ multi ./src/main.ts
+
+WARNING in ./node_modules/Rxjs/_esm2015/internal/AsyncSubject.js
+There are multiple modules with names that only differ in casing.
+This can lead to unexpected behavior when compiling on a filesystem with other case-semantic.
+Use equal casing. Compare these module identifiers:
+* C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\@angular-devkit\build-optimizer\src\build-optimizer\webpack-loader.js??ref--8-0!C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\Rxjs\_esm2015\internal\AsyncSubject.js
+    Used by 8 module(s), i. e.
+    C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\@angular-devkit\build-optimizer\src\build-optimizer\webpack-loader.js??ref--8-0!C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\Rxjs\_esm2015\index.js
+* C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\@angular-devkit\build-optimizer\src\build-optimizer\webpack-loader.js??ref--8-0!C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\rxjs\_esm2015\internal\AsyncSubject.js
+    Used by 10 module(s), i. e.
+    C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\@angular-devkit\build-optimizer\src\build-optimizer\webpack-loader.js??ref--8-0!C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\rxjs\_esm2015\index.js
+ @ ./node_modules/Rxjs/_esm2015/internal/AsyncSubject.js
+ @ ./node_modules/Rxjs/_esm2015/index.js
+ @ ./src/app/Services/buyer.service.ts
+ @ ./src/app/Buyer/buy-product/buy-product.component.ngfactory.js
+ @ ./src/app/app.module.ngfactory.js
+ @ ./src/main.ts
+ @ multi ./src/main.ts
+
+WARNING in ./node_modules/Rxjs/_esm2015/internal/BehaviorSubject.js
+There are multiple modules with names that only differ in casing.
+This can lead to unexpected behavior when compiling on a filesystem with other case-semantic.
+Use equal casing. Compare these module identifiers:
+* C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\@angular-devkit\build-optimizer\src\build-optimizer\webpack-loader.js??ref--8-0!C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\Rxjs\_esm2015\internal\BehaviorSubject.js
+    Used by 2 module(s), i. e.
+    C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\@angular-devkit\build-optimizer\src\build-optimizer\webpack-loader.js??ref--8-0!C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\Rxjs\_esm2015\index.js
+* C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\@angular-devkit\build-optimizer\src\build-optimizer\webpack-loader.js??ref--8-0!C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\rxjs\_esm2015\internal\BehaviorSubject.js
+    Used by 4 module(s), i. e.
+    C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\@angular-devkit\build-optimizer\src\build-optimizer\webpack-loader.js??ref--8-0!C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\rxjs\_esm2015\index.js
+ @ ./node_modules/Rxjs/_esm2015/internal/BehaviorSubject.js
+ @ ./node_modules/Rxjs/_esm2015/index.js
+ @ ./src/app/Services/buyer.service.ts
+ @ ./src/app/Buyer/buy-product/buy-product.component.ngfactory.js
+ @ ./src/app/app.module.ngfactory.js
+ @ ./src/main.ts
+ @ multi ./src/main.ts
+
+WARNING in ./node_modules/Rxjs/_esm2015/internal/InnerSubscriber.js
+There are multiple modules with names that only differ in casing.
+This can lead to unexpected behavior when compiling on a filesystem with other case-semantic.
+Use equal casing. Compare these module identifiers:
+* C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\@angular-devkit\build-optimizer\src\build-optimizer\webpack-loader.js??ref--8-0!C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\Rxjs\_esm2015\internal\InnerSubscriber.js
+    Used by 4 module(s), i. e.
+    C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\@angular-devkit\build-optimizer\src\build-optimizer\webpack-loader.js??ref--8-0!C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\Rxjs\_esm2015\internal\util\subscribeToResult.js
+* C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\@angular-devkit\build-optimizer\src\build-optimizer\webpack-loader.js??ref--8-0!C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\rxjs\_esm2015\internal\InnerSubscriber.js
+    Used by 16 module(s), i. e.
+    C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\@angular-devkit\build-optimizer\src\build-optimizer\webpack-loader.js??ref--8-0!C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\rxjs\_esm2015\internal\operators\catchError.js
+ @ ./node_modules/Rxjs/_esm2015/internal/InnerSubscriber.js
+ @ ./node_modules/Rxjs/_esm2015/internal/util/subscribeToResult.js
+ @ ./node_modules/Rxjs/_esm2015/internal/observable/zip.js
+ @ ./node_modules/Rxjs/_esm2015/index.js
+ @ ./src/app/Services/buyer.service.ts
+ @ ./src/app/Buyer/buy-product/buy-product.component.ngfactory.js
+ @ ./src/app/app.module.ngfactory.js
+ @ ./src/main.ts
+ @ multi ./src/main.ts
+
+WARNING in ./node_modules/Rxjs/_esm2015/internal/Notification.js
+There are multiple modules with names that only differ in casing.
+This can lead to unexpected behavior when compiling on a filesystem with other case-semantic.
+Use equal casing. Compare these module identifiers:
+* C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\@angular-devkit\build-optimizer\src\build-optimizer\webpack-loader.js??ref--8-0!C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\Rxjs\_esm2015\internal\Notification.js
+    Used by 6 module(s), i. e.
+    C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\@angular-devkit\build-optimizer\src\build-optimizer\webpack-loader.js??ref--8-0!C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\Rxjs\_esm2015\index.js
+* C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\@angular-devkit\build-optimizer\src\build-optimizer\webpack-loader.js??ref--8-0!C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\rxjs\_esm2015\internal\Notification.js
+    Used by 13 module(s), i. e.
+    C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\@angular-devkit\build-optimizer\src\build-optimizer\webpack-loader.js??ref--8-0!C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\rxjs\_esm2015\index.js
+ @ ./node_modules/Rxjs/_esm2015/internal/Notification.js
+ @ ./node_modules/Rxjs/_esm2015/index.js
+ @ ./src/app/Services/buyer.service.ts
+ @ ./src/app/Buyer/buy-product/buy-product.component.ngfactory.js
+ @ ./src/app/app.module.ngfactory.js
+ @ ./src/main.ts
+ @ multi ./src/main.ts
+
+WARNING in ./node_modules/Rxjs/_esm2015/internal/Observable.js
+There are multiple modules with names that only differ in casing.
+This can lead to unexpected behavior when compiling on a filesystem with other case-semantic.
+Use equal casing. Compare these module identifiers:
+* C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\@angular-devkit\build-optimizer\src\build-optimizer\webpack-loader.js??ref--8-0!C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\Rxjs\_esm2015\internal\Observable.js
+    Used by 67 module(s), i. e.
+    C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\@angular-devkit\build-optimizer\src\build-optimizer\webpack-loader.js??ref--8-0!C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\Rxjs\_esm2015\index.js
+* C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\@angular-devkit\build-optimizer\src\build-optimizer\webpack-loader.js??ref--8-0!C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\rxjs\_esm2015\internal\Observable.js
+    Used by 71 module(s), i. e.
+    C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\@angular-devkit\build-optimizer\src\build-optimizer\webpack-loader.js??ref--8-0!C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\rxjs\_esm2015\index.js
+ @ ./node_modules/Rxjs/_esm2015/internal/Observable.js
+ @ ./node_modules/Rxjs/_esm2015/index.js
+ @ ./src/app/Services/buyer.service.ts
+ @ ./src/app/Buyer/buy-product/buy-product.component.ngfactory.js
+ @ ./src/app/app.module.ngfactory.js
+ @ ./src/main.ts
+ @ multi ./src/main.ts
+
+WARNING in ./node_modules/Rxjs/_esm2015/internal/Observer.js
+There are multiple modules with names that only differ in casing.
+This can lead to unexpected behavior when compiling on a filesystem with other case-semantic.
+Use equal casing. Compare these module identifiers:
+* C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\@angular-devkit\build-optimizer\src\build-optimizer\webpack-loader.js??ref--8-0!C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\Rxjs\_esm2015\internal\Observer.js
+    Used by 6 module(s), i. e.
+    C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\@angular-devkit\build-optimizer\src\build-optimizer\webpack-loader.js??ref--8-0!C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\Rxjs\_esm2015\internal\Subscriber.js
+* C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\@angular-devkit\build-optimizer\src\build-optimizer\webpack-loader.js??ref--8-0!C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\rxjs\_esm2015\internal\Observer.js
+    Used by 6 module(s), i. e.
+    C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\@angular-devkit\build-optimizer\src\build-optimizer\webpack-loader.js??ref--8-0!C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\rxjs\_esm2015\internal\Subscriber.js
+ @ ./node_modules/Rxjs/_esm2015/internal/Observer.js
+ @ ./node_modules/Rxjs/_esm2015/internal/Subscriber.js
+ @ ./node_modules/Rxjs/_esm2015/index.js
+ @ ./src/app/Services/buyer.service.ts
+ @ ./src/app/Buyer/buy-product/buy-product.component.ngfactory.js
+ @ ./src/app/app.module.ngfactory.js
+ @ ./src/main.ts
+ @ multi ./src/main.ts
+
+WARNING in ./node_modules/Rxjs/_esm2015/internal/OuterSubscriber.js
+There are multiple modules with names that only differ in casing.
+This can lead to unexpected behavior when compiling on a filesystem with other case-semantic.
+Use equal casing. Compare these module identifiers:
+* C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\@angular-devkit\build-optimizer\src\build-optimizer\webpack-loader.js??ref--8-0!C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\Rxjs\_esm2015\internal\OuterSubscriber.js
+    Used by 10 module(s), i. e.
+    C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\@angular-devkit\build-optimizer\src\build-optimizer\webpack-loader.js??ref--8-0!C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\Rxjs\_esm2015\internal\observable\zip.js
+* C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\@angular-devkit\build-optimizer\src\build-optimizer\webpack-loader.js??ref--8-0!C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\rxjs\_esm2015\internal\OuterSubscriber.js
+    Used by 60 module(s), i. e.
+    C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\@angular-devkit\build-optimizer\src\build-optimizer\webpack-loader.js??ref--8-0!C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\rxjs\_esm2015\internal\observable\race.js
+ @ ./node_modules/Rxjs/_esm2015/internal/OuterSubscriber.js
+ @ ./node_modules/Rxjs/_esm2015/internal/observable/zip.js
+ @ ./node_modules/Rxjs/_esm2015/index.js
+ @ ./src/app/Services/buyer.service.ts
+ @ ./src/app/Buyer/buy-product/buy-product.component.ngfactory.js
+ @ ./src/app/app.module.ngfactory.js
+ @ ./src/main.ts
+ @ multi ./src/main.ts
+
+WARNING in ./node_modules/Rxjs/_esm2015/internal/ReplaySubject.js
+There are multiple modules with names that only differ in casing.
+This can lead to unexpected behavior when compiling on a filesystem with other case-semantic.
+Use equal casing. Compare these module identifiers:
+* C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\@angular-devkit\build-optimizer\src\build-optimizer\webpack-loader.js??ref--8-0!C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\Rxjs\_esm2015\internal\ReplaySubject.js
+    Used by 2 module(s), i. e.
+    C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\@angular-devkit\build-optimizer\src\build-optimizer\webpack-loader.js??ref--8-0!C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\Rxjs\_esm2015\index.js
+* C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\@angular-devkit\build-optimizer\src\build-optimizer\webpack-loader.js??ref--8-0!C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\rxjs\_esm2015\internal\ReplaySubject.js
+    Used by 6 module(s), i. e.
+    C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\@angular-devkit\build-optimizer\src\build-optimizer\webpack-loader.js??ref--8-0!C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\rxjs\_esm2015\index.js
+ @ ./node_modules/Rxjs/_esm2015/internal/ReplaySubject.js
+ @ ./node_modules/Rxjs/_esm2015/index.js
+ @ ./src/app/Services/buyer.service.ts
+ @ ./src/app/Buyer/buy-product/buy-product.component.ngfactory.js
+ @ ./src/app/app.module.ngfactory.js
+ @ ./src/main.ts
+ @ multi ./src/main.ts
+
+WARNING in ./node_modules/Rxjs/_esm2015/internal/Scheduler.js
+There are multiple modules with names that only differ in casing.
+This can lead to unexpected behavior when compiling on a filesystem with other case-semantic.
+Use equal casing. Compare these module identifiers:
+* C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\@angular-devkit\build-optimizer\src\build-optimizer\webpack-loader.js??ref--8-0!C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\Rxjs\_esm2015\internal\Scheduler.js
+    Used by 5 module(s), i. e.
+    C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\@angular-devkit\build-optimizer\src\build-optimizer\webpack-loader.js??ref--8-0!C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\Rxjs\_esm2015\index.js
+* C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\@angular-devkit\build-optimizer\src\build-optimizer\webpack-loader.js??ref--8-0!C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\rxjs\_esm2015\internal\Scheduler.js
+    Used by 5 module(s), i. e.
+    C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\@angular-devkit\build-optimizer\src\build-optimizer\webpack-loader.js??ref--8-0!C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\rxjs\_esm2015\index.js
+ @ ./node_modules/Rxjs/_esm2015/internal/Scheduler.js
+ @ ./node_modules/Rxjs/_esm2015/index.js
+ @ ./src/app/Services/buyer.service.ts
+ @ ./src/app/Buyer/buy-product/buy-product.component.ngfactory.js
+ @ ./src/app/app.module.ngfactory.js
+ @ ./src/main.ts
+ @ multi ./src/main.ts
+
+WARNING in ./node_modules/Rxjs/_esm2015/internal/Subject.js
+There are multiple modules with names that only differ in casing.
+This can lead to unexpected behavior when compiling on a filesystem with other case-semantic.
+Use equal casing. Compare these module identifiers:
+* C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\@angular-devkit\build-optimizer\src\build-optimizer\webpack-loader.js??ref--8-0!C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\Rxjs\_esm2015\internal\Subject.js
+    Used by 12 module(s), i. e.
+    C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\@angular-devkit\build-optimizer\src\build-optimizer\webpack-loader.js??ref--8-0!C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\Rxjs\_esm2015\index.js
+* C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\@angular-devkit\build-optimizer\src\build-optimizer\webpack-loader.js??ref--8-0!C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\rxjs\_esm2015\internal\Subject.js
+    Used by 33 module(s), i. e.
+    C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\@angular-devkit\build-optimizer\src\build-optimizer\webpack-loader.js??ref--8-0!C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\rxjs\_esm2015\index.js
+ @ ./node_modules/Rxjs/_esm2015/internal/Subject.js
+ @ ./node_modules/Rxjs/_esm2015/index.js
+ @ ./src/app/Services/buyer.service.ts
+ @ ./src/app/Buyer/buy-product/buy-product.component.ngfactory.js
+ @ ./src/app/app.module.ngfactory.js
+ @ ./src/main.ts
+ @ multi ./src/main.ts
+
+WARNING in ./node_modules/Rxjs/_esm2015/internal/SubjectSubscription.js
+There are multiple modules with names that only differ in casing.
+This can lead to unexpected behavior when compiling on a filesystem with other case-semantic.
+Use equal casing. Compare these module identifiers:
+* C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\@angular-devkit\build-optimizer\src\build-optimizer\webpack-loader.js??ref--8-0!C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\Rxjs\_esm2015\internal\SubjectSubscription.js
+    Used by 4 module(s), i. e.
+    C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\@angular-devkit\build-optimizer\src\build-optimizer\webpack-loader.js??ref--8-0!C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\Rxjs\_esm2015\internal\Subject.js
+* C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\@angular-devkit\build-optimizer\src\build-optimizer\webpack-loader.js??ref--8-0!C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\rxjs\_esm2015\internal\SubjectSubscription.js
+    Used by 4 module(s), i. e.
+    C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\@angular-devkit\build-optimizer\src\build-optimizer\webpack-loader.js??ref--8-0!C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\rxjs\_esm2015\internal\Subject.js
+ @ ./node_modules/Rxjs/_esm2015/internal/SubjectSubscription.js
+ @ ./node_modules/Rxjs/_esm2015/internal/Subject.js
+ @ ./node_modules/Rxjs/_esm2015/index.js
+ @ ./src/app/Services/buyer.service.ts
+ @ ./src/app/Buyer/buy-product/buy-product.component.ngfactory.js
+ @ ./src/app/app.module.ngfactory.js
+ @ ./src/main.ts
+ @ multi ./src/main.ts
+
+WARNING in ./node_modules/Rxjs/_esm2015/internal/Subscriber.js
+There are multiple modules with names that only differ in casing.
+This can lead to unexpected behavior when compiling on a filesystem with other case-semantic.
+Use equal casing. Compare these module identifiers:
+* C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\@angular-devkit\build-optimizer\src\build-optimizer\webpack-loader.js??ref--8-0!C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\Rxjs\_esm2015\internal\Subscriber.js
+    Used by 27 module(s), i. e.
+    C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\@angular-devkit\build-optimizer\src\build-optimizer\webpack-loader.js??ref--8-0!C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\Rxjs\_esm2015\index.js
+* C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\@angular-devkit\build-optimizer\src\build-optimizer\webpack-loader.js??ref--8-0!C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\rxjs\_esm2015\internal\Subscriber.js
+    Used by 98 module(s), i. e.
+    C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\@angular-devkit\build-optimizer\src\build-optimizer\webpack-loader.js??ref--8-0!C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\rxjs\_esm2015\index.js
+ @ ./node_modules/Rxjs/_esm2015/internal/Subscriber.js
+ @ ./node_modules/Rxjs/_esm2015/index.js
+ @ ./src/app/Services/buyer.service.ts
+ @ ./src/app/Buyer/buy-product/buy-product.component.ngfactory.js
+ @ ./src/app/app.module.ngfactory.js
+ @ ./src/main.ts
+ @ multi ./src/main.ts
+
+WARNING in ./node_modules/Rxjs/_esm2015/internal/Subscription.js
+There are multiple modules with names that only differ in casing.
+This can lead to unexpected behavior when compiling on a filesystem with other case-semantic.
+Use equal casing. Compare these module identifiers:
+* C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\@angular-devkit\build-optimizer\src\build-optimizer\webpack-loader.js??ref--8-0!C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\Rxjs\_esm2015\internal\Subscription.js
+    Used by 33 module(s), i. e.
+    C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\@angular-devkit\build-optimizer\src\build-optimizer\webpack-loader.js??ref--8-0!C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\Rxjs\_esm2015\index.js
+* C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\@angular-devkit\build-optimizer\src\build-optimizer\webpack-loader.js??ref--8-0!C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\rxjs\_esm2015\internal\Subscription.js
+    Used by 41 module(s), i. e.
+    C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\@angular-devkit\build-optimizer\src\build-optimizer\webpack-loader.js??ref--8-0!C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\rxjs\_esm2015\index.js
+ @ ./node_modules/Rxjs/_esm2015/internal/Subscription.js
+ @ ./node_modules/Rxjs/_esm2015/index.js
+ @ ./src/app/Services/buyer.service.ts
+ @ ./src/app/Buyer/buy-product/buy-product.component.ngfactory.js
+ @ ./src/app/app.module.ngfactory.js
+ @ ./src/main.ts
+ @ multi ./src/main.ts
+
+WARNING in ./node_modules/Rxjs/_esm2015/internal/config.js
+There are multiple modules with names that only differ in casing.
+This can lead to unexpected behavior when compiling on a filesystem with other case-semantic.
+Use equal casing. Compare these module identifiers:
+* C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\@angular-devkit\build-optimizer\src\build-optimizer\webpack-loader.js??ref--8-0!C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\Rxjs\_esm2015\internal\config.js
+    Used by 16 module(s), i. e.
+    C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\@angular-devkit\build-optimizer\src\build-optimizer\webpack-loader.js??ref--8-0!C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\Rxjs\_esm2015\index.js
+* C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\@angular-devkit\build-optimizer\src\build-optimizer\webpack-loader.js??ref--8-0!C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\rxjs\_esm2015\internal\config.js
+    Used by 16 module(s), i. e.
+    C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\@angular-devkit\build-optimizer\src\build-optimizer\webpack-loader.js??ref--8-0!C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\rxjs\_esm2015\index.js
+ @ ./node_modules/Rxjs/_esm2015/internal/config.js
+ @ ./node_modules/Rxjs/_esm2015/index.js
+ @ ./src/app/Services/buyer.service.ts
+ @ ./src/app/Buyer/buy-product/buy-product.component.ngfactory.js
+ @ ./src/app/app.module.ngfactory.js
+ @ ./src/main.ts
+ @ multi ./src/main.ts
+
+WARNING in ./node_modules/Rxjs/_esm2015/internal/observable/ConnectableObservable.js
+There are multiple modules with names that only differ in casing.
+This can lead to unexpected behavior when compiling on a filesystem with other case-semantic.
+Use equal casing. Compare these module identifiers:
+* C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\@angular-devkit\build-optimizer\src\build-optimizer\webpack-loader.js??ref--8-0!C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\Rxjs\_esm2015\internal\observable\ConnectableObservable.js
+    Used by 2 module(s), i. e.
+    C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\@angular-devkit\build-optimizer\src\build-optimizer\webpack-loader.js??ref--8-0!C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\Rxjs\_esm2015\index.js
+* C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\@angular-devkit\build-optimizer\src\build-optimizer\webpack-loader.js??ref--8-0!C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\rxjs\_esm2015\internal\observable\ConnectableObservable.js
+    Used by 4 module(s), i. e.
+    C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\@angular-devkit\build-optimizer\src\build-optimizer\webpack-loader.js??ref--8-0!C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\rxjs\_esm2015\index.js
+ @ ./node_modules/Rxjs/_esm2015/internal/observable/ConnectableObservable.js
+ @ ./node_modules/Rxjs/_esm2015/index.js
+ @ ./src/app/Services/buyer.service.ts
+ @ ./src/app/Buyer/buy-product/buy-product.component.ngfactory.js
+ @ ./src/app/app.module.ngfactory.js
+ @ ./src/main.ts
+ @ multi ./src/main.ts
+
+WARNING in ./node_modules/Rxjs/_esm2015/internal/observable/bindCallback.js
+There are multiple modules with names that only differ in casing.
+This can lead to unexpected behavior when compiling on a filesystem with other case-semantic.
+Use equal casing. Compare these module identifiers:
+* C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\@angular-devkit\build-optimizer\src\build-optimizer\webpack-loader.js??ref--8-0!C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\Rxjs\_esm2015\internal\observable\bindCallback.js
+    Used by 2 module(s), i. e.
+    C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\@angular-devkit\build-optimizer\src\build-optimizer\webpack-loader.js??ref--8-0!C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\Rxjs\_esm2015\index.js
+* C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\@angular-devkit\build-optimizer\src\build-optimizer\webpack-loader.js??ref--8-0!C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\rxjs\_esm2015\internal\observable\bindCallback.js
+    Used by 2 module(s), i. e.
+    C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\@angular-devkit\build-optimizer\src\build-optimizer\webpack-loader.js??ref--8-0!C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\rxjs\_esm2015\index.js
+ @ ./node_modules/Rxjs/_esm2015/internal/observable/bindCallback.js
+ @ ./node_modules/Rxjs/_esm2015/index.js
+ @ ./src/app/Services/buyer.service.ts
+ @ ./src/app/Buyer/buy-product/buy-product.component.ngfactory.js
+ @ ./src/app/app.module.ngfactory.js
+ @ ./src/main.ts
+ @ multi ./src/main.ts
+
+WARNING in ./node_modules/Rxjs/_esm2015/internal/observable/bindNodeCallback.js
+There are multiple modules with names that only differ in casing.
+This can lead to unexpected behavior when compiling on a filesystem with other case-semantic.
+Use equal casing. Compare these module identifiers:
+* C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\@angular-devkit\build-optimizer\src\build-optimizer\webpack-loader.js??ref--8-0!C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\Rxjs\_esm2015\internal\observable\bindNodeCallback.js
+    Used by 2 module(s), i. e.
+    C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\@angular-devkit\build-optimizer\src\build-optimizer\webpack-loader.js??ref--8-0!C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\Rxjs\_esm2015\index.js
+* C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\@angular-devkit\build-optimizer\src\build-optimizer\webpack-loader.js??ref--8-0!C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\rxjs\_esm2015\internal\observable\bindNodeCallback.js
+    Used by 2 module(s), i. e.
+    C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\@angular-devkit\build-optimizer\src\build-optimizer\webpack-loader.js??ref--8-0!C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\rxjs\_esm2015\index.js
+ @ ./node_modules/Rxjs/_esm2015/internal/observable/bindNodeCallback.js
+ @ ./node_modules/Rxjs/_esm2015/index.js
+ @ ./src/app/Services/buyer.service.ts
+ @ ./src/app/Buyer/buy-product/buy-product.component.ngfactory.js
+ @ ./src/app/app.module.ngfactory.js
+ @ ./src/main.ts
+ @ multi ./src/main.ts
+
+WARNING in ./node_modules/Rxjs/_esm2015/internal/observable/combineLatest.js
+There are multiple modules with names that only differ in casing.
+This can lead to unexpected behavior when compiling on a filesystem with other case-semantic.
+Use equal casing. Compare these module identifiers:
+* C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\@angular-devkit\build-optimizer\src\build-optimizer\webpack-loader.js??ref--8-0!C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\Rxjs\_esm2015\internal\observable\combineLatest.js
+    Used by 2 module(s), i. e.
+    C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\@angular-devkit\build-optimizer\src\build-optimizer\webpack-loader.js??ref--8-0!C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\Rxjs\_esm2015\index.js
+* C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\@angular-devkit\build-optimizer\src\build-optimizer\webpack-loader.js??ref--8-0!C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\rxjs\_esm2015\internal\observable\combineLatest.js
+    Used by 6 module(s), i. e.
+    C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\@angular-devkit\build-optimizer\src\build-optimizer\webpack-loader.js??ref--8-0!C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\rxjs\_esm2015\index.js
+ @ ./node_modules/Rxjs/_esm2015/internal/observable/combineLatest.js
+ @ ./node_modules/Rxjs/_esm2015/index.js
+ @ ./src/app/Services/buyer.service.ts
+ @ ./src/app/Buyer/buy-product/buy-product.component.ngfactory.js
+ @ ./src/app/app.module.ngfactory.js
+ @ ./src/main.ts
+ @ multi ./src/main.ts
+
+WARNING in ./node_modules/Rxjs/_esm2015/internal/observable/concat.js
+There are multiple modules with names that only differ in casing.
+This can lead to unexpected behavior when compiling on a filesystem with other case-semantic.
+Use equal casing. Compare these module identifiers:
+* C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\@angular-devkit\build-optimizer\src\build-optimizer\webpack-loader.js??ref--8-0!C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\Rxjs\_esm2015\internal\observable\concat.js
+    Used by 2 module(s), i. e.
+    C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\@angular-devkit\build-optimizer\src\build-optimizer\webpack-loader.js??ref--8-0!C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\Rxjs\_esm2015\index.js
+* C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\@angular-devkit\build-optimizer\src\build-optimizer\webpack-loader.js??ref--8-0!C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\rxjs\_esm2015\internal\observable\concat.js
+    Used by 12 module(s), i. e.
+    C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\@angular-devkit\build-optimizer\src\build-optimizer\webpack-loader.js??ref--8-0!C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\rxjs\_esm2015\index.js
+ @ ./node_modules/Rxjs/_esm2015/internal/observable/concat.js
+ @ ./node_modules/Rxjs/_esm2015/index.js
+ @ ./src/app/Services/buyer.service.ts
+ @ ./src/app/Buyer/buy-product/buy-product.component.ngfactory.js
+ @ ./src/app/app.module.ngfactory.js
+ @ ./src/main.ts
+ @ multi ./src/main.ts
+
+WARNING in ./node_modules/Rxjs/_esm2015/internal/observable/defer.js
+There are multiple modules with names that only differ in casing.
+This can lead to unexpected behavior when compiling on a filesystem with other case-semantic.
+Use equal casing. Compare these module identifiers:
+* C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\@angular-devkit\build-optimizer\src\build-optimizer\webpack-loader.js??ref--8-0!C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\Rxjs\_esm2015\internal\observable\defer.js
+    Used by 4 module(s), i. e.
+    C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\@angular-devkit\build-optimizer\src\build-optimizer\webpack-loader.js??ref--8-0!C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\Rxjs\_esm2015\index.js
+* C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\@angular-devkit\build-optimizer\src\build-optimizer\webpack-loader.js??ref--8-0!C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\rxjs\_esm2015\internal\observable\defer.js
+    Used by 6 module(s), i. e.
+    C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\@angular-devkit\build-optimizer\src\build-optimizer\webpack-loader.js??ref--8-0!C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\rxjs\_esm2015\index.js
+ @ ./node_modules/Rxjs/_esm2015/internal/observable/defer.js
+ @ ./node_modules/Rxjs/_esm2015/index.js
+ @ ./src/app/Services/buyer.service.ts
+ @ ./src/app/Buyer/buy-product/buy-product.component.ngfactory.js
+ @ ./src/app/app.module.ngfactory.js
+ @ ./src/main.ts
+ @ multi ./src/main.ts
+
+WARNING in ./node_modules/Rxjs/_esm2015/internal/observable/empty.js
+There are multiple modules with names that only differ in casing.
+This can lead to unexpected behavior when compiling on a filesystem with other case-semantic.
+Use equal casing. Compare these module identifiers:
+* C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\@angular-devkit\build-optimizer\src\build-optimizer\webpack-loader.js??ref--8-0!C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\Rxjs\_esm2015\internal\observable\empty.js
+    Used by 19 module(s), i. e.
+    C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\@angular-devkit\build-optimizer\src\build-optimizer\webpack-loader.js??ref--8-0!C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\Rxjs\_esm2015\index.js
+* C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\@angular-devkit\build-optimizer\src\build-optimizer\webpack-loader.js??ref--8-0!C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\rxjs\_esm2015\internal\observable\empty.js
+    Used by 29 module(s), i. e.
+    C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\@angular-devkit\build-optimizer\src\build-optimizer\webpack-loader.js??ref--8-0!C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\rxjs\_esm2015\index.js
+ @ ./node_modules/Rxjs/_esm2015/internal/observable/empty.js
+ @ ./node_modules/Rxjs/_esm2015/index.js
+ @ ./src/app/Services/buyer.service.ts
+ @ ./src/app/Buyer/buy-product/buy-product.component.ngfactory.js
+ @ ./src/app/app.module.ngfactory.js
+ @ ./src/main.ts
+ @ multi ./src/main.ts
+
+WARNING in ./node_modules/Rxjs/_esm2015/internal/observable/forkJoin.js
+There are multiple modules with names that only differ in casing.
+This can lead to unexpected behavior when compiling on a filesystem with other case-semantic.
+Use equal casing. Compare these module identifiers:
+* C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\@angular-devkit\build-optimizer\src\build-optimizer\webpack-loader.js??ref--8-0!C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\Rxjs\_esm2015\internal\observable\forkJoin.js
+    Used by 2 module(s), i. e.
+    C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\@angular-devkit\build-optimizer\src\build-optimizer\webpack-loader.js??ref--8-0!C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\Rxjs\_esm2015\index.js
+* C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\@angular-devkit\build-optimizer\src\build-optimizer\webpack-loader.js??ref--8-0!C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\rxjs\_esm2015\internal\observable\forkJoin.js
+    Used by 2 module(s), i. e.
+    C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\@angular-devkit\build-optimizer\src\build-optimizer\webpack-loader.js??ref--8-0!C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\rxjs\_esm2015\index.js
+ @ ./node_modules/Rxjs/_esm2015/internal/observable/forkJoin.js
+ @ ./node_modules/Rxjs/_esm2015/index.js
+ @ ./src/app/Services/buyer.service.ts
+ @ ./src/app/Buyer/buy-product/buy-product.component.ngfactory.js
+ @ ./src/app/app.module.ngfactory.js
+ @ ./src/main.ts
+ @ multi ./src/main.ts
+
+WARNING in ./node_modules/Rxjs/_esm2015/internal/observable/from.js
+There are multiple modules with names that only differ in casing.
+This can lead to unexpected behavior when compiling on a filesystem with other case-semantic.
+Use equal casing. Compare these module identifiers:
+* C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\@angular-devkit\build-optimizer\src\build-optimizer\webpack-loader.js??ref--8-0!C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\Rxjs\_esm2015\internal\observable\from.js
+    Used by 10 module(s), i. e.
+    C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\@angular-devkit\build-optimizer\src\build-optimizer\webpack-loader.js??ref--8-0!C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\Rxjs\_esm2015\index.js
+* C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\@angular-devkit\build-optimizer\src\build-optimizer\webpack-loader.js??ref--8-0!C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\rxjs\_esm2015\internal\observable\from.js
+    Used by 18 module(s), i. e.
+    C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\@angular-devkit\build-optimizer\src\build-optimizer\webpack-loader.js??ref--8-0!C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\rxjs\_esm2015\index.js
+ @ ./node_modules/Rxjs/_esm2015/internal/observable/from.js
+ @ ./node_modules/Rxjs/_esm2015/index.js
+ @ ./src/app/Services/buyer.service.ts
+ @ ./src/app/Buyer/buy-product/buy-product.component.ngfactory.js
+ @ ./src/app/app.module.ngfactory.js
+ @ ./src/main.ts
+ @ multi ./src/main.ts
+
+WARNING in ./node_modules/Rxjs/_esm2015/internal/observable/fromArray.js
+There are multiple modules with names that only differ in casing.
+This can lead to unexpected behavior when compiling on a filesystem with other case-semantic.
+Use equal casing. Compare these module identifiers:
+* C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\@angular-devkit\build-optimizer\src\build-optimizer\webpack-loader.js??ref--8-0!C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\Rxjs\_esm2015\internal\observable\fromArray.js
+    Used by 13 module(s), i. e.
+    C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\@angular-devkit\build-optimizer\src\build-optimizer\webpack-loader.js??ref--8-0!C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\Rxjs\_esm2015\internal\observable\zip.js
+* C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\@angular-devkit\build-optimizer\src\build-optimizer\webpack-loader.js??ref--8-0!C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\rxjs\_esm2015\internal\observable\fromArray.js
+    Used by 17 module(s), i. e.
+    C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\@angular-devkit\build-optimizer\src\build-optimizer\webpack-loader.js??ref--8-0!C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\rxjs\_esm2015\internal\observable\merge.js
+ @ ./node_modules/Rxjs/_esm2015/internal/observable/fromArray.js
+ @ ./node_modules/Rxjs/_esm2015/internal/observable/zip.js
+ @ ./node_modules/Rxjs/_esm2015/index.js
+ @ ./src/app/Services/buyer.service.ts
+ @ ./src/app/Buyer/buy-product/buy-product.component.ngfactory.js
+ @ ./src/app/app.module.ngfactory.js
+ @ ./src/main.ts
+ @ multi ./src/main.ts
+
+WARNING in ./node_modules/Rxjs/_esm2015/internal/observable/fromEvent.js
+There are multiple modules with names that only differ in casing.
+This can lead to unexpected behavior when compiling on a filesystem with other case-semantic.
+Use equal casing. Compare these module identifiers:
+* C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\@angular-devkit\build-optimizer\src\build-optimizer\webpack-loader.js??ref--8-0!C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\Rxjs\_esm2015\internal\observable\fromEvent.js
+    Used by 2 module(s), i. e.
+    C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\@angular-devkit\build-optimizer\src\build-optimizer\webpack-loader.js??ref--8-0!C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\Rxjs\_esm2015\index.js
+* C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\@angular-devkit\build-optimizer\src\build-optimizer\webpack-loader.js??ref--8-0!C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\rxjs\_esm2015\internal\observable\fromEvent.js
+    Used by 2 module(s), i. e.
+    C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\@angular-devkit\build-optimizer\src\build-optimizer\webpack-loader.js??ref--8-0!C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\rxjs\_esm2015\index.js
+ @ ./node_modules/Rxjs/_esm2015/internal/observable/fromEvent.js
+ @ ./node_modules/Rxjs/_esm2015/index.js
+ @ ./src/app/Services/buyer.service.ts
+ @ ./src/app/Buyer/buy-product/buy-product.component.ngfactory.js
+ @ ./src/app/app.module.ngfactory.js
+ @ ./src/main.ts
+ @ multi ./src/main.ts
+
+WARNING in ./node_modules/Rxjs/_esm2015/internal/observable/fromEventPattern.js
+There are multiple modules with names that only differ in casing.
+This can lead to unexpected behavior when compiling on a filesystem with other case-semantic.
+Use equal casing. Compare these module identifiers:
+* C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\@angular-devkit\build-optimizer\src\build-optimizer\webpack-loader.js??ref--8-0!C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\Rxjs\_esm2015\internal\observable\fromEventPattern.js
+    Used by 2 module(s), i. e.
+    C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\@angular-devkit\build-optimizer\src\build-optimizer\webpack-loader.js??ref--8-0!C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\Rxjs\_esm2015\index.js
+* C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\@angular-devkit\build-optimizer\src\build-optimizer\webpack-loader.js??ref--8-0!C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\rxjs\_esm2015\internal\observable\fromEventPattern.js
+    Used by 2 module(s), i. e.
+    C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\@angular-devkit\build-optimizer\src\build-optimizer\webpack-loader.js??ref--8-0!C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\rxjs\_esm2015\index.js
+ @ ./node_modules/Rxjs/_esm2015/internal/observable/fromEventPattern.js
+ @ ./node_modules/Rxjs/_esm2015/index.js
+ @ ./src/app/Services/buyer.service.ts
+ @ ./src/app/Buyer/buy-product/buy-product.component.ngfactory.js
+ @ ./src/app/app.module.ngfactory.js
+ @ ./src/main.ts
+ @ multi ./src/main.ts
+
+WARNING in ./node_modules/Rxjs/_esm2015/internal/observable/fromIterable.js
+There are multiple modules with names that only differ in casing.
+This can lead to unexpected behavior when compiling on a filesystem with other case-semantic.
+Use equal casing. Compare these module identifiers:
+* C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\@angular-devkit\build-optimizer\src\build-optimizer\webpack-loader.js??ref--8-0!C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\Rxjs\_esm2015\internal\observable\fromIterable.js
+    Used by 2 module(s), i. e.
+    C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\@angular-devkit\build-optimizer\src\build-optimizer\webpack-loader.js??ref--8-0!C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\Rxjs\_esm2015\internal\observable\from.js
+* C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\@angular-devkit\build-optimizer\src\build-optimizer\webpack-loader.js??ref--8-0!C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\rxjs\_esm2015\internal\observable\fromIterable.js
+    Used by 2 module(s), i. e.
+    C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\@angular-devkit\build-optimizer\src\build-optimizer\webpack-loader.js??ref--8-0!C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\rxjs\_esm2015\internal\observable\from.js
+ @ ./node_modules/Rxjs/_esm2015/internal/observable/fromIterable.js
+ @ ./node_modules/Rxjs/_esm2015/internal/observable/from.js
+ @ ./node_modules/Rxjs/_esm2015/index.js
+ @ ./src/app/Services/buyer.service.ts
+ @ ./src/app/Buyer/buy-product/buy-product.component.ngfactory.js
+ @ ./src/app/app.module.ngfactory.js
+ @ ./src/main.ts
+ @ multi ./src/main.ts
+
+WARNING in ./node_modules/Rxjs/_esm2015/internal/observable/fromObservable.js
+There are multiple modules with names that only differ in casing.
+This can lead to unexpected behavior when compiling on a filesystem with other case-semantic.
+Use equal casing. Compare these module identifiers:
+* C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\@angular-devkit\build-optimizer\src\build-optimizer\webpack-loader.js??ref--8-0!C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\Rxjs\_esm2015\internal\observable\fromObservable.js
+    Used by 2 module(s), i. e.
+    C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\@angular-devkit\build-optimizer\src\build-optimizer\webpack-loader.js??ref--8-0!C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\Rxjs\_esm2015\internal\observable\from.js
+* C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\@angular-devkit\build-optimizer\src\build-optimizer\webpack-loader.js??ref--8-0!C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\rxjs\_esm2015\internal\observable\fromObservable.js
+    Used by 2 module(s), i. e.
+    C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\@angular-devkit\build-optimizer\src\build-optimizer\webpack-loader.js??ref--8-0!C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\rxjs\_esm2015\internal\observable\from.js
+ @ ./node_modules/Rxjs/_esm2015/internal/observable/fromObservable.js
+ @ ./node_modules/Rxjs/_esm2015/internal/observable/from.js
+ @ ./node_modules/Rxjs/_esm2015/index.js
+ @ ./src/app/Services/buyer.service.ts
+ @ ./src/app/Buyer/buy-product/buy-product.component.ngfactory.js
+ @ ./src/app/app.module.ngfactory.js
+ @ ./src/main.ts
+ @ multi ./src/main.ts
+
+WARNING in ./node_modules/Rxjs/_esm2015/internal/observable/fromPromise.js
+There are multiple modules with names that only differ in casing.
+This can lead to unexpected behavior when compiling on a filesystem with other case-semantic.
+Use equal casing. Compare these module identifiers:
+* C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\@angular-devkit\build-optimizer\src\build-optimizer\webpack-loader.js??ref--8-0!C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\Rxjs\_esm2015\internal\observable\fromPromise.js
+    Used by 2 module(s), i. e.
+    C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\@angular-devkit\build-optimizer\src\build-optimizer\webpack-loader.js??ref--8-0!C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\Rxjs\_esm2015\internal\observable\from.js
+* C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\@angular-devkit\build-optimizer\src\build-optimizer\webpack-loader.js??ref--8-0!C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\rxjs\_esm2015\internal\observable\fromPromise.js
+    Used by 2 module(s), i. e.
+    C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\@angular-devkit\build-optimizer\src\build-optimizer\webpack-loader.js??ref--8-0!C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\rxjs\_esm2015\internal\observable\from.js
+ @ ./node_modules/Rxjs/_esm2015/internal/observable/fromPromise.js
+ @ ./node_modules/Rxjs/_esm2015/internal/observable/from.js
+ @ ./node_modules/Rxjs/_esm2015/index.js
+ @ ./src/app/Services/buyer.service.ts
+ @ ./src/app/Buyer/buy-product/buy-product.component.ngfactory.js
+ @ ./src/app/app.module.ngfactory.js
+ @ ./src/main.ts
+ @ multi ./src/main.ts
+
+WARNING in ./node_modules/Rxjs/_esm2015/internal/observable/generate.js
+There are multiple modules with names that only differ in casing.
+This can lead to unexpected behavior when compiling on a filesystem with other case-semantic.
+Use equal casing. Compare these module identifiers:
+* C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\@angular-devkit\build-optimizer\src\build-optimizer\webpack-loader.js??ref--8-0!C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\Rxjs\_esm2015\internal\observable\generate.js
+    Used by 2 module(s), i. e.
+    C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\@angular-devkit\build-optimizer\src\build-optimizer\webpack-loader.js??ref--8-0!C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\Rxjs\_esm2015\index.js
+* C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\@angular-devkit\build-optimizer\src\build-optimizer\webpack-loader.js??ref--8-0!C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\rxjs\_esm2015\internal\observable\generate.js
+    Used by 2 module(s), i. e.
+    C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\@angular-devkit\build-optimizer\src\build-optimizer\webpack-loader.js??ref--8-0!C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\rxjs\_esm2015\index.js
+ @ ./node_modules/Rxjs/_esm2015/internal/observable/generate.js
+ @ ./node_modules/Rxjs/_esm2015/index.js
+ @ ./src/app/Services/buyer.service.ts
+ @ ./src/app/Buyer/buy-product/buy-product.component.ngfactory.js
+ @ ./src/app/app.module.ngfactory.js
+ @ ./src/main.ts
+ @ multi ./src/main.ts
+
+WARNING in ./node_modules/Rxjs/_esm2015/internal/observable/iif.js
+There are multiple modules with names that only differ in casing.
+This can lead to unexpected behavior when compiling on a filesystem with other case-semantic.
+Use equal casing. Compare these module identifiers:
+* C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\@angular-devkit\build-optimizer\src\build-optimizer\webpack-loader.js??ref--8-0!C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\Rxjs\_esm2015\internal\observable\iif.js
+    Used by 2 module(s), i. e.
+    C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\@angular-devkit\build-optimizer\src\build-optimizer\webpack-loader.js??ref--8-0!C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\Rxjs\_esm2015\index.js
+* C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\@angular-devkit\build-optimizer\src\build-optimizer\webpack-loader.js??ref--8-0!C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\rxjs\_esm2015\internal\observable\iif.js
+    Used by 2 module(s), i. e.
+    C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\@angular-devkit\build-optimizer\src\build-optimizer\webpack-loader.js??ref--8-0!C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\rxjs\_esm2015\index.js
+ @ ./node_modules/Rxjs/_esm2015/internal/observable/iif.js
+ @ ./node_modules/Rxjs/_esm2015/index.js
+ @ ./src/app/Services/buyer.service.ts
+ @ ./src/app/Buyer/buy-product/buy-product.component.ngfactory.js
+ @ ./src/app/app.module.ngfactory.js
+ @ ./src/main.ts
+ @ multi ./src/main.ts
+
+WARNING in ./node_modules/Rxjs/_esm2015/internal/observable/interval.js
+There are multiple modules with names that only differ in casing.
+This can lead to unexpected behavior when compiling on a filesystem with other case-semantic.
+Use equal casing. Compare these module identifiers:
+* C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\@angular-devkit\build-optimizer\src\build-optimizer\webpack-loader.js??ref--8-0!C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\Rxjs\_esm2015\internal\observable\interval.js
+    Used by 2 module(s), i. e.
+    C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\@angular-devkit\build-optimizer\src\build-optimizer\webpack-loader.js??ref--8-0!C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\Rxjs\_esm2015\index.js
+* C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\@angular-devkit\build-optimizer\src\build-optimizer\webpack-loader.js??ref--8-0!C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\rxjs\_esm2015\internal\observable\interval.js
+    Used by 2 module(s), i. e.
+    C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\@angular-devkit\build-optimizer\src\build-optimizer\webpack-loader.js??ref--8-0!C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\rxjs\_esm2015\index.js
+ @ ./node_modules/Rxjs/_esm2015/internal/observable/interval.js
+ @ ./node_modules/Rxjs/_esm2015/index.js
+ @ ./src/app/Services/buyer.service.ts
+ @ ./src/app/Buyer/buy-product/buy-product.component.ngfactory.js
+ @ ./src/app/app.module.ngfactory.js
+ @ ./src/main.ts
+ @ multi ./src/main.ts
+
+WARNING in ./node_modules/Rxjs/_esm2015/internal/observable/merge.js
+There are multiple modules with names that only differ in casing.
+This can lead to unexpected behavior when compiling on a filesystem with other case-semantic.
+Use equal casing. Compare these module identifiers:
+* C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\@angular-devkit\build-optimizer\src\build-optimizer\webpack-loader.js??ref--8-0!C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\Rxjs\_esm2015\internal\observable\merge.js
+    Used by 2 module(s), i. e.
+    C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\@angular-devkit\build-optimizer\src\build-optimizer\webpack-loader.js??ref--8-0!C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\Rxjs\_esm2015\index.js
+* C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\@angular-devkit\build-optimizer\src\build-optimizer\webpack-loader.js??ref--8-0!C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\rxjs\_esm2015\internal\observable\merge.js
+    Used by 4 module(s), i. e.
+    C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\@angular-devkit\build-optimizer\src\build-optimizer\webpack-loader.js??ref--8-0!C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\rxjs\_esm2015\index.js
+ @ ./node_modules/Rxjs/_esm2015/internal/observable/merge.js
+ @ ./node_modules/Rxjs/_esm2015/index.js
+ @ ./src/app/Services/buyer.service.ts
+ @ ./src/app/Buyer/buy-product/buy-product.component.ngfactory.js
+ @ ./src/app/app.module.ngfactory.js
+ @ ./src/main.ts
+ @ multi ./src/main.ts
+
+WARNING in ./node_modules/Rxjs/_esm2015/internal/observable/never.js
+There are multiple modules with names that only differ in casing.
+This can lead to unexpected behavior when compiling on a filesystem with other case-semantic.
+Use equal casing. Compare these module identifiers:
+* C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\@angular-devkit\build-optimizer\src\build-optimizer\webpack-loader.js??ref--8-0!C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\Rxjs\_esm2015\internal\observable\never.js
+    Used by 4 module(s), i. e.
+    C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\@angular-devkit\build-optimizer\src\build-optimizer\webpack-loader.js??ref--8-0!C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\Rxjs\_esm2015\index.js
+* C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\@angular-devkit\build-optimizer\src\build-optimizer\webpack-loader.js??ref--8-0!C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\rxjs\_esm2015\internal\observable\never.js
+    Used by 4 module(s), i. e.
+    C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\@angular-devkit\build-optimizer\src\build-optimizer\webpack-loader.js??ref--8-0!C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\rxjs\_esm2015\index.js
+ @ ./node_modules/Rxjs/_esm2015/internal/observable/never.js
+ @ ./node_modules/Rxjs/_esm2015/index.js
+ @ ./src/app/Services/buyer.service.ts
+ @ ./src/app/Buyer/buy-product/buy-product.component.ngfactory.js
+ @ ./src/app/app.module.ngfactory.js
+ @ ./src/main.ts
+ @ multi ./src/main.ts
+
+WARNING in ./node_modules/Rxjs/_esm2015/internal/observable/of.js
+There are multiple modules with names that only differ in casing.
+This can lead to unexpected behavior when compiling on a filesystem with other case-semantic.
+Use equal casing. Compare these module identifiers:
+* C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\@angular-devkit\build-optimizer\src\build-optimizer\webpack-loader.js??ref--8-0!C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\Rxjs\_esm2015\internal\observable\of.js
+    Used by 6 module(s), i. e.
+    C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\@angular-devkit\build-optimizer\src\build-optimizer\webpack-loader.js??ref--8-0!C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\Rxjs\_esm2015\index.js
+* C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\@angular-devkit\build-optimizer\src\build-optimizer\webpack-loader.js??ref--8-0!C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\rxjs\_esm2015\internal\observable\of.js
+    Used by 6 module(s), i. e.
+    C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\@angular-devkit\build-optimizer\src\build-optimizer\webpack-loader.js??ref--8-0!C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\rxjs\_esm2015\index.js
+ @ ./node_modules/Rxjs/_esm2015/internal/observable/of.js
+ @ ./node_modules/Rxjs/_esm2015/index.js
+ @ ./src/app/Services/buyer.service.ts
+ @ ./src/app/Buyer/buy-product/buy-product.component.ngfactory.js
+ @ ./src/app/app.module.ngfactory.js
+ @ ./src/main.ts
+ @ multi ./src/main.ts
+
+WARNING in ./node_modules/Rxjs/_esm2015/internal/observable/onErrorResumeNext.js
+There are multiple modules with names that only differ in casing.
+This can lead to unexpected behavior when compiling on a filesystem with other case-semantic.
+Use equal casing. Compare these module identifiers:
+* C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\@angular-devkit\build-optimizer\src\build-optimizer\webpack-loader.js??ref--8-0!C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\Rxjs\_esm2015\internal\observable\onErrorResumeNext.js
+    Used by 2 module(s), i. e.
+    C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\@angular-devkit\build-optimizer\src\build-optimizer\webpack-loader.js??ref--8-0!C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\Rxjs\_esm2015\index.js
+* C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\@angular-devkit\build-optimizer\src\build-optimizer\webpack-loader.js??ref--8-0!C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\rxjs\_esm2015\internal\observable\onErrorResumeNext.js
+    Used by 2 module(s), i. e.
+    C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\@angular-devkit\build-optimizer\src\build-optimizer\webpack-loader.js??ref--8-0!C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\rxjs\_esm2015\index.js
+ @ ./node_modules/Rxjs/_esm2015/internal/observable/onErrorResumeNext.js
+ @ ./node_modules/Rxjs/_esm2015/index.js
+ @ ./src/app/Services/buyer.service.ts
+ @ ./src/app/Buyer/buy-product/buy-product.component.ngfactory.js
+ @ ./src/app/app.module.ngfactory.js
+ @ ./src/main.ts
+ @ multi ./src/main.ts
+
+WARNING in ./node_modules/Rxjs/_esm2015/internal/observable/pairs.js
+There are multiple modules with names that only differ in casing.
+This can lead to unexpected behavior when compiling on a filesystem with other case-semantic.
+Use equal casing. Compare these module identifiers:
+* C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\@angular-devkit\build-optimizer\src\build-optimizer\webpack-loader.js??ref--8-0!C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\Rxjs\_esm2015\internal\observable\pairs.js
+    Used by 2 module(s), i. e.
+    C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\@angular-devkit\build-optimizer\src\build-optimizer\webpack-loader.js??ref--8-0!C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\Rxjs\_esm2015\index.js
+* C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\@angular-devkit\build-optimizer\src\build-optimizer\webpack-loader.js??ref--8-0!C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\rxjs\_esm2015\internal\observable\pairs.js
+    Used by 2 module(s), i. e.
+    C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\@angular-devkit\build-optimizer\src\build-optimizer\webpack-loader.js??ref--8-0!C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\rxjs\_esm2015\index.js
+ @ ./node_modules/Rxjs/_esm2015/internal/observable/pairs.js
+ @ ./node_modules/Rxjs/_esm2015/index.js
+ @ ./src/app/Services/buyer.service.ts
+ @ ./src/app/Buyer/buy-product/buy-product.component.ngfactory.js
+ @ ./src/app/app.module.ngfactory.js
+ @ ./src/main.ts
+ @ multi ./src/main.ts
+
+WARNING in ./node_modules/Rxjs/_esm2015/internal/observable/race.js
+There are multiple modules with names that only differ in casing.
+This can lead to unexpected behavior when compiling on a filesystem with other case-semantic.
+Use equal casing. Compare these module identifiers:
+* C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\@angular-devkit\build-optimizer\src\build-optimizer\webpack-loader.js??ref--8-0!C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\Rxjs\_esm2015\internal\observable\race.js
+    Used by 2 module(s), i. e.
+    C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\@angular-devkit\build-optimizer\src\build-optimizer\webpack-loader.js??ref--8-0!C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\Rxjs\_esm2015\index.js
+* C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\@angular-devkit\build-optimizer\src\build-optimizer\webpack-loader.js??ref--8-0!C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\rxjs\_esm2015\internal\observable\race.js
+    Used by 4 module(s), i. e.
+    C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\@angular-devkit\build-optimizer\src\build-optimizer\webpack-loader.js??ref--8-0!C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\rxjs\_esm2015\index.js
+ @ ./node_modules/Rxjs/_esm2015/internal/observable/race.js
+ @ ./node_modules/Rxjs/_esm2015/index.js
+ @ ./src/app/Services/buyer.service.ts
+ @ ./src/app/Buyer/buy-product/buy-product.component.ngfactory.js
+ @ ./src/app/app.module.ngfactory.js
+ @ ./src/main.ts
+ @ multi ./src/main.ts
+
+WARNING in ./node_modules/Rxjs/_esm2015/internal/observable/range.js
+There are multiple modules with names that only differ in casing.
+This can lead to unexpected behavior when compiling on a filesystem with other case-semantic.
+Use equal casing. Compare these module identifiers:
+* C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\@angular-devkit\build-optimizer\src\build-optimizer\webpack-loader.js??ref--8-0!C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\Rxjs\_esm2015\internal\observable\range.js
+    Used by 2 module(s), i. e.
+    C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\@angular-devkit\build-optimizer\src\build-optimizer\webpack-loader.js??ref--8-0!C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\Rxjs\_esm2015\index.js
+* C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\@angular-devkit\build-optimizer\src\build-optimizer\webpack-loader.js??ref--8-0!C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\rxjs\_esm2015\internal\observable\range.js
+    Used by 2 module(s), i. e.
+    C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\@angular-devkit\build-optimizer\src\build-optimizer\webpack-loader.js??ref--8-0!C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\rxjs\_esm2015\index.js
+ @ ./node_modules/Rxjs/_esm2015/internal/observable/range.js
+ @ ./node_modules/Rxjs/_esm2015/index.js
+ @ ./src/app/Services/buyer.service.ts
+ @ ./src/app/Buyer/buy-product/buy-product.component.ngfactory.js
+ @ ./src/app/app.module.ngfactory.js
+ @ ./src/main.ts
+ @ multi ./src/main.ts
+
+WARNING in ./node_modules/Rxjs/_esm2015/internal/observable/scalar.js
+There are multiple modules with names that only differ in casing.
+This can lead to unexpected behavior when compiling on a filesystem with other case-semantic.
+Use equal casing. Compare these module identifiers:
+* C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\@angular-devkit\build-optimizer\src\build-optimizer\webpack-loader.js??ref--8-0!C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\Rxjs\_esm2015\internal\observable\scalar.js
+    Used by 2 module(s), i. e.
+    C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\@angular-devkit\build-optimizer\src\build-optimizer\webpack-loader.js??ref--8-0!C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\Rxjs\_esm2015\internal\observable\of.js
+* C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\@angular-devkit\build-optimizer\src\build-optimizer\webpack-loader.js??ref--8-0!C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\rxjs\_esm2015\internal\observable\scalar.js
+    Used by 6 module(s), i. e.
+    C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\@angular-devkit\build-optimizer\src\build-optimizer\webpack-loader.js??ref--8-0!C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\rxjs\_esm2015\internal\observable\of.js
+ @ ./node_modules/Rxjs/_esm2015/internal/observable/scalar.js
+ @ ./node_modules/Rxjs/_esm2015/internal/observable/of.js
+ @ ./node_modules/Rxjs/_esm2015/index.js
+ @ ./src/app/Services/buyer.service.ts
+ @ ./src/app/Buyer/buy-product/buy-product.component.ngfactory.js
+ @ ./src/app/app.module.ngfactory.js
+ @ ./src/main.ts
+ @ multi ./src/main.ts
+
+WARNING in ./node_modules/Rxjs/_esm2015/internal/observable/throwError.js
+There are multiple modules with names that only differ in casing.
+This can lead to unexpected behavior when compiling on a filesystem with other case-semantic.
+Use equal casing. Compare these module identifiers:
+* C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\@angular-devkit\build-optimizer\src\build-optimizer\webpack-loader.js??ref--8-0!C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\Rxjs\_esm2015\internal\observable\throwError.js
+    Used by 4 module(s), i. e.
+    C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\@angular-devkit\build-optimizer\src\build-optimizer\webpack-loader.js??ref--8-0!C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\Rxjs\_esm2015\index.js
+* C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\@angular-devkit\build-optimizer\src\build-optimizer\webpack-loader.js??ref--8-0!C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\rxjs\_esm2015\internal\observable\throwError.js
+    Used by 6 module(s), i. e.
+    C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\@angular-devkit\build-optimizer\src\build-optimizer\webpack-loader.js??ref--8-0!C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\rxjs\_esm2015\index.js
+ @ ./node_modules/Rxjs/_esm2015/internal/observable/throwError.js
+ @ ./node_modules/Rxjs/_esm2015/index.js
+ @ ./src/app/Services/buyer.service.ts
+ @ ./src/app/Buyer/buy-product/buy-product.component.ngfactory.js
+ @ ./src/app/app.module.ngfactory.js
+ @ ./src/main.ts
+ @ multi ./src/main.ts
+
+WARNING in ./node_modules/Rxjs/_esm2015/internal/observable/timer.js
+There are multiple modules with names that only differ in casing.
+This can lead to unexpected behavior when compiling on a filesystem with other case-semantic.
+Use equal casing. Compare these module identifiers:
+* C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\@angular-devkit\build-optimizer\src\build-optimizer\webpack-loader.js??ref--8-0!C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\Rxjs\_esm2015\internal\observable\timer.js
+    Used by 2 module(s), i. e.
+    C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\@angular-devkit\build-optimizer\src\build-optimizer\webpack-loader.js??ref--8-0!C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\Rxjs\_esm2015\index.js
+* C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\@angular-devkit\build-optimizer\src\build-optimizer\webpack-loader.js??ref--8-0!C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\rxjs\_esm2015\internal\observable\timer.js
+    Used by 4 module(s), i. e.
+    C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\@angular-devkit\build-optimizer\src\build-optimizer\webpack-loader.js??ref--8-0!C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\rxjs\_esm2015\index.js
+ @ ./node_modules/Rxjs/_esm2015/internal/observable/timer.js
+ @ ./node_modules/Rxjs/_esm2015/index.js
+ @ ./src/app/Services/buyer.service.ts
+ @ ./src/app/Buyer/buy-product/buy-product.component.ngfactory.js
+ @ ./src/app/app.module.ngfactory.js
+ @ ./src/main.ts
+ @ multi ./src/main.ts
+
+WARNING in ./node_modules/Rxjs/_esm2015/internal/observable/using.js
+There are multiple modules with names that only differ in casing.
+This can lead to unexpected behavior when compiling on a filesystem with other case-semantic.
+Use equal casing. Compare these module identifiers:
+* C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\@angular-devkit\build-optimizer\src\build-optimizer\webpack-loader.js??ref--8-0!C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\Rxjs\_esm2015\internal\observable\using.js
+    Used by 2 module(s), i. e.
+    C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\@angular-devkit\build-optimizer\src\build-optimizer\webpack-loader.js??ref--8-0!C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\Rxjs\_esm2015\index.js
+* C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\@angular-devkit\build-optimizer\src\build-optimizer\webpack-loader.js??ref--8-0!C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\rxjs\_esm2015\internal\observable\using.js
+    Used by 2 module(s), i. e.
+    C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\@angular-devkit\build-optimizer\src\build-optimizer\webpack-loader.js??ref--8-0!C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\rxjs\_esm2015\index.js
+ @ ./node_modules/Rxjs/_esm2015/internal/observable/using.js
+ @ ./node_modules/Rxjs/_esm2015/index.js
+ @ ./src/app/Services/buyer.service.ts
+ @ ./src/app/Buyer/buy-product/buy-product.component.ngfactory.js
+ @ ./src/app/app.module.ngfactory.js
+ @ ./src/main.ts
+ @ multi ./src/main.ts
+
+WARNING in ./node_modules/Rxjs/_esm2015/internal/observable/zip.js
+There are multiple modules with names that only differ in casing.
+This can lead to unexpected behavior when compiling on a filesystem with other case-semantic.
+Use equal casing. Compare these module identifiers:
+* C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\@angular-devkit\build-optimizer\src\build-optimizer\webpack-loader.js??ref--8-0!C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\Rxjs\_esm2015\internal\observable\zip.js
+    Used by 2 module(s), i. e.
+    C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\@angular-devkit\build-optimizer\src\build-optimizer\webpack-loader.js??ref--8-0!C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\Rxjs\_esm2015\index.js
+* C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\@angular-devkit\build-optimizer\src\build-optimizer\webpack-loader.js??ref--8-0!C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\rxjs\_esm2015\internal\observable\zip.js
+    Used by 6 module(s), i. e.
+    C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\@angular-devkit\build-optimizer\src\build-optimizer\webpack-loader.js??ref--8-0!C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\rxjs\_esm2015\index.js
+ @ ./node_modules/Rxjs/_esm2015/internal/observable/zip.js
+ @ ./node_modules/Rxjs/_esm2015/index.js
+ @ ./src/app/Services/buyer.service.ts
+ @ ./src/app/Buyer/buy-product/buy-product.component.ngfactory.js
+ @ ./src/app/app.module.ngfactory.js
+ @ ./src/main.ts
+ @ multi ./src/main.ts
+
+WARNING in ./node_modules/Rxjs/_esm2015/internal/operators/concatAll.js
+There are multiple modules with names that only differ in casing.
+This can lead to unexpected behavior when compiling on a filesystem with other case-semantic.
+Use equal casing. Compare these module identifiers:
+* C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\@angular-devkit\build-optimizer\src\build-optimizer\webpack-loader.js??ref--8-0!C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\Rxjs\_esm2015\internal\operators\concatAll.js
+    Used by 2 module(s), i. e.
+    C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\@angular-devkit\build-optimizer\src\build-optimizer\webpack-loader.js??ref--8-0!C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\Rxjs\_esm2015\internal\observable\concat.js
+* C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\@angular-devkit\build-optimizer\src\build-optimizer\webpack-loader.js??ref--8-0!C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\rxjs\_esm2015\internal\operators\concatAll.js
+    Used by 4 module(s), i. e.
+    C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\@angular-devkit\build-optimizer\src\build-optimizer\webpack-loader.js??ref--8-0!C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\rxjs\_esm2015\operators\index.js
+ @ ./node_modules/Rxjs/_esm2015/internal/operators/concatAll.js
+ @ ./node_modules/Rxjs/_esm2015/internal/observable/concat.js
+ @ ./node_modules/Rxjs/_esm2015/index.js
+ @ ./src/app/Services/buyer.service.ts
+ @ ./src/app/Buyer/buy-product/buy-product.component.ngfactory.js
+ @ ./src/app/app.module.ngfactory.js
+ @ ./src/main.ts
+ @ multi ./src/main.ts
+
+WARNING in ./node_modules/Rxjs/_esm2015/internal/operators/groupBy.js
+There are multiple modules with names that only differ in casing.
+This can lead to unexpected behavior when compiling on a filesystem with other case-semantic.
+Use equal casing. Compare these module identifiers:
+* C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\@angular-devkit\build-optimizer\src\build-optimizer\webpack-loader.js??ref--8-0!C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\Rxjs\_esm2015\internal\operators\groupBy.js
+    Used by 2 module(s), i. e.
+    C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\@angular-devkit\build-optimizer\src\build-optimizer\webpack-loader.js??ref--8-0!C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\Rxjs\_esm2015\index.js
+* C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\@angular-devkit\build-optimizer\src\build-optimizer\webpack-loader.js??ref--8-0!C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\rxjs\_esm2015\internal\operators\groupBy.js
+    Used by 4 module(s), i. e.
+    C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\@angular-devkit\build-optimizer\src\build-optimizer\webpack-loader.js??ref--8-0!C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\rxjs\_esm2015\index.js
+ @ ./node_modules/Rxjs/_esm2015/internal/operators/groupBy.js
+ @ ./node_modules/Rxjs/_esm2015/index.js
+ @ ./src/app/Services/buyer.service.ts
+ @ ./src/app/Buyer/buy-product/buy-product.component.ngfactory.js
+ @ ./src/app/app.module.ngfactory.js
+ @ ./src/main.ts
+ @ multi ./src/main.ts
+
+WARNING in ./node_modules/Rxjs/_esm2015/internal/operators/map.js
+There are multiple modules with names that only differ in casing.
+This can lead to unexpected behavior when compiling on a filesystem with other case-semantic.
+Use equal casing. Compare these module identifiers:
+* C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\@angular-devkit\build-optimizer\src\build-optimizer\webpack-loader.js??ref--8-0!C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\Rxjs\_esm2015\internal\operators\map.js
+    Used by 12 module(s), i. e.
+    C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\@angular-devkit\build-optimizer\src\build-optimizer\webpack-loader.js??ref--8-0!C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\Rxjs\_esm2015\internal\observable\fromEventPattern.js
+* C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\@angular-devkit\build-optimizer\src\build-optimizer\webpack-loader.js??ref--8-0!C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\rxjs\_esm2015\internal\operators\map.js
+    Used by 24 module(s), i. e.
+    C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\@angular-devkit\build-optimizer\src\build-optimizer\webpack-loader.js??ref--8-0!C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\rxjs\_esm2015\operators\index.js
+ @ ./node_modules/Rxjs/_esm2015/internal/operators/map.js
+ @ ./node_modules/Rxjs/_esm2015/internal/observable/fromEventPattern.js
+ @ ./node_modules/Rxjs/_esm2015/index.js
+ @ ./src/app/Services/buyer.service.ts
+ @ ./src/app/Buyer/buy-product/buy-product.component.ngfactory.js
+ @ ./src/app/app.module.ngfactory.js
+ @ ./src/main.ts
+ @ multi ./src/main.ts
+
+WARNING in ./node_modules/Rxjs/_esm2015/internal/operators/mergeAll.js
+There are multiple modules with names that only differ in casing.
+This can lead to unexpected behavior when compiling on a filesystem with other case-semantic.
+Use equal casing. Compare these module identifiers:
+* C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\@angular-devkit\build-optimizer\src\build-optimizer\webpack-loader.js??ref--8-0!C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\Rxjs\_esm2015\internal\operators\mergeAll.js
+    Used by 4 module(s), i. e.
+    C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\@angular-devkit\build-optimizer\src\build-optimizer\webpack-loader.js??ref--8-0!C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\Rxjs\_esm2015\internal\observable\merge.js
+* C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\@angular-devkit\build-optimizer\src\build-optimizer\webpack-loader.js??ref--8-0!C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\rxjs\_esm2015\internal\operators\mergeAll.js
+    Used by 6 module(s), i. e.
+    C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\@angular-devkit\build-optimizer\src\build-optimizer\webpack-loader.js??ref--8-0!C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\rxjs\_esm2015\internal\observable\merge.js
+ @ ./node_modules/Rxjs/_esm2015/internal/operators/mergeAll.js
+ @ ./node_modules/Rxjs/_esm2015/internal/observable/merge.js
+ @ ./node_modules/Rxjs/_esm2015/index.js
+ @ ./src/app/Services/buyer.service.ts
+ @ ./src/app/Buyer/buy-product/buy-product.component.ngfactory.js
+ @ ./src/app/app.module.ngfactory.js
+ @ ./src/main.ts
+ @ multi ./src/main.ts
+
+WARNING in ./node_modules/Rxjs/_esm2015/internal/operators/mergeMap.js
+There are multiple modules with names that only differ in casing.
+This can lead to unexpected behavior when compiling on a filesystem with other case-semantic.
+Use equal casing. Compare these module identifiers:
+* C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\@angular-devkit\build-optimizer\src\build-optimizer\webpack-loader.js??ref--8-0!C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\Rxjs\_esm2015\internal\operators\mergeMap.js
+    Used by 2 module(s), i. e.
+    C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\@angular-devkit\build-optimizer\src\build-optimizer\webpack-loader.js??ref--8-0!C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\Rxjs\_esm2015\internal\operators\mergeAll.js
+* C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\@angular-devkit\build-optimizer\src\build-optimizer\webpack-loader.js??ref--8-0!C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\rxjs\_esm2015\internal\operators\mergeMap.js
+    Used by 11 module(s), i. e.
+    C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\@angular-devkit\build-optimizer\src\build-optimizer\webpack-loader.js??ref--8-0!C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\rxjs\_esm2015\internal\operators\concatMap.js
+ @ ./node_modules/Rxjs/_esm2015/internal/operators/mergeMap.js
+ @ ./node_modules/Rxjs/_esm2015/internal/operators/mergeAll.js
+ @ ./node_modules/Rxjs/_esm2015/internal/observable/merge.js
+ @ ./node_modules/Rxjs/_esm2015/index.js
+ @ ./src/app/Services/buyer.service.ts
+ @ ./src/app/Buyer/buy-product/buy-product.component.ngfactory.js
+ @ ./src/app/app.module.ngfactory.js
+ @ ./src/main.ts
+ @ multi ./src/main.ts
+
+WARNING in ./node_modules/Rxjs/_esm2015/internal/operators/observeOn.js
+There are multiple modules with names that only differ in casing.
+This can lead to unexpected behavior when compiling on a filesystem with other case-semantic.
+Use equal casing. Compare these module identifiers:
+* C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\@angular-devkit\build-optimizer\src\build-optimizer\webpack-loader.js??ref--8-0!C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\Rxjs\_esm2015\internal\operators\observeOn.js
+    Used by 2 module(s), i. e.
+    C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\@angular-devkit\build-optimizer\src\build-optimizer\webpack-loader.js??ref--8-0!C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\Rxjs\_esm2015\internal\ReplaySubject.js
+* C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\@angular-devkit\build-optimizer\src\build-optimizer\webpack-loader.js??ref--8-0!C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\rxjs\_esm2015\internal\operators\observeOn.js
+    Used by 4 module(s), i. e.
+    C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\@angular-devkit\build-optimizer\src\build-optimizer\webpack-loader.js??ref--8-0!C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\rxjs\_esm2015\internal\ReplaySubject.js
+ @ ./node_modules/Rxjs/_esm2015/internal/operators/observeOn.js
+ @ ./node_modules/Rxjs/_esm2015/internal/ReplaySubject.js
+ @ ./node_modules/Rxjs/_esm2015/index.js
+ @ ./src/app/Services/buyer.service.ts
+ @ ./src/app/Buyer/buy-product/buy-product.component.ngfactory.js
+ @ ./src/app/app.module.ngfactory.js
+ @ ./src/main.ts
+ @ multi ./src/main.ts
+
+WARNING in ./node_modules/Rxjs/_esm2015/internal/operators/refCount.js
+There are multiple modules with names that only differ in casing.
+This can lead to unexpected behavior when compiling on a filesystem with other case-semantic.
+Use equal casing. Compare these module identifiers:
+* C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\@angular-devkit\build-optimizer\src\build-optimizer\webpack-loader.js??ref--8-0!C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\Rxjs\_esm2015\internal\operators\refCount.js
+    Used by 2 module(s), i. e.
+    C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\@angular-devkit\build-optimizer\src\build-optimizer\webpack-loader.js??ref--8-0!C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\Rxjs\_esm2015\internal\observable\ConnectableObservable.js
+* C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\@angular-devkit\build-optimizer\src\build-optimizer\webpack-loader.js??ref--8-0!C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\rxjs\_esm2015\internal\operators\refCount.js
+    Used by 6 module(s), i. e.
+    C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\@angular-devkit\build-optimizer\src\build-optimizer\webpack-loader.js??ref--8-0!C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\rxjs\_esm2015\internal\observable\ConnectableObservable.js
+ @ ./node_modules/Rxjs/_esm2015/internal/operators/refCount.js
+ @ ./node_modules/Rxjs/_esm2015/internal/observable/ConnectableObservable.js
+ @ ./node_modules/Rxjs/_esm2015/index.js
+ @ ./src/app/Services/buyer.service.ts
+ @ ./src/app/Buyer/buy-product/buy-product.component.ngfactory.js
+ @ ./src/app/app.module.ngfactory.js
+ @ ./src/main.ts
+ @ multi ./src/main.ts
+
+WARNING in ./node_modules/Rxjs/_esm2015/internal/scheduler/Action.js
+There are multiple modules with names that only differ in casing.
+This can lead to unexpected behavior when compiling on a filesystem with other case-semantic.
+Use equal casing. Compare these module identifiers:
+* C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\@angular-devkit\build-optimizer\src\build-optimizer\webpack-loader.js??ref--8-0!C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\Rxjs\_esm2015\internal\scheduler\Action.js
+    Used by 2 module(s), i. e.
+    C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\@angular-devkit\build-optimizer\src\build-optimizer\webpack-loader.js??ref--8-0!C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\Rxjs\_esm2015\internal\scheduler\AsyncAction.js
+* C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\@angular-devkit\build-optimizer\src\build-optimizer\webpack-loader.js??ref--8-0!C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\rxjs\_esm2015\internal\scheduler\Action.js
+    Used by 2 module(s), i. e.
+    C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\@angular-devkit\build-optimizer\src\build-optimizer\webpack-loader.js??ref--8-0!C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\rxjs\_esm2015\internal\scheduler\AsyncAction.js
+ @ ./node_modules/Rxjs/_esm2015/internal/scheduler/Action.js
+ @ ./node_modules/Rxjs/_esm2015/internal/scheduler/AsyncAction.js
+ @ ./node_modules/Rxjs/_esm2015/internal/scheduler/VirtualTimeScheduler.js
+ @ ./node_modules/Rxjs/_esm2015/index.js
+ @ ./src/app/Services/buyer.service.ts
+ @ ./src/app/Buyer/buy-product/buy-product.component.ngfactory.js
+ @ ./src/app/app.module.ngfactory.js
+ @ ./src/main.ts
+ @ multi ./src/main.ts
+
+WARNING in ./node_modules/Rxjs/_esm2015/internal/scheduler/AnimationFrameAction.js
+There are multiple modules with names that only differ in casing.
+This can lead to unexpected behavior when compiling on a filesystem with other case-semantic.
+Use equal casing. Compare these module identifiers:
+* C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\@angular-devkit\build-optimizer\src\build-optimizer\webpack-loader.js??ref--8-0!C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\Rxjs\_esm2015\internal\scheduler\AnimationFrameAction.js
+    Used by 2 module(s), i. e.
+    C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\@angular-devkit\build-optimizer\src\build-optimizer\webpack-loader.js??ref--8-0!C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\Rxjs\_esm2015\internal\scheduler\animationFrame.js
+* C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\@angular-devkit\build-optimizer\src\build-optimizer\webpack-loader.js??ref--8-0!C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\rxjs\_esm2015\internal\scheduler\AnimationFrameAction.js
+    Used by 2 module(s), i. e.
+    C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\@angular-devkit\build-optimizer\src\build-optimizer\webpack-loader.js??ref--8-0!C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\rxjs\_esm2015\internal\scheduler\animationFrame.js
+ @ ./node_modules/Rxjs/_esm2015/internal/scheduler/AnimationFrameAction.js
+ @ ./node_modules/Rxjs/_esm2015/internal/scheduler/animationFrame.js
+ @ ./node_modules/Rxjs/_esm2015/index.js
+ @ ./src/app/Services/buyer.service.ts
+ @ ./src/app/Buyer/buy-product/buy-product.component.ngfactory.js
+ @ ./src/app/app.module.ngfactory.js
+ @ ./src/main.ts
+ @ multi ./src/main.ts
+
+WARNING in ./node_modules/Rxjs/_esm2015/internal/scheduler/AnimationFrameScheduler.js
+There are multiple modules with names that only differ in casing.
+This can lead to unexpected behavior when compiling on a filesystem with other case-semantic.
+Use equal casing. Compare these module identifiers:
+* C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\@angular-devkit\build-optimizer\src\build-optimizer\webpack-loader.js??ref--8-0!C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\Rxjs\_esm2015\internal\scheduler\AnimationFrameScheduler.js
+    Used by 2 module(s), i. e.
+    C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\@angular-devkit\build-optimizer\src\build-optimizer\webpack-loader.js??ref--8-0!C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\Rxjs\_esm2015\internal\scheduler\animationFrame.js
+* C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\@angular-devkit\build-optimizer\src\build-optimizer\webpack-loader.js??ref--8-0!C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\rxjs\_esm2015\internal\scheduler\AnimationFrameScheduler.js
+    Used by 2 module(s), i. e.
+    C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\@angular-devkit\build-optimizer\src\build-optimizer\webpack-loader.js??ref--8-0!C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\rxjs\_esm2015\internal\scheduler\animationFrame.js
+ @ ./node_modules/Rxjs/_esm2015/internal/scheduler/AnimationFrameScheduler.js
+ @ ./node_modules/Rxjs/_esm2015/internal/scheduler/animationFrame.js
+ @ ./node_modules/Rxjs/_esm2015/index.js
+ @ ./src/app/Services/buyer.service.ts
+ @ ./src/app/Buyer/buy-product/buy-product.component.ngfactory.js
+ @ ./src/app/app.module.ngfactory.js
+ @ ./src/main.ts
+ @ multi ./src/main.ts
+
+WARNING in ./node_modules/Rxjs/_esm2015/internal/scheduler/AsapAction.js
+There are multiple modules with names that only differ in casing.
+This can lead to unexpected behavior when compiling on a filesystem with other case-semantic.
+Use equal casing. Compare these module identifiers:
+* C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\@angular-devkit\build-optimizer\src\build-optimizer\webpack-loader.js??ref--8-0!C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\Rxjs\_esm2015\internal\scheduler\AsapAction.js
+    Used by 2 module(s), i. e.
+    C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\@angular-devkit\build-optimizer\src\build-optimizer\webpack-loader.js??ref--8-0!C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\Rxjs\_esm2015\internal\scheduler\asap.js
+* C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\@angular-devkit\build-optimizer\src\build-optimizer\webpack-loader.js??ref--8-0!C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\rxjs\_esm2015\internal\scheduler\AsapAction.js
+    Used by 2 module(s), i. e.
+    C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\@angular-devkit\build-optimizer\src\build-optimizer\webpack-loader.js??ref--8-0!C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\rxjs\_esm2015\internal\scheduler\asap.js
+ @ ./node_modules/Rxjs/_esm2015/internal/scheduler/AsapAction.js
+ @ ./node_modules/Rxjs/_esm2015/internal/scheduler/asap.js
+ @ ./node_modules/Rxjs/_esm2015/index.js
+ @ ./src/app/Services/buyer.service.ts
+ @ ./src/app/Buyer/buy-product/buy-product.component.ngfactory.js
+ @ ./src/app/app.module.ngfactory.js
+ @ ./src/main.ts
+ @ multi ./src/main.ts
+
+WARNING in ./node_modules/Rxjs/_esm2015/internal/scheduler/AsapScheduler.js
+There are multiple modules with names that only differ in casing.
+This can lead to unexpected behavior when compiling on a filesystem with other case-semantic.
+Use equal casing. Compare these module identifiers:
+* C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\@angular-devkit\build-optimizer\src\build-optimizer\webpack-loader.js??ref--8-0!C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\Rxjs\_esm2015\internal\scheduler\AsapScheduler.js
+    Used by 2 module(s), i. e.
+    C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\@angular-devkit\build-optimizer\src\build-optimizer\webpack-loader.js??ref--8-0!C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\Rxjs\_esm2015\internal\scheduler\asap.js
+* C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\@angular-devkit\build-optimizer\src\build-optimizer\webpack-loader.js??ref--8-0!C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\rxjs\_esm2015\internal\scheduler\AsapScheduler.js
+    Used by 2 module(s), i. e.
+    C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\@angular-devkit\build-optimizer\src\build-optimizer\webpack-loader.js??ref--8-0!C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\rxjs\_esm2015\internal\scheduler\asap.js
+ @ ./node_modules/Rxjs/_esm2015/internal/scheduler/AsapScheduler.js
+ @ ./node_modules/Rxjs/_esm2015/internal/scheduler/asap.js
+ @ ./node_modules/Rxjs/_esm2015/index.js
+ @ ./src/app/Services/buyer.service.ts
+ @ ./src/app/Buyer/buy-product/buy-product.component.ngfactory.js
+ @ ./src/app/app.module.ngfactory.js
+ @ ./src/main.ts
+ @ multi ./src/main.ts
+
+WARNING in ./node_modules/Rxjs/_esm2015/internal/scheduler/AsyncAction.js
+There are multiple modules with names that only differ in casing.
+This can lead to unexpected behavior when compiling on a filesystem with other case-semantic.
+Use equal casing. Compare these module identifiers:
+* C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\@angular-devkit\build-optimizer\src\build-optimizer\webpack-loader.js??ref--8-0!C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\Rxjs\_esm2015\internal\scheduler\AsyncAction.js
+    Used by 10 module(s), i. e.
+    C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\@angular-devkit\build-optimizer\src\build-optimizer\webpack-loader.js??ref--8-0!C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\Rxjs\_esm2015\internal\scheduler\VirtualTimeScheduler.js
+* C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\@angular-devkit\build-optimizer\src\build-optimizer\webpack-loader.js??ref--8-0!C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\rxjs\_esm2015\internal\scheduler\AsyncAction.js
+    Used by 10 module(s), i. e.
+    C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\@angular-devkit\build-optimizer\src\build-optimizer\webpack-loader.js??ref--8-0!C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\rxjs\_esm2015\internal\scheduler\async.js
+ @ ./node_modules/Rxjs/_esm2015/internal/scheduler/AsyncAction.js
+ @ ./node_modules/Rxjs/_esm2015/internal/scheduler/VirtualTimeScheduler.js
+ @ ./node_modules/Rxjs/_esm2015/index.js
+ @ ./src/app/Services/buyer.service.ts
+ @ ./src/app/Buyer/buy-product/buy-product.component.ngfactory.js
+ @ ./src/app/app.module.ngfactory.js
+ @ ./src/main.ts
+ @ multi ./src/main.ts
+
+WARNING in ./node_modules/Rxjs/_esm2015/internal/scheduler/AsyncScheduler.js
+There are multiple modules with names that only differ in casing.
+This can lead to unexpected behavior when compiling on a filesystem with other case-semantic.
+Use equal casing. Compare these module identifiers:
+* C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\@angular-devkit\build-optimizer\src\build-optimizer\webpack-loader.js??ref--8-0!C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\Rxjs\_esm2015\internal\scheduler\AsyncScheduler.js
+    Used by 10 module(s), i. e.
+    C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\@angular-devkit\build-optimizer\src\build-optimizer\webpack-loader.js??ref--8-0!C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\Rxjs\_esm2015\internal\scheduler\async.js
+* C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\@angular-devkit\build-optimizer\src\build-optimizer\webpack-loader.js??ref--8-0!C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\rxjs\_esm2015\internal\scheduler\AsyncScheduler.js
+    Used by 10 module(s), i. e.
+    C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\@angular-devkit\build-optimizer\src\build-optimizer\webpack-loader.js??ref--8-0!C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\rxjs\_esm2015\internal\scheduler\VirtualTimeScheduler.js
+ @ ./node_modules/Rxjs/_esm2015/internal/scheduler/AsyncScheduler.js
+ @ ./node_modules/Rxjs/_esm2015/internal/scheduler/async.js
+ @ ./node_modules/Rxjs/_esm2015/index.js
+ @ ./src/app/Services/buyer.service.ts
+ @ ./src/app/Buyer/buy-product/buy-product.component.ngfactory.js
+ @ ./src/app/app.module.ngfactory.js
+ @ ./src/main.ts
+ @ multi ./src/main.ts
+
+WARNING in ./node_modules/Rxjs/_esm2015/internal/scheduler/QueueAction.js
+There are multiple modules with names that only differ in casing.
+This can lead to unexpected behavior when compiling on a filesystem with other case-semantic.
+Use equal casing. Compare these module identifiers:
+* C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\@angular-devkit\build-optimizer\src\build-optimizer\webpack-loader.js??ref--8-0!C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\Rxjs\_esm2015\internal\scheduler\QueueAction.js
+    Used by 2 module(s), i. e.
+    C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\@angular-devkit\build-optimizer\src\build-optimizer\webpack-loader.js??ref--8-0!C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\Rxjs\_esm2015\internal\scheduler\queue.js
+* C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\@angular-devkit\build-optimizer\src\build-optimizer\webpack-loader.js??ref--8-0!C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\rxjs\_esm2015\internal\scheduler\QueueAction.js
+    Used by 2 module(s), i. e.
+    C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\@angular-devkit\build-optimizer\src\build-optimizer\webpack-loader.js??ref--8-0!C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\rxjs\_esm2015\internal\scheduler\queue.js
+ @ ./node_modules/Rxjs/_esm2015/internal/scheduler/QueueAction.js
+ @ ./node_modules/Rxjs/_esm2015/internal/scheduler/queue.js
+ @ ./node_modules/Rxjs/_esm2015/index.js
+ @ ./src/app/Services/buyer.service.ts
+ @ ./src/app/Buyer/buy-product/buy-product.component.ngfactory.js
+ @ ./src/app/app.module.ngfactory.js
+ @ ./src/main.ts
+ @ multi ./src/main.ts
+
+WARNING in ./node_modules/Rxjs/_esm2015/internal/scheduler/QueueScheduler.js
+There are multiple modules with names that only differ in casing.
+This can lead to unexpected behavior when compiling on a filesystem with other case-semantic.
+Use equal casing. Compare these module identifiers:
+* C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\@angular-devkit\build-optimizer\src\build-optimizer\webpack-loader.js??ref--8-0!C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\Rxjs\_esm2015\internal\scheduler\QueueScheduler.js
+    Used by 2 module(s), i. e.
+    C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\@angular-devkit\build-optimizer\src\build-optimizer\webpack-loader.js??ref--8-0!C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\Rxjs\_esm2015\internal\scheduler\queue.js
+* C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\@angular-devkit\build-optimizer\src\build-optimizer\webpack-loader.js??ref--8-0!C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\rxjs\_esm2015\internal\scheduler\QueueScheduler.js
+    Used by 2 module(s), i. e.
+    C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\@angular-devkit\build-optimizer\src\build-optimizer\webpack-loader.js??ref--8-0!C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\rxjs\_esm2015\internal\scheduler\queue.js
+ @ ./node_modules/Rxjs/_esm2015/internal/scheduler/QueueScheduler.js
+ @ ./node_modules/Rxjs/_esm2015/internal/scheduler/queue.js
+ @ ./node_modules/Rxjs/_esm2015/index.js
+ @ ./src/app/Services/buyer.service.ts
+ @ ./src/app/Buyer/buy-product/buy-product.component.ngfactory.js
+ @ ./src/app/app.module.ngfactory.js
+ @ ./src/main.ts
+ @ multi ./src/main.ts
+
+WARNING in ./node_modules/Rxjs/_esm2015/internal/scheduler/VirtualTimeScheduler.js
+There are multiple modules with names that only differ in casing.
+This can lead to unexpected behavior when compiling on a filesystem with other case-semantic.
+Use equal casing. Compare these module identifiers:
+* C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\@angular-devkit\build-optimizer\src\build-optimizer\webpack-loader.js??ref--8-0!C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\Rxjs\_esm2015\internal\scheduler\VirtualTimeScheduler.js
+    Used by 3 module(s), i. e.
+    C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\@angular-devkit\build-optimizer\src\build-optimizer\webpack-loader.js??ref--8-0!C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\Rxjs\_esm2015\index.js
+* C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\@angular-devkit\build-optimizer\src\build-optimizer\webpack-loader.js??ref--8-0!C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\rxjs\_esm2015\internal\scheduler\VirtualTimeScheduler.js
+    Used by 3 module(s), i. e.
+    C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\@angular-devkit\build-optimizer\src\build-optimizer\webpack-loader.js??ref--8-0!C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\rxjs\_esm2015\index.js
+ @ ./node_modules/Rxjs/_esm2015/internal/scheduler/VirtualTimeScheduler.js
+ @ ./node_modules/Rxjs/_esm2015/index.js
+ @ ./src/app/Services/buyer.service.ts
+ @ ./src/app/Buyer/buy-product/buy-product.component.ngfactory.js
+ @ ./src/app/app.module.ngfactory.js
+ @ ./src/main.ts
+ @ multi ./src/main.ts
+
+WARNING in ./node_modules/Rxjs/_esm2015/internal/scheduler/animationFrame.js
+There are multiple modules with names that only differ in casing.
+This can lead to unexpected behavior when compiling on a filesystem with other case-semantic.
+Use equal casing. Compare these module identifiers:
+* C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\@angular-devkit\build-optimizer\src\build-optimizer\webpack-loader.js??ref--8-0!C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\Rxjs\_esm2015\internal\scheduler\animationFrame.js
+    Used by 2 module(s), i. e.
+    C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\@angular-devkit\build-optimizer\src\build-optimizer\webpack-loader.js??ref--8-0!C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\Rxjs\_esm2015\index.js
+* C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\@angular-devkit\build-optimizer\src\build-optimizer\webpack-loader.js??ref--8-0!C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\rxjs\_esm2015\internal\scheduler\animationFrame.js
+    Used by 2 module(s), i. e.
+    C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\@angular-devkit\build-optimizer\src\build-optimizer\webpack-loader.js??ref--8-0!C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\rxjs\_esm2015\index.js
+ @ ./node_modules/Rxjs/_esm2015/internal/scheduler/animationFrame.js
+ @ ./node_modules/Rxjs/_esm2015/index.js
+ @ ./src/app/Services/buyer.service.ts
+ @ ./src/app/Buyer/buy-product/buy-product.component.ngfactory.js
+ @ ./src/app/app.module.ngfactory.js
+ @ ./src/main.ts
+ @ multi ./src/main.ts
+
+WARNING in ./node_modules/Rxjs/_esm2015/internal/scheduler/asap.js
+There are multiple modules with names that only differ in casing.
+This can lead to unexpected behavior when compiling on a filesystem with other case-semantic.
+Use equal casing. Compare these module identifiers:
+* C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\@angular-devkit\build-optimizer\src\build-optimizer\webpack-loader.js??ref--8-0!C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\Rxjs\_esm2015\internal\scheduler\asap.js
+    Used by 2 module(s), i. e.
+    C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\@angular-devkit\build-optimizer\src\build-optimizer\webpack-loader.js??ref--8-0!C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\Rxjs\_esm2015\index.js
+* C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\@angular-devkit\build-optimizer\src\build-optimizer\webpack-loader.js??ref--8-0!C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\rxjs\_esm2015\internal\scheduler\asap.js
+    Used by 6 module(s), i. e.
+    C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\@angular-devkit\build-optimizer\src\build-optimizer\webpack-loader.js??ref--8-0!C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\rxjs\_esm2015\index.js
+ @ ./node_modules/Rxjs/_esm2015/internal/scheduler/asap.js
+ @ ./node_modules/Rxjs/_esm2015/index.js
+ @ ./src/app/Services/buyer.service.ts
+ @ ./src/app/Buyer/buy-product/buy-product.component.ngfactory.js
+ @ ./src/app/app.module.ngfactory.js
+ @ ./src/main.ts
+ @ multi ./src/main.ts
+
+WARNING in ./node_modules/Rxjs/_esm2015/internal/scheduler/async.js
+There are multiple modules with names that only differ in casing.
+This can lead to unexpected behavior when compiling on a filesystem with other case-semantic.
+Use equal casing. Compare these module identifiers:
+* C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\@angular-devkit\build-optimizer\src\build-optimizer\webpack-loader.js??ref--8-0!C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\Rxjs\_esm2015\internal\scheduler\async.js
+    Used by 7 module(s), i. e.
+    C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\@angular-devkit\build-optimizer\src\build-optimizer\webpack-loader.js??ref--8-0!C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\Rxjs\_esm2015\index.js
+* C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\@angular-devkit\build-optimizer\src\build-optimizer\webpack-loader.js??ref--8-0!C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\rxjs\_esm2015\internal\scheduler\async.js
+    Used by 29 module(s), i. e.
+    C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\@angular-devkit\build-optimizer\src\build-optimizer\webpack-loader.js??ref--8-0!C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\rxjs\_esm2015\index.js
+ @ ./node_modules/Rxjs/_esm2015/internal/scheduler/async.js
+ @ ./node_modules/Rxjs/_esm2015/index.js
+ @ ./src/app/Services/buyer.service.ts
+ @ ./src/app/Buyer/buy-product/buy-product.component.ngfactory.js
+ @ ./src/app/app.module.ngfactory.js
+ @ ./src/main.ts
+ @ multi ./src/main.ts
+
+WARNING in ./node_modules/Rxjs/_esm2015/internal/scheduler/queue.js
+There are multiple modules with names that only differ in casing.
+This can lead to unexpected behavior when compiling on a filesystem with other case-semantic.
+Use equal casing. Compare these module identifiers:
+* C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\@angular-devkit\build-optimizer\src\build-optimizer\webpack-loader.js??ref--8-0!C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\Rxjs\_esm2015\internal\scheduler\queue.js
+    Used by 4 module(s), i. e.
+    C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\@angular-devkit\build-optimizer\src\build-optimizer\webpack-loader.js??ref--8-0!C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\Rxjs\_esm2015\index.js
+* C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\@angular-devkit\build-optimizer\src\build-optimizer\webpack-loader.js??ref--8-0!C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\rxjs\_esm2015\internal\scheduler\queue.js
+    Used by 4 module(s), i. e.
+    C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\@angular-devkit\build-optimizer\src\build-optimizer\webpack-loader.js??ref--8-0!C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\rxjs\_esm2015\index.js
+ @ ./node_modules/Rxjs/_esm2015/internal/scheduler/queue.js
+ @ ./node_modules/Rxjs/_esm2015/index.js
+ @ ./src/app/Services/buyer.service.ts
+ @ ./src/app/Buyer/buy-product/buy-product.component.ngfactory.js
+ @ ./src/app/app.module.ngfactory.js
+ @ ./src/main.ts
+ @ multi ./src/main.ts
+
+WARNING in ./node_modules/Rxjs/_esm2015/internal/symbol/iterator.js
+There are multiple modules with names that only differ in casing.
+This can lead to unexpected behavior when compiling on a filesystem with other case-semantic.
+Use equal casing. Compare these module identifiers:
+* C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\@angular-devkit\build-optimizer\src\build-optimizer\webpack-loader.js??ref--8-0!C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\Rxjs\_esm2015\internal\symbol\iterator.js
+    Used by 13 module(s), i. e.
+    C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\@angular-devkit\build-optimizer\src\build-optimizer\webpack-loader.js??ref--8-0!C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\Rxjs\_esm2015\internal\observable\zip.js
+* C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\@angular-devkit\build-optimizer\src\build-optimizer\webpack-loader.js??ref--8-0!C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\rxjs\_esm2015\internal\symbol\iterator.js
+    Used by 13 module(s), i. e.
+    C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\@angular-devkit\build-optimizer\src\build-optimizer\webpack-loader.js??ref--8-0!C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\rxjs\_esm2015\internal\observable\zip.js
+ @ ./node_modules/Rxjs/_esm2015/internal/symbol/iterator.js
+ @ ./node_modules/Rxjs/_esm2015/internal/observable/zip.js
+ @ ./node_modules/Rxjs/_esm2015/index.js
+ @ ./src/app/Services/buyer.service.ts
+ @ ./src/app/Buyer/buy-product/buy-product.component.ngfactory.js
+ @ ./src/app/app.module.ngfactory.js
+ @ ./src/main.ts
+ @ multi ./src/main.ts
+
+WARNING in ./node_modules/Rxjs/_esm2015/internal/symbol/observable.js
+There are multiple modules with names that only differ in casing.
+This can lead to unexpected behavior when compiling on a filesystem with other case-semantic.
+Use equal casing. Compare these module identifiers:
+* C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\@angular-devkit\build-optimizer\src\build-optimizer\webpack-loader.js??ref--8-0!C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\Rxjs\_esm2015\internal\symbol\observable.js
+    Used by 12 module(s), i. e.
+    C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\@angular-devkit\build-optimizer\src\build-optimizer\webpack-loader.js??ref--8-0!C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\Rxjs\_esm2015\index.js
+* C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\@angular-devkit\build-optimizer\src\build-optimizer\webpack-loader.js??ref--8-0!C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\rxjs\_esm2015\internal\symbol\observable.js
+    Used by 12 module(s), i. e.
+    C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\@angular-devkit\build-optimizer\src\build-optimizer\webpack-loader.js??ref--8-0!C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\rxjs\_esm2015\index.js
+ @ ./node_modules/Rxjs/_esm2015/internal/symbol/observable.js
+ @ ./node_modules/Rxjs/_esm2015/index.js
+ @ ./src/app/Services/buyer.service.ts
+ @ ./src/app/Buyer/buy-product/buy-product.component.ngfactory.js
+ @ ./src/app/app.module.ngfactory.js
+ @ ./src/main.ts
+ @ multi ./src/main.ts
+
+WARNING in ./node_modules/Rxjs/_esm2015/internal/symbol/rxSubscriber.js
+There are multiple modules with names that only differ in casing.
+This can lead to unexpected behavior when compiling on a filesystem with other case-semantic.
+Use equal casing. Compare these module identifiers:
+* C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\@angular-devkit\build-optimizer\src\build-optimizer\webpack-loader.js??ref--8-0!C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\Rxjs\_esm2015\internal\symbol\rxSubscriber.js
+    Used by 7 module(s), i. e.
+    C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\@angular-devkit\build-optimizer\src\build-optimizer\webpack-loader.js??ref--8-0!C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\Rxjs\_esm2015\internal\Subscriber.js
+* C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\@angular-devkit\build-optimizer\src\build-optimizer\webpack-loader.js??ref--8-0!C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\rxjs\_esm2015\internal\symbol\rxSubscriber.js
+    Used by 7 module(s), i. e.
+    C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\@angular-devkit\build-optimizer\src\build-optimizer\webpack-loader.js??ref--8-0!C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\rxjs\_esm2015\internal\Subject.js
+ @ ./node_modules/Rxjs/_esm2015/internal/symbol/rxSubscriber.js
+ @ ./node_modules/Rxjs/_esm2015/internal/Subscriber.js
+ @ ./node_modules/Rxjs/_esm2015/index.js
+ @ ./src/app/Services/buyer.service.ts
+ @ ./src/app/Buyer/buy-product/buy-product.component.ngfactory.js
+ @ ./src/app/app.module.ngfactory.js
+ @ ./src/main.ts
+ @ multi ./src/main.ts
+
+WARNING in ./node_modules/Rxjs/_esm2015/internal/util/ArgumentOutOfRangeError.js
+There are multiple modules with names that only differ in casing.
+This can lead to unexpected behavior when compiling on a filesystem with other case-semantic.
+Use equal casing. Compare these module identifiers:
+* C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\@angular-devkit\build-optimizer\src\build-optimizer\webpack-loader.js??ref--8-0!C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\Rxjs\_esm2015\internal\util\ArgumentOutOfRangeError.js
+    Used by 2 module(s), i. e.
+    C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\@angular-devkit\build-optimizer\src\build-optimizer\webpack-loader.js??ref--8-0!C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\Rxjs\_esm2015\index.js
+* C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\@angular-devkit\build-optimizer\src\build-optimizer\webpack-loader.js??ref--8-0!C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\rxjs\_esm2015\internal\util\ArgumentOutOfRangeError.js
+    Used by 11 module(s), i. e.
+    C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\@angular-devkit\build-optimizer\src\build-optimizer\webpack-loader.js??ref--8-0!C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\rxjs\_esm2015\index.js
+ @ ./node_modules/Rxjs/_esm2015/internal/util/ArgumentOutOfRangeError.js
+ @ ./node_modules/Rxjs/_esm2015/index.js
+ @ ./src/app/Services/buyer.service.ts
+ @ ./src/app/Buyer/buy-product/buy-product.component.ngfactory.js
+ @ ./src/app/app.module.ngfactory.js
+ @ ./src/main.ts
+ @ multi ./src/main.ts
+
+WARNING in ./node_modules/Rxjs/_esm2015/internal/util/EmptyError.js
+There are multiple modules with names that only differ in casing.
+This can lead to unexpected behavior when compiling on a filesystem with other case-semantic.
+Use equal casing. Compare these module identifiers:
+* C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\@angular-devkit\build-optimizer\src\build-optimizer\webpack-loader.js??ref--8-0!C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\Rxjs\_esm2015\internal\util\EmptyError.js
+    Used by 2 module(s), i. e.
+    C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\@angular-devkit\build-optimizer\src\build-optimizer\webpack-loader.js??ref--8-0!C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\Rxjs\_esm2015\index.js
+* C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\@angular-devkit\build-optimizer\src\build-optimizer\webpack-loader.js??ref--8-0!C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\rxjs\_esm2015\internal\util\EmptyError.js
+    Used by 10 module(s), i. e.
+    C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\@angular-devkit\build-optimizer\src\build-optimizer\webpack-loader.js??ref--8-0!C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\rxjs\_esm2015\index.js
+ @ ./node_modules/Rxjs/_esm2015/internal/util/EmptyError.js
+ @ ./node_modules/Rxjs/_esm2015/index.js
+ @ ./src/app/Services/buyer.service.ts
+ @ ./src/app/Buyer/buy-product/buy-product.component.ngfactory.js
+ @ ./src/app/app.module.ngfactory.js
+ @ ./src/main.ts
+ @ multi ./src/main.ts
+
+WARNING in ./node_modules/Rxjs/_esm2015/internal/util/Immediate.js
+There are multiple modules with names that only differ in casing.
+This can lead to unexpected behavior when compiling on a filesystem with other case-semantic.
+Use equal casing. Compare these module identifiers:
+* C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\@angular-devkit\build-optimizer\src\build-optimizer\webpack-loader.js??ref--8-0!C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\Rxjs\_esm2015\internal\util\Immediate.js
+    Used by 3 module(s), i. e.
+    C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\@angular-devkit\build-optimizer\src\build-optimizer\webpack-loader.js??ref--8-0!C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\Rxjs\_esm2015\internal\scheduler\AsapAction.js
+* C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\@angular-devkit\build-optimizer\src\build-optimizer\webpack-loader.js??ref--8-0!C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\rxjs\_esm2015\internal\util\Immediate.js
+    Used by 3 module(s), i. e.
+    C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\@angular-devkit\build-optimizer\src\build-optimizer\webpack-loader.js??ref--8-0!C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\rxjs\_esm2015\internal\scheduler\AsapAction.js
+ @ ./node_modules/Rxjs/_esm2015/internal/util/Immediate.js
+ @ ./node_modules/Rxjs/_esm2015/internal/scheduler/AsapAction.js
+ @ ./node_modules/Rxjs/_esm2015/internal/scheduler/asap.js
+ @ ./node_modules/Rxjs/_esm2015/index.js
+ @ ./src/app/Services/buyer.service.ts
+ @ ./src/app/Buyer/buy-product/buy-product.component.ngfactory.js
+ @ ./src/app/app.module.ngfactory.js
+ @ ./src/main.ts
+ @ multi ./src/main.ts
+
+WARNING in ./node_modules/Rxjs/_esm2015/internal/util/ObjectUnsubscribedError.js
+There are multiple modules with names that only differ in casing.
+This can lead to unexpected behavior when compiling on a filesystem with other case-semantic.
+Use equal casing. Compare these module identifiers:
+* C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\@angular-devkit\build-optimizer\src\build-optimizer\webpack-loader.js??ref--8-0!C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\Rxjs\_esm2015\internal\util\ObjectUnsubscribedError.js
+    Used by 12 module(s), i. e.
+    C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\@angular-devkit\build-optimizer\src\build-optimizer\webpack-loader.js??ref--8-0!C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\Rxjs\_esm2015\index.js
+* C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\@angular-devkit\build-optimizer\src\build-optimizer\webpack-loader.js??ref--8-0!C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\rxjs\_esm2015\internal\util\ObjectUnsubscribedError.js
+    Used by 12 module(s), i. e.
+    C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\@angular-devkit\build-optimizer\src\build-optimizer\webpack-loader.js??ref--8-0!C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\rxjs\_esm2015\index.js
+ @ ./node_modules/Rxjs/_esm2015/internal/util/ObjectUnsubscribedError.js
+ @ ./node_modules/Rxjs/_esm2015/index.js
+ @ ./src/app/Services/buyer.service.ts
+ @ ./src/app/Buyer/buy-product/buy-product.component.ngfactory.js
+ @ ./src/app/app.module.ngfactory.js
+ @ ./src/main.ts
+ @ multi ./src/main.ts
+
+WARNING in ./node_modules/Rxjs/_esm2015/internal/util/TimeoutError.js
+There are multiple modules with names that only differ in casing.
+This can lead to unexpected behavior when compiling on a filesystem with other case-semantic.
+Use equal casing. Compare these module identifiers:
+* C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\@angular-devkit\build-optimizer\src\build-optimizer\webpack-loader.js??ref--8-0!C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\Rxjs\_esm2015\internal\util\TimeoutError.js
+    Used by 2 module(s), i. e.
+    C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\@angular-devkit\build-optimizer\src\build-optimizer\webpack-loader.js??ref--8-0!C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\Rxjs\_esm2015\index.js
+* C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\@angular-devkit\build-optimizer\src\build-optimizer\webpack-loader.js??ref--8-0!C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\rxjs\_esm2015\internal\util\TimeoutError.js
+    Used by 4 module(s), i. e.
+    C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\@angular-devkit\build-optimizer\src\build-optimizer\webpack-loader.js??ref--8-0!C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\rxjs\_esm2015\index.js
+ @ ./node_modules/Rxjs/_esm2015/internal/util/TimeoutError.js
+ @ ./node_modules/Rxjs/_esm2015/index.js
+ @ ./src/app/Services/buyer.service.ts
+ @ ./src/app/Buyer/buy-product/buy-product.component.ngfactory.js
+ @ ./src/app/app.module.ngfactory.js
+ @ ./src/main.ts
+ @ multi ./src/main.ts
+
+WARNING in ./node_modules/Rxjs/_esm2015/internal/util/UnsubscriptionError.js
+There are multiple modules with names that only differ in casing.
+This can lead to unexpected behavior when compiling on a filesystem with other case-semantic.
+Use equal casing. Compare these module identifiers:
+* C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\@angular-devkit\build-optimizer\src\build-optimizer\webpack-loader.js??ref--8-0!C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\Rxjs\_esm2015\internal\util\UnsubscriptionError.js
+    Used by 7 module(s), i. e.
+    C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\@angular-devkit\build-optimizer\src\build-optimizer\webpack-loader.js??ref--8-0!C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\Rxjs\_esm2015\index.js
+* C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\@angular-devkit\build-optimizer\src\build-optimizer\webpack-loader.js??ref--8-0!C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\rxjs\_esm2015\internal\util\UnsubscriptionError.js
+    Used by 7 module(s), i. e.
+    C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\@angular-devkit\build-optimizer\src\build-optimizer\webpack-loader.js??ref--8-0!C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\rxjs\_esm2015\index.js
+ @ ./node_modules/Rxjs/_esm2015/internal/util/UnsubscriptionError.js
+ @ ./node_modules/Rxjs/_esm2015/index.js
+ @ ./src/app/Services/buyer.service.ts
+ @ ./src/app/Buyer/buy-product/buy-product.component.ngfactory.js
+ @ ./src/app/app.module.ngfactory.js
+ @ ./src/main.ts
+ @ multi ./src/main.ts
+
+WARNING in ./node_modules/Rxjs/_esm2015/internal/util/canReportError.js
+There are multiple modules with names that only differ in casing.
+This can lead to unexpected behavior when compiling on a filesystem with other case-semantic.
+Use equal casing. Compare these module identifiers:
+* C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\@angular-devkit\build-optimizer\src\build-optimizer\webpack-loader.js??ref--8-0!C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\Rxjs\_esm2015\internal\util\canReportError.js
+    Used by 6 module(s), i. e.
+    C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\@angular-devkit\build-optimizer\src\build-optimizer\webpack-loader.js??ref--8-0!C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\Rxjs\_esm2015\internal\Observable.js
+* C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\@angular-devkit\build-optimizer\src\build-optimizer\webpack-loader.js??ref--8-0!C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\rxjs\_esm2015\internal\util\canReportError.js
+    Used by 6 module(s), i. e.
+    C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\@angular-devkit\build-optimizer\src\build-optimizer\webpack-loader.js??ref--8-0!C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\rxjs\_esm2015\internal\Observable.js
+ @ ./node_modules/Rxjs/_esm2015/internal/util/canReportError.js
+ @ ./node_modules/Rxjs/_esm2015/internal/Observable.js
+ @ ./node_modules/Rxjs/_esm2015/index.js
+ @ ./src/app/Services/buyer.service.ts
+ @ ./src/app/Buyer/buy-product/buy-product.component.ngfactory.js
+ @ ./src/app/app.module.ngfactory.js
+ @ ./src/main.ts
+ @ multi ./src/main.ts
+
+WARNING in ./node_modules/Rxjs/_esm2015/internal/util/hostReportError.js
+There are multiple modules with names that only differ in casing.
+This can lead to unexpected behavior when compiling on a filesystem with other case-semantic.
+Use equal casing. Compare these module identifiers:
+* C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\@angular-devkit\build-optimizer\src\build-optimizer\webpack-loader.js??ref--8-0!C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\Rxjs\_esm2015\internal\util\hostReportError.js
+    Used by 9 module(s), i. e.
+    C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\@angular-devkit\build-optimizer\src\build-optimizer\webpack-loader.js??ref--8-0!C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\Rxjs\_esm2015\internal\Subscriber.js
+* C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\@angular-devkit\build-optimizer\src\build-optimizer\webpack-loader.js??ref--8-0!C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\rxjs\_esm2015\internal\util\hostReportError.js
+    Used by 9 module(s), i. e.
+    C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\@angular-devkit\build-optimizer\src\build-optimizer\webpack-loader.js??ref--8-0!C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\rxjs\_esm2015\internal\Subscriber.js
+ @ ./node_modules/Rxjs/_esm2015/internal/util/hostReportError.js
+ @ ./node_modules/Rxjs/_esm2015/internal/Subscriber.js
+ @ ./node_modules/Rxjs/_esm2015/index.js
+ @ ./src/app/Services/buyer.service.ts
+ @ ./src/app/Buyer/buy-product/buy-product.component.ngfactory.js
+ @ ./src/app/app.module.ngfactory.js
+ @ ./src/main.ts
+ @ multi ./src/main.ts
+
+WARNING in ./node_modules/Rxjs/_esm2015/internal/util/identity.js
+There are multiple modules with names that only differ in casing.
+This can lead to unexpected behavior when compiling on a filesystem with other case-semantic.
+Use equal casing. Compare these module identifiers:
+* C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\@angular-devkit\build-optimizer\src\build-optimizer\webpack-loader.js??ref--8-0!C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\Rxjs\_esm2015\internal\util\identity.js
+    Used by 7 module(s), i. e.
+    C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\@angular-devkit\build-optimizer\src\build-optimizer\webpack-loader.js??ref--8-0!C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\Rxjs\_esm2015\index.js
+* C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\@angular-devkit\build-optimizer\src\build-optimizer\webpack-loader.js??ref--8-0!C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\rxjs\_esm2015\internal\util\identity.js
+    Used by 13 module(s), i. e.
+    C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\@angular-devkit\build-optimizer\src\build-optimizer\webpack-loader.js??ref--8-0!C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\rxjs\_esm2015\index.js
+ @ ./node_modules/Rxjs/_esm2015/internal/util/identity.js
+ @ ./node_modules/Rxjs/_esm2015/index.js
+ @ ./src/app/Services/buyer.service.ts
+ @ ./src/app/Buyer/buy-product/buy-product.component.ngfactory.js
+ @ ./src/app/app.module.ngfactory.js
+ @ ./src/main.ts
+ @ multi ./src/main.ts
+
+WARNING in ./node_modules/Rxjs/_esm2015/internal/util/isArray.js
+There are multiple modules with names that only differ in casing.
+This can lead to unexpected behavior when compiling on a filesystem with other case-semantic.
+Use equal casing. Compare these module identifiers:
+* C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\@angular-devkit\build-optimizer\src\build-optimizer\webpack-loader.js??ref--8-0!C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\Rxjs\_esm2015\internal\util\isArray.js
+    Used by 22 module(s), i. e.
+    C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\@angular-devkit\build-optimizer\src\build-optimizer\webpack-loader.js??ref--8-0!C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\Rxjs\_esm2015\internal\observable\zip.js
+* C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\@angular-devkit\build-optimizer\src\build-optimizer\webpack-loader.js??ref--8-0!C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\rxjs\_esm2015\internal\util\isArray.js
+    Used by 29 module(s), i. e.
+    C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\@angular-devkit\build-optimizer\src\build-optimizer\webpack-loader.js??ref--8-0!C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\rxjs\_esm2015\internal\observable\bindNodeCallback.js
+ @ ./node_modules/Rxjs/_esm2015/internal/util/isArray.js
+ @ ./node_modules/Rxjs/_esm2015/internal/observable/zip.js
+ @ ./node_modules/Rxjs/_esm2015/index.js
+ @ ./src/app/Services/buyer.service.ts
+ @ ./src/app/Buyer/buy-product/buy-product.component.ngfactory.js
+ @ ./src/app/app.module.ngfactory.js
+ @ ./src/main.ts
+ @ multi ./src/main.ts
+
+WARNING in ./node_modules/Rxjs/_esm2015/internal/util/isArrayLike.js
+There are multiple modules with names that only differ in casing.
+This can lead to unexpected behavior when compiling on a filesystem with other case-semantic.
+Use equal casing. Compare these module identifiers:
+* C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\@angular-devkit\build-optimizer\src\build-optimizer\webpack-loader.js??ref--8-0!C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\Rxjs\_esm2015\internal\util\isArrayLike.js
+    Used by 4 module(s), i. e.
+    C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\@angular-devkit\build-optimizer\src\build-optimizer\webpack-loader.js??ref--8-0!C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\Rxjs\_esm2015\internal\observable\from.js
+* C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\@angular-devkit\build-optimizer\src\build-optimizer\webpack-loader.js??ref--8-0!C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\rxjs\_esm2015\internal\util\isArrayLike.js
+    Used by 4 module(s), i. e.
+    C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\@angular-devkit\build-optimizer\src\build-optimizer\webpack-loader.js??ref--8-0!C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\rxjs\_esm2015\internal\observable\from.js
+ @ ./node_modules/Rxjs/_esm2015/internal/util/isArrayLike.js
+ @ ./node_modules/Rxjs/_esm2015/internal/observable/from.js
+ @ ./node_modules/Rxjs/_esm2015/index.js
+ @ ./src/app/Services/buyer.service.ts
+ @ ./src/app/Buyer/buy-product/buy-product.component.ngfactory.js
+ @ ./src/app/app.module.ngfactory.js
+ @ ./src/main.ts
+ @ multi ./src/main.ts
+
+WARNING in ./node_modules/Rxjs/_esm2015/internal/util/isFunction.js
+There are multiple modules with names that only differ in casing.
+This can lead to unexpected behavior when compiling on a filesystem with other case-semantic.
+Use equal casing. Compare these module identifiers:
+* C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\@angular-devkit\build-optimizer\src\build-optimizer\webpack-loader.js??ref--8-0!C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\Rxjs\_esm2015\internal\util\isFunction.js
+    Used by 9 module(s), i. e.
+    C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\@angular-devkit\build-optimizer\src\build-optimizer\webpack-loader.js??ref--8-0!C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\Rxjs\_esm2015\internal\Subscriber.js
+* C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\@angular-devkit\build-optimizer\src\build-optimizer\webpack-loader.js??ref--8-0!C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\rxjs\_esm2015\internal\util\isFunction.js
+    Used by 11 module(s), i. e.
+    C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\@angular-devkit\build-optimizer\src\build-optimizer\webpack-loader.js??ref--8-0!C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\rxjs\_esm2015\internal\Subscription.js
+ @ ./node_modules/Rxjs/_esm2015/internal/util/isFunction.js
+ @ ./node_modules/Rxjs/_esm2015/internal/Subscriber.js
+ @ ./node_modules/Rxjs/_esm2015/index.js
+ @ ./src/app/Services/buyer.service.ts
+ @ ./src/app/Buyer/buy-product/buy-product.component.ngfactory.js
+ @ ./src/app/app.module.ngfactory.js
+ @ ./src/main.ts
+ @ multi ./src/main.ts
+
+WARNING in ./node_modules/Rxjs/_esm2015/internal/util/isInteropObservable.js
+There are multiple modules with names that only differ in casing.
+This can lead to unexpected behavior when compiling on a filesystem with other case-semantic.
+Use equal casing. Compare these module identifiers:
+* C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\@angular-devkit\build-optimizer\src\build-optimizer\webpack-loader.js??ref--8-0!C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\Rxjs\_esm2015\internal\util\isInteropObservable.js
+    Used by 2 module(s), i. e.
+    C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\@angular-devkit\build-optimizer\src\build-optimizer\webpack-loader.js??ref--8-0!C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\Rxjs\_esm2015\internal\observable\from.js
+* C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\@angular-devkit\build-optimizer\src\build-optimizer\webpack-loader.js??ref--8-0!C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\rxjs\_esm2015\internal\util\isInteropObservable.js
+    Used by 2 module(s), i. e.
+    C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\@angular-devkit\build-optimizer\src\build-optimizer\webpack-loader.js??ref--8-0!C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\rxjs\_esm2015\internal\observable\from.js
+ @ ./node_modules/Rxjs/_esm2015/internal/util/isInteropObservable.js
+ @ ./node_modules/Rxjs/_esm2015/internal/observable/from.js
+ @ ./node_modules/Rxjs/_esm2015/index.js
+ @ ./src/app/Services/buyer.service.ts
+ @ ./src/app/Buyer/buy-product/buy-product.component.ngfactory.js
+ @ ./src/app/app.module.ngfactory.js
+ @ ./src/main.ts
+ @ multi ./src/main.ts
+
+WARNING in ./node_modules/Rxjs/_esm2015/internal/util/isIterable.js
+There are multiple modules with names that only differ in casing.
+This can lead to unexpected behavior when compiling on a filesystem with other case-semantic.
+Use equal casing. Compare these module identifiers:
+* C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\@angular-devkit\build-optimizer\src\build-optimizer\webpack-loader.js??ref--8-0!C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\Rxjs\_esm2015\internal\util\isIterable.js
+    Used by 2 module(s), i. e.
+    C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\@angular-devkit\build-optimizer\src\build-optimizer\webpack-loader.js??ref--8-0!C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\Rxjs\_esm2015\internal\observable\from.js
+* C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\@angular-devkit\build-optimizer\src\build-optimizer\webpack-loader.js??ref--8-0!C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\rxjs\_esm2015\internal\util\isIterable.js
+    Used by 2 module(s), i. e.
+    C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\@angular-devkit\build-optimizer\src\build-optimizer\webpack-loader.js??ref--8-0!C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\rxjs\_esm2015\internal\observable\from.js
+ @ ./node_modules/Rxjs/_esm2015/internal/util/isIterable.js
+ @ ./node_modules/Rxjs/_esm2015/internal/observable/from.js
+ @ ./node_modules/Rxjs/_esm2015/index.js
+ @ ./src/app/Services/buyer.service.ts
+ @ ./src/app/Buyer/buy-product/buy-product.component.ngfactory.js
+ @ ./src/app/app.module.ngfactory.js
+ @ ./src/main.ts
+ @ multi ./src/main.ts
+
+WARNING in ./node_modules/Rxjs/_esm2015/internal/util/isNumeric.js
+There are multiple modules with names that only differ in casing.
+This can lead to unexpected behavior when compiling on a filesystem with other case-semantic.
+Use equal casing. Compare these module identifiers:
+* C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\@angular-devkit\build-optimizer\src\build-optimizer\webpack-loader.js??ref--8-0!C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\Rxjs\_esm2015\internal\util\isNumeric.js
+    Used by 5 module(s), i. e.
+    C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\@angular-devkit\build-optimizer\src\build-optimizer\webpack-loader.js??ref--8-0!C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\Rxjs\_esm2015\internal\observable\timer.js
+* C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\@angular-devkit\build-optimizer\src\build-optimizer\webpack-loader.js??ref--8-0!C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\rxjs\_esm2015\internal\util\isNumeric.js
+    Used by 10 module(s), i. e.
+    C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\@angular-devkit\build-optimizer\src\build-optimizer\webpack-loader.js??ref--8-0!C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\rxjs\_esm2015\internal\observable\interval.js
+ @ ./node_modules/Rxjs/_esm2015/internal/util/isNumeric.js
+ @ ./node_modules/Rxjs/_esm2015/internal/observable/timer.js
+ @ ./node_modules/Rxjs/_esm2015/index.js
+ @ ./src/app/Services/buyer.service.ts
+ @ ./src/app/Buyer/buy-product/buy-product.component.ngfactory.js
+ @ ./src/app/app.module.ngfactory.js
+ @ ./src/main.ts
+ @ multi ./src/main.ts
+
+WARNING in ./node_modules/Rxjs/_esm2015/internal/util/isObject.js
+There are multiple modules with names that only differ in casing.
+This can lead to unexpected behavior when compiling on a filesystem with other case-semantic.
+Use equal casing. Compare these module identifiers:
+* C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\@angular-devkit\build-optimizer\src\build-optimizer\webpack-loader.js??ref--8-0!C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\Rxjs\_esm2015\internal\util\isObject.js
+    Used by 4 module(s), i. e.
+    C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\@angular-devkit\build-optimizer\src\build-optimizer\webpack-loader.js??ref--8-0!C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\Rxjs\_esm2015\internal\Subscription.js
+* C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\@angular-devkit\build-optimizer\src\build-optimizer\webpack-loader.js??ref--8-0!C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\rxjs\_esm2015\internal\util\isObject.js
+    Used by 4 module(s), i. e.
+    C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\@angular-devkit\build-optimizer\src\build-optimizer\webpack-loader.js??ref--8-0!C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\rxjs\_esm2015\internal\Subscription.js
+ @ ./node_modules/Rxjs/_esm2015/internal/util/isObject.js
+ @ ./node_modules/Rxjs/_esm2015/internal/Subscription.js
+ @ ./node_modules/Rxjs/_esm2015/index.js
+ @ ./src/app/Services/buyer.service.ts
+ @ ./src/app/Buyer/buy-product/buy-product.component.ngfactory.js
+ @ ./src/app/app.module.ngfactory.js
+ @ ./src/main.ts
+ @ multi ./src/main.ts
+
+WARNING in ./node_modules/Rxjs/_esm2015/internal/util/isObservable.js
+There are multiple modules with names that only differ in casing.
+This can lead to unexpected behavior when compiling on a filesystem with other case-semantic.
+Use equal casing. Compare these module identifiers:
+* C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\@angular-devkit\build-optimizer\src\build-optimizer\webpack-loader.js??ref--8-0!C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\Rxjs\_esm2015\internal\util\isObservable.js
+    Used by 2 module(s), i. e.
+    C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\@angular-devkit\build-optimizer\src\build-optimizer\webpack-loader.js??ref--8-0!C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\Rxjs\_esm2015\index.js
+* C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\@angular-devkit\build-optimizer\src\build-optimizer\webpack-loader.js??ref--8-0!C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\rxjs\_esm2015\internal\util\isObservable.js
+    Used by 2 module(s), i. e.
+    C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\@angular-devkit\build-optimizer\src\build-optimizer\webpack-loader.js??ref--8-0!C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\rxjs\_esm2015\index.js
+ @ ./node_modules/Rxjs/_esm2015/internal/util/isObservable.js
+ @ ./node_modules/Rxjs/_esm2015/index.js
+ @ ./src/app/Services/buyer.service.ts
+ @ ./src/app/Buyer/buy-product/buy-product.component.ngfactory.js
+ @ ./src/app/app.module.ngfactory.js
+ @ ./src/main.ts
+ @ multi ./src/main.ts
+
+WARNING in ./node_modules/Rxjs/_esm2015/internal/util/isPromise.js
+There are multiple modules with names that only differ in casing.
+This can lead to unexpected behavior when compiling on a filesystem with other case-semantic.
+Use equal casing. Compare these module identifiers:
+* C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\@angular-devkit\build-optimizer\src\build-optimizer\webpack-loader.js??ref--8-0!C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\Rxjs\_esm2015\internal\util\isPromise.js
+    Used by 4 module(s), i. e.
+    C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\@angular-devkit\build-optimizer\src\build-optimizer\webpack-loader.js??ref--8-0!C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\Rxjs\_esm2015\internal\observable\from.js
+* C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\@angular-devkit\build-optimizer\src\build-optimizer\webpack-loader.js??ref--8-0!C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\rxjs\_esm2015\internal\util\isPromise.js
+    Used by 4 module(s), i. e.
+    C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\@angular-devkit\build-optimizer\src\build-optimizer\webpack-loader.js??ref--8-0!C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\rxjs\_esm2015\internal\util\subscribeTo.js
+ @ ./node_modules/Rxjs/_esm2015/internal/util/isPromise.js
+ @ ./node_modules/Rxjs/_esm2015/internal/observable/from.js
+ @ ./node_modules/Rxjs/_esm2015/index.js
+ @ ./src/app/Services/buyer.service.ts
+ @ ./src/app/Buyer/buy-product/buy-product.component.ngfactory.js
+ @ ./src/app/app.module.ngfactory.js
+ @ ./src/main.ts
+ @ multi ./src/main.ts
+
+WARNING in ./node_modules/Rxjs/_esm2015/internal/util/isScheduler.js
+There are multiple modules with names that only differ in casing.
+This can lead to unexpected behavior when compiling on a filesystem with other case-semantic.
+Use equal casing. Compare these module identifiers:
+* C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\@angular-devkit\build-optimizer\src\build-optimizer\webpack-loader.js??ref--8-0!C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\Rxjs\_esm2015\internal\util\isScheduler.js
+    Used by 15 module(s), i. e.
+    C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\@angular-devkit\build-optimizer\src\build-optimizer\webpack-loader.js??ref--8-0!C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\Rxjs\_esm2015\internal\observable\timer.js
+* C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\@angular-devkit\build-optimizer\src\build-optimizer\webpack-loader.js??ref--8-0!C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\rxjs\_esm2015\internal\util\isScheduler.js
+    Used by 25 module(s), i. e.
+    C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\@angular-devkit\build-optimizer\src\build-optimizer\webpack-loader.js??ref--8-0!C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\rxjs\_esm2015\internal\observable\bindCallback.js
+ @ ./node_modules/Rxjs/_esm2015/internal/util/isScheduler.js
+ @ ./node_modules/Rxjs/_esm2015/internal/observable/timer.js
+ @ ./node_modules/Rxjs/_esm2015/index.js
+ @ ./src/app/Services/buyer.service.ts
+ @ ./src/app/Buyer/buy-product/buy-product.component.ngfactory.js
+ @ ./src/app/app.module.ngfactory.js
+ @ ./src/main.ts
+ @ multi ./src/main.ts
+
+WARNING in ./node_modules/Rxjs/_esm2015/internal/util/noop.js
+There are multiple modules with names that only differ in casing.
+This can lead to unexpected behavior when compiling on a filesystem with other case-semantic.
+Use equal casing. Compare these module identifiers:
+* C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\@angular-devkit\build-optimizer\src\build-optimizer\webpack-loader.js??ref--8-0!C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\Rxjs\_esm2015\internal\util\noop.js
+    Used by 6 module(s), i. e.
+    C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\@angular-devkit\build-optimizer\src\build-optimizer\webpack-loader.js??ref--8-0!C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\Rxjs\_esm2015\index.js
+* C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\@angular-devkit\build-optimizer\src\build-optimizer\webpack-loader.js??ref--8-0!C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\rxjs\_esm2015\internal\util\noop.js
+    Used by 15 module(s), i. e.
+    C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\@angular-devkit\build-optimizer\src\build-optimizer\webpack-loader.js??ref--8-0!C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\rxjs\_esm2015\index.js
+ @ ./node_modules/Rxjs/_esm2015/internal/util/noop.js
+ @ ./node_modules/Rxjs/_esm2015/index.js
+ @ ./src/app/Services/buyer.service.ts
+ @ ./src/app/Buyer/buy-product/buy-product.component.ngfactory.js
+ @ ./src/app/app.module.ngfactory.js
+ @ ./src/main.ts
+ @ multi ./src/main.ts
+
+WARNING in ./node_modules/Rxjs/_esm2015/internal/util/pipe.js
+There are multiple modules with names that only differ in casing.
+This can lead to unexpected behavior when compiling on a filesystem with other case-semantic.
+Use equal casing. Compare these module identifiers:
+* C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\@angular-devkit\build-optimizer\src\build-optimizer\webpack-loader.js??ref--8-0!C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\Rxjs\_esm2015\internal\util\pipe.js
+    Used by 4 module(s), i. e.
+    C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\@angular-devkit\build-optimizer\src\build-optimizer\webpack-loader.js??ref--8-0!C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\Rxjs\_esm2015\index.js
+* C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\@angular-devkit\build-optimizer\src\build-optimizer\webpack-loader.js??ref--8-0!C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\rxjs\_esm2015\internal\util\pipe.js
+    Used by 7 module(s), i. e.
+    C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\@angular-devkit\build-optimizer\src\build-optimizer\webpack-loader.js??ref--8-0!C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\rxjs\_esm2015\index.js
+ @ ./node_modules/Rxjs/_esm2015/internal/util/pipe.js
+ @ ./node_modules/Rxjs/_esm2015/index.js
+ @ ./src/app/Services/buyer.service.ts
+ @ ./src/app/Buyer/buy-product/buy-product.component.ngfactory.js
+ @ ./src/app/app.module.ngfactory.js
+ @ ./src/main.ts
+ @ multi ./src/main.ts
+
+WARNING in ./node_modules/Rxjs/_esm2015/internal/util/subscribeTo.js
+There are multiple modules with names that only differ in casing.
+This can lead to unexpected behavior when compiling on a filesystem with other case-semantic.
+Use equal casing. Compare these module identifiers:
+* C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\@angular-devkit\build-optimizer\src\build-optimizer\webpack-loader.js??ref--8-0!C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\Rxjs\_esm2015\internal\util\subscribeTo.js
+    Used by 4 module(s), i. e.
+    C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\@angular-devkit\build-optimizer\src\build-optimizer\webpack-loader.js??ref--8-0!C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\Rxjs\_esm2015\internal\observable\from.js
+* C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\@angular-devkit\build-optimizer\src\build-optimizer\webpack-loader.js??ref--8-0!C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\rxjs\_esm2015\internal\util\subscribeTo.js
+    Used by 4 module(s), i. e.
+    C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\@angular-devkit\build-optimizer\src\build-optimizer\webpack-loader.js??ref--8-0!C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\rxjs\_esm2015\internal\observable\from.js
+ @ ./node_modules/Rxjs/_esm2015/internal/util/subscribeTo.js
+ @ ./node_modules/Rxjs/_esm2015/internal/observable/from.js
+ @ ./node_modules/Rxjs/_esm2015/index.js
+ @ ./src/app/Services/buyer.service.ts
+ @ ./src/app/Buyer/buy-product/buy-product.component.ngfactory.js
+ @ ./src/app/app.module.ngfactory.js
+ @ ./src/main.ts
+ @ multi ./src/main.ts
+
+WARNING in ./node_modules/Rxjs/_esm2015/internal/util/subscribeToArray.js
+There are multiple modules with names that only differ in casing.
+This can lead to unexpected behavior when compiling on a filesystem with other case-semantic.
+Use equal casing. Compare these module identifiers:
+* C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\@angular-devkit\build-optimizer\src\build-optimizer\webpack-loader.js??ref--8-0!C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\Rxjs\_esm2015\internal\util\subscribeToArray.js
+    Used by 4 module(s), i. e.
+    C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\@angular-devkit\build-optimizer\src\build-optimizer\webpack-loader.js??ref--8-0!C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\Rxjs\_esm2015\internal\observable\fromArray.js
+* C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\@angular-devkit\build-optimizer\src\build-optimizer\webpack-loader.js??ref--8-0!C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\rxjs\_esm2015\internal\util\subscribeToArray.js
+    Used by 4 module(s), i. e.
+    C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\@angular-devkit\build-optimizer\src\build-optimizer\webpack-loader.js??ref--8-0!C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\rxjs\_esm2015\internal\observable\fromArray.js
+ @ ./node_modules/Rxjs/_esm2015/internal/util/subscribeToArray.js
+ @ ./node_modules/Rxjs/_esm2015/internal/observable/fromArray.js
+ @ ./node_modules/Rxjs/_esm2015/internal/observable/zip.js
+ @ ./node_modules/Rxjs/_esm2015/index.js
+ @ ./src/app/Services/buyer.service.ts
+ @ ./src/app/Buyer/buy-product/buy-product.component.ngfactory.js
+ @ ./src/app/app.module.ngfactory.js
+ @ ./src/main.ts
+ @ multi ./src/main.ts
+
+WARNING in ./node_modules/Rxjs/_esm2015/internal/util/subscribeToIterable.js
+There are multiple modules with names that only differ in casing.
+This can lead to unexpected behavior when compiling on a filesystem with other case-semantic.
+Use equal casing. Compare these module identifiers:
+* C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\@angular-devkit\build-optimizer\src\build-optimizer\webpack-loader.js??ref--8-0!C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\Rxjs\_esm2015\internal\util\subscribeToIterable.js
+    Used by 4 module(s), i. e.
+    C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\@angular-devkit\build-optimizer\src\build-optimizer\webpack-loader.js??ref--8-0!C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\Rxjs\_esm2015\internal\util\subscribeTo.js
+* C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\@angular-devkit\build-optimizer\src\build-optimizer\webpack-loader.js??ref--8-0!C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\rxjs\_esm2015\internal\util\subscribeToIterable.js
+    Used by 4 module(s), i. e.
+    C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\@angular-devkit\build-optimizer\src\build-optimizer\webpack-loader.js??ref--8-0!C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\rxjs\_esm2015\internal\util\subscribeTo.js
+ @ ./node_modules/Rxjs/_esm2015/internal/util/subscribeToIterable.js
+ @ ./node_modules/Rxjs/_esm2015/internal/util/subscribeTo.js
+ @ ./node_modules/Rxjs/_esm2015/internal/observable/from.js
+ @ ./node_modules/Rxjs/_esm2015/index.js
+ @ ./src/app/Services/buyer.service.ts
+ @ ./src/app/Buyer/buy-product/buy-product.component.ngfactory.js
+ @ ./src/app/app.module.ngfactory.js
+ @ ./src/main.ts
+ @ multi ./src/main.ts
+
+WARNING in ./node_modules/Rxjs/_esm2015/internal/util/subscribeToObservable.js
+There are multiple modules with names that only differ in casing.
+This can lead to unexpected behavior when compiling on a filesystem with other case-semantic.
+Use equal casing. Compare these module identifiers:
+* C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\@angular-devkit\build-optimizer\src\build-optimizer\webpack-loader.js??ref--8-0!C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\Rxjs\_esm2015\internal\util\subscribeToObservable.js
+    Used by 4 module(s), i. e.
+    C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\@angular-devkit\build-optimizer\src\build-optimizer\webpack-loader.js??ref--8-0!C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\Rxjs\_esm2015\internal\util\subscribeTo.js
+* C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\@angular-devkit\build-optimizer\src\build-optimizer\webpack-loader.js??ref--8-0!C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\rxjs\_esm2015\internal\util\subscribeToObservable.js
+    Used by 4 module(s), i. e.
+    C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\@angular-devkit\build-optimizer\src\build-optimizer\webpack-loader.js??ref--8-0!C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\rxjs\_esm2015\internal\util\subscribeTo.js
+ @ ./node_modules/Rxjs/_esm2015/internal/util/subscribeToObservable.js
+ @ ./node_modules/Rxjs/_esm2015/internal/util/subscribeTo.js
+ @ ./node_modules/Rxjs/_esm2015/internal/observable/from.js
+ @ ./node_modules/Rxjs/_esm2015/index.js
+ @ ./src/app/Services/buyer.service.ts
+ @ ./src/app/Buyer/buy-product/buy-product.component.ngfactory.js
+ @ ./src/app/app.module.ngfactory.js
+ @ ./src/main.ts
+ @ multi ./src/main.ts
+
+WARNING in ./node_modules/Rxjs/_esm2015/internal/util/subscribeToPromise.js
+There are multiple modules with names that only differ in casing.
+This can lead to unexpected behavior when compiling on a filesystem with other case-semantic.
+Use equal casing. Compare these module identifiers:
+* C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\@angular-devkit\build-optimizer\src\build-optimizer\webpack-loader.js??ref--8-0!C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\Rxjs\_esm2015\internal\util\subscribeToPromise.js
+    Used by 4 module(s), i. e.
+    C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\@angular-devkit\build-optimizer\src\build-optimizer\webpack-loader.js??ref--8-0!C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\Rxjs\_esm2015\internal\util\subscribeTo.js
+* C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\@angular-devkit\build-optimizer\src\build-optimizer\webpack-loader.js??ref--8-0!C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\rxjs\_esm2015\internal\util\subscribeToPromise.js
+    Used by 4 module(s), i. e.
+    C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\@angular-devkit\build-optimizer\src\build-optimizer\webpack-loader.js??ref--8-0!C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\rxjs\_esm2015\internal\util\subscribeTo.js
+ @ ./node_modules/Rxjs/_esm2015/internal/util/subscribeToPromise.js
+ @ ./node_modules/Rxjs/_esm2015/internal/util/subscribeTo.js
+ @ ./node_modules/Rxjs/_esm2015/internal/observable/from.js
+ @ ./node_modules/Rxjs/_esm2015/index.js
+ @ ./src/app/Services/buyer.service.ts
+ @ ./src/app/Buyer/buy-product/buy-product.component.ngfactory.js
+ @ ./src/app/app.module.ngfactory.js
+ @ ./src/main.ts
+ @ multi ./src/main.ts
+
+WARNING in ./node_modules/Rxjs/_esm2015/internal/util/subscribeToResult.js
+There are multiple modules with names that only differ in casing.
+This can lead to unexpected behavior when compiling on a filesystem with other case-semantic.
+Use equal casing. Compare these module identifiers:
+* C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\@angular-devkit\build-optimizer\src\build-optimizer\webpack-loader.js??ref--8-0!C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\Rxjs\_esm2015\internal\util\subscribeToResult.js
+    Used by 10 module(s), i. e.
+    C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\@angular-devkit\build-optimizer\src\build-optimizer\webpack-loader.js??ref--8-0!C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\Rxjs\_esm2015\internal\observable\zip.js
+* C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\@angular-devkit\build-optimizer\src\build-optimizer\webpack-loader.js??ref--8-0!C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\rxjs\_esm2015\internal\util\subscribeToResult.js
+    Used by 62 module(s), i. e.
+    C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\@angular-devkit\build-optimizer\src\build-optimizer\webpack-loader.js??ref--8-0!C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\rxjs\_esm2015\internal\observable\race.js
+ @ ./node_modules/Rxjs/_esm2015/internal/util/subscribeToResult.js
+ @ ./node_modules/Rxjs/_esm2015/internal/observable/zip.js
+ @ ./node_modules/Rxjs/_esm2015/index.js
+ @ ./src/app/Services/buyer.service.ts
+ @ ./src/app/Buyer/buy-product/buy-product.component.ngfactory.js
+ @ ./src/app/app.module.ngfactory.js
+ @ ./src/main.ts
+ @ multi ./src/main.ts
+
+WARNING in ./node_modules/Rxjs/_esm2015/internal/util/toSubscriber.js
+There are multiple modules with names that only differ in casing.
+This can lead to unexpected behavior when compiling on a filesystem with other case-semantic.
+Use equal casing. Compare these module identifiers:
+* C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\@angular-devkit\build-optimizer\src\build-optimizer\webpack-loader.js??ref--8-0!C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\Rxjs\_esm2015\internal\util\toSubscriber.js
+    Used by 2 module(s), i. e.
+    C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\@angular-devkit\build-optimizer\src\build-optimizer\webpack-loader.js??ref--8-0!C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\Rxjs\_esm2015\internal\Observable.js
+* C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\@angular-devkit\build-optimizer\src\build-optimizer\webpack-loader.js??ref--8-0!C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\rxjs\_esm2015\internal\util\toSubscriber.js
+    Used by 2 module(s), i. e.
+    C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\@angular-devkit\build-optimizer\src\build-optimizer\webpack-loader.js??ref--8-0!C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\node_modules\rxjs\_esm2015\internal\Observable.js
+ @ ./node_modules/Rxjs/_esm2015/internal/util/toSubscriber.js
+ @ ./node_modules/Rxjs/_esm2015/internal/Observable.js
+ @ ./node_modules/Rxjs/_esm2015/index.js
+ @ ./src/app/Services/buyer.service.ts
+ @ ./src/app/Buyer/buy-product/buy-product.component.ngfactory.js
+ @ ./src/app/app.module.ngfactory.js
+ @ ./src/main.ts
+ @ multi ./src/main.ts
+[EmartUI] $ cmd /c call C:\Windows\TEMP\jenkins7499697956705768454.bat
+
+C:\Program Files (x86)\Jenkins\workspace\EmartUI>xcopy /s "C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\dist\EMART-UI" "C:\inetpub\wwwroot\Emart-UI"  
+C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\dist\EMART-UI\10.d467ac79f338f3c57f70.jpg
+C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\dist\EMART-UI\3rdpartylicenses.txt
+C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\dist\EMART-UI\download.b07049df3b34fe70ef55.jpg
+C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\dist\EMART-UI\index.html
+C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\dist\EMART-UI\main-es2015.e9faf1e1aa22b834255b.js
+C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\dist\EMART-UI\main-es5.e9faf1e1aa22b834255b.js
+C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\dist\EMART-UI\order11.29e83d81781b9ce3b3d2.jpg
+C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\dist\EMART-UI\polyfills-es2015.5b10b8fd823b6392f1fd.js
+C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\dist\EMART-UI\polyfills-es5.8e50a9832860f7cf804a.js
+C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\dist\EMART-UI\runtime-es2015.c5fa8325f89fc516600b.js
+C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\dist\EMART-UI\runtime-es5.c5fa8325f89fc516600b.js
+C:\Program Files (x86)\Jenkins\workspace\EmartUI\EMART-UI\dist\EMART-UI\styles.91774cb956cdf300af34.css
+12 File(s) copied
+
+C:\Program Files (x86)\Jenkins\workspace\EmartUI>C:\Windows\System32\iisreset.exe
+
+Attempting stop...
+
+Internet services successfully stopped
+
+Attempting start...
+
+Internet services successfully restarted
+
+
+C:\Program Files (x86)\Jenkins\workspace\EmartUI>exit 0 
+Finished: SUCCESS

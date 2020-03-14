@@ -41,8 +41,8 @@ namespace Emart.Test
         [Description("DeleteCartItems")]
         public void DeleteCartItems()
         {
-            _repo.DeleteCartItems("C532");
-            var result = _repo.GetCartItem("C532");
+            _repo.DeleteCartItems("C840");
+            var result = _repo.GetCartItem("C840");
             Assert.Null(result);
         }
         [Test]
@@ -58,14 +58,14 @@ namespace Emart.Test
         {
             _repo.BuyItem(new TransactionHistory()
             {
-                Id = "T20",
+                Id = "T21",
                 BuyerId="1",
                 SellerId="1",
-                TransactionId="T20",
+                TransactionId="T21",
                 ItemId="4",
-                NumberOfItems="5",
+                NumberOfItems="6",
                 DateTime=DateTime.Now,
-                Remarks="Gud",
+                Remarks="Good",
                 TransactionType="Debit"
             });
             var result = _repo.TransactionHistory("1");
@@ -77,20 +77,20 @@ namespace Emart.Test
         {
             _repo.AddtoCart(new Cart()
             {
-                Id = "C545",
-                CategoryId="c03",
+                Id = "C546",
+                CategoryId="c01",
                 SubcategoryId="s02",
                 SellerId="2",
-                ItemId="I6",
+                ItemId="I66",
                 ItemName="maskara",
                 Price="56",
                 Description="dff",
-                StockNumber="87",
-                Remarks="fdgg",
+                StockNumber="90",
+                Remarks="good",
                 Img="",
                 BuyerId="3"
             });
-            var result = _repo.ViewCart("3", "I6");
+            var result = _repo.ViewCart("3", "I66");
             Assert.IsNotNull(result);
         }
         [Test]

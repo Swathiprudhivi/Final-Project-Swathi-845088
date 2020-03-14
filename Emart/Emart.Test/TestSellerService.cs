@@ -43,8 +43,8 @@ namespace Emart.Test
         [Description("DeleteItem")]
         public void DeleteItem()
         {
-            _repo.DeleteItem("I2");
-            var result = _repo.GetItem("I2");
+            _repo.DeleteItem("I48");
+            var result = _repo.GetItem("I48");
             Assert.Null(result);
         }
         [Test]
@@ -52,10 +52,10 @@ namespace Emart.Test
         public void UpdateItem()
         {
             //Arrange
-            Items i = _repo.GetItem("I6");
+            Items i = _repo.GetItem("I65");
             i.ItemName = "maskara";
             _repo.UpdateItem(i);
-            Items i1 = _repo.GetItem("I6");
+            Items i1 = _repo.GetItem("I65");
             Assert.AreSame(i, i1);
         }
         [Test]

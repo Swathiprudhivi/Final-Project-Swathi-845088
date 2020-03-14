@@ -22,15 +22,15 @@ namespace Emart.Test
         {
             _repo.BuyerRegister(new Buyer
             {
-                BuyerId="3",
-                UserName="vinay",
-                EmailId="vinay@gmail.com",
-                Password="vinay25",
-                MobileNo="8801341500",
+                BuyerId="4",
+                UserName="sai",
+                EmailId="sai@gmail.com",
+                Password="sai123",
+                MobileNo="8023154689",
                 CreatedDateTime=DateTime.Now
 
             });
-            var result = _repo.BuyerLogin("vinay","vinay25");
+            var result = _repo.BuyerLogin("sai","sai123");
             Assert.NotNull(result);
         }
         [Test]
@@ -39,18 +39,18 @@ namespace Emart.Test
         {
             _repo.SellerRegister(new Seller()
             {
-                SellerId="3",
-                UserName="siva",
-                Password="siva23",
-                CompanyName="aaa",
-                Gstin="12",
-                BriefDetails="Good",
-                PostalAddress="hyd",
-                Website="www.siva.com",
-                EmailId="siva@gmail.com",
-                MobileNo="9885918520"
+                SellerId="4",
+                UserName="sai",
+                Password="sai23",
+                CompanyName="asd",
+                Gstin="16",
+                BriefDetails=" very Good",
+                PostalAddress="dehli",
+                Website="www.sai.com",
+                EmailId="sai@gmail.com",
+                MobileNo="8080895689"
             });
-            var result = _repo.SellerLogin("siva", "siva23");
+            var result = _repo.SellerLogin("sai", "sai23");
             Assert.NotNull(result);
         }
         [Test]
